@@ -3,6 +3,7 @@ python:
   - "2.7"
 install:
   - pip install html5validator
+  - apt-get install wput
 script:
   - html5validator
 after_success:
