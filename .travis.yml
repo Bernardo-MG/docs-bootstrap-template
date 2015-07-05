@@ -6,4 +6,4 @@ install:
 script:
   - html5validator
 after_success:
-  - "find . -type f -exec curl --user $REPO_USER:$REPO_PASSWORD --ftp-create-dirs -T {} $REPO_URL{} \;"
+  - "find . -type f -exec curl --user $REPO_USER:$REPO_PASSWORD --ftp-create-dirs -T {} $REPO_URL{}"
