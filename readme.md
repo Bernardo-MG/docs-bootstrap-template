@@ -33,6 +33,6 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 
 The project has been released under the [MIT License][license].
 
-[issues]: https://github.com/Bernardo-MG/java-patterns/issues
+[issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
 [license]: http://www.opensource.org/licenses/mit-license.php
-[scm]: http://github.com/Bernardo-MG/java-patterns
+[scm]: http://github.com/Bernardo-MG/docs-bootstrap-template
