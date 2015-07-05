@@ -1,0 +1,25 @@
+Palette chosen:
+
+Primary color:
+#122107
+
+White background complementary:
+#ebf0e8
+
+Binary:
+#122107
+#273b18
+
+Trinary:
+#122107
+#07210b
+#1f2107
+
+
+Complementary:
+#210712
+Complementary light:
+Default:
+#eee9eb
+Selected:
+#FFDBEA

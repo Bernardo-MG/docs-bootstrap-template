@@ -1,0 +1,6 @@
+# Git folder #
+/.git/
+
+# IntelliJ Idea fileas
+.idea
+*.iml
