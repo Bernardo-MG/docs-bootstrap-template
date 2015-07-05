@@ -4,6 +4,10 @@ A Bootstrap-based template for preparing documentation pages. It's meant to be u
 
 For this it makes use of Bootstrap, allowing it to adapt to most view panes, including the screens of mobile phones.
 
+## Check it
+
+The template can be checked at the [online demo site][demo-site]
+
 ## Usage
 
 The template project is partly a demo, showcasing the style configuration. This means that while the static files, contained in the \_static folder, can be used as they are, the html one should be adapted, preferably with the use of a templating engine.
@@ -33,6 +37,7 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 
 The project has been released under the [MIT License][license].
 
+[demo-site]: http://www.wandrell.com/docs-bootstrap-template/
 [issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
 [license]: http://www.opensource.org/licenses/mit-license.php
 [scm]: http://github.com/Bernardo-MG/docs-bootstrap-template
