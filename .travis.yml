@@ -3,4 +3,7 @@ python:
   - "2.7"
 install:
   - pip install html5validator
-script: html5validator
+script:
+  - html5validator
+after_success:
+  - "wput * ftp://$REPO_USER:$REPO_PASSWORD@$REPO_URL"
