@@ -1,9 +1,13 @@
 language: python
 python:
   - "2.7"
+env:
+  - DEPLOY=true
+before_install:
+  - chmod +x ./.scripts/deploy.sh
 install:
   - pip install html5validator
 script:
   - html5validator
 after_success:
-  - "find . -type f -exec curl --user $REPO_USER:$REPO_PASSWORD --ftp-create-dirs -T {} $REPO_URL{} \\;"
+  - ./.scripts/deploy.sh
