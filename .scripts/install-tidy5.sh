@@ -6,14 +6,14 @@ if [ $(id -u) != "0" ]; then
     exit 1
 fi
 
-apt-get remove libtidy-0.99-0 tidy
-apt-get install git-core automake libtool checkinstall
-mkdir /tmp/htmltidy
-cd /tmp/htmltidy
+sudo apt-get remove libtidy-0.99-0 tidy
+sudo apt-get install git-core automake libtool
+
 git clone https://github.com/w3c/tidy-html5
 cd tidy-html5
 
-sh build/gnuauto/setup.sh && ./configure --prefix=/usr && make
-checkinstall --pkgversion $(date +"%Y%m%dcvs-1")
-
-rm /tmp/htmltidy -rf
+cd build/cmake
+cmake ../.. [-DCMAKE_INSTALL_PREFIX=/path/for/install]
+make
+make install
+cd ../../..
