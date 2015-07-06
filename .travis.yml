@@ -1,13 +1,10 @@
-language: python
-python:
-  - "2.7"
 env:
-  - DEPLOY=true PULL_REQUEST = $TRAVIS_PULL_REQUEST CMS_BRANCH = $TRAVIS_BRANCH
+  - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST CMS_BRANCH=$TRAVIS_BRANCH
 before_install:
   - chmod +x ./.scripts/deploy.sh
 install:
-  - pip install html5validator
+  - sudo apt-get install tidy
 script:
-  - html5validator
+  - tidy **.*
 after_success:
   - ./.scripts/deploy.sh
