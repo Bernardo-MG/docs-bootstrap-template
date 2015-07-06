@@ -1,13 +1,11 @@
+language: python
+python:
+ - "2.7"
 env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST CMS_BRANCH=$TRAVIS_BRANCH
-before_install:
-  - chmod +x ./.scripts/install-tidy5.sh
 install:
-  #- sudo apt-get install tidy
-  - sudo ./.scripts/install-tidy5.sh
-before_script:
-  - chmod +x ./.scripts/deploy.sh
+ - pip install html5validator
 script:
-  - tidy5 **.*
+  - html5validator
 after_success:
   - ./.scripts/deploy.sh
