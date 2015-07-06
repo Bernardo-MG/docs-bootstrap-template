@@ -1,9 +1,12 @@
 env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST CMS_BRANCH=$TRAVIS_BRANCH
 before_install:
-  - chmod +x ./.scripts/deploy.sh
+  - chmod +x ./.scripts/install-tidy5.sh
 install:
-  - sudo apt-get install tidy
+  #- sudo apt-get install tidy
+  - ./.scripts/install-tidy5.sh
+before_script:
+  - chmod +x ./.scripts/deploy.sh
 script:
   - tidy **.*
 after_success:
