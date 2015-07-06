@@ -74,44 +74,48 @@
             </div>
         </div>
     </nav>
-    <div class="banner jumbotron subhead">
-        <div class="container">
-            <h1>Bootstrap Documentation for a Project</h1>
-        </div>
-    </div>
 </header>
-<div class="container">
-    <div class="section" id="cookiecutter-python-library">
-        <p>This template aims to give documentation sites a modern and responsive look, which will serve also to
-            homogenize their looks.</p>
+<section id="template-description" class="container">
+    <header class="page-header">
+        <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
+    </header>
+    <p>Taking modern features of Bootstrap and HTML5, this template aims to give a responsive web design to
+        documentation sites, allowing them to be readable on any device, and not only a home computer.</p>
 
-        <p>That way it doesn't matter if the site has been created with Maven Site, Sphinx or any other tool,
-            they all will have a same similar feeling, showing they are meant to be related.</p>
+    <p>But additionally as it is meant to be generic and reusable, it allows giving a homogeneous look to the
+        documentation pages of various projects. It doesn't matter if they use Maven Site, Sphinx, or any other tool
+        to build the doc site, just by adapting this template they will all show to be a documentation site.</p>
 
-        <div class="section" id="usage">
-            <h2>Usage</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <section id="usage">
+                <h2>Usage</h2>
 
-            <p>Just grab the template from GitHub and adapt the html files with your preferred templating
-                engine.</p>
+                <p>Just grab the template from GitHub and adapt the html files with your preferred templating
+                    engine.</p>
 
-            <p>All the static files are stored in the _static folder, and should not need any modification.</p>
+                <p>All the static files are stored in the _static folder, and should not need any modification.</p>
+            </section>
         </div>
 
-        <div class="section" id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
+        <div class="col-md-6">
+            <section id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>HTML5 semantic markup.</li>
+                    <li>Using Bootstrap for a responsive design, which adapts to the device being used.</li>
+                    <li>Icons created with Fonts Awesome.</li>
+                    <li>Simple look which invites to explore the different options.</li>
+                </ul>
+            </section>
         </div>
     </div>
     <p class="pull-right"><a href="#">Back to top</a></p>
-</div>
-<footer class="footer">
+</section>
+<footer id="docs-footer" class="footer">
     <div class="container">
         <div class="row">
-            <nav class="col-md-8 nav-footer">
+            <nav id="nav-info" class="col-md-8 nav-footer">
                 <div class="row">
                     <div class="col-md-4">
                         <dl>
@@ -138,13 +142,14 @@
                     </div>
                 </div>
             </nav>
-            <div class="col-md-4">
-                <p class="version-date">
+            <div id="version-info" class="col-md-4">
                 <dl class="dl-version">
                     <dt>Version</dt>
                     <dd>1.2.3</dd>
                     <dt>Last Published</dt>
-                    <dd>2015-07-03</dd>
+                    <dd>
+                        <time>2015-07-03</time>
+                    </dd>
                 </dl>
                 <dl class="dl-version-support">
                     <dt>Supported versions</dt>
