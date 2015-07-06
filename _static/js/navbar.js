@@ -1,9 +1,15 @@
-$(document).ready(function () {
-    $(".alert").addClass("in").fadeOut(4500);
+$(document).ready(function() {
 
-    /* swap open/close side menu icons */
-    $('[data-toggle=dropdown]').click(function () {
-        // toggle icon
-        $(this).find("span").toggleClass("glyphicon-chevron-right glyphicon-chevron-down");
-    });
+    $('.dropdown').on('show.bs.dropdown', function () {
+        $(this).find('.chevron_toggleable')
+            .removeClass("glyphicon-chevron-right")
+            .addClass("glyphicon-chevron-down");
+    })
+
+    $('.dropdown').on('hide.bs.dropdown', function () {
+        $(this).find('.chevron_toggleable')
+            .removeClass("glyphicon-chevron-down")
+            .addClass("glyphicon-chevron-right");
+    })
+
 });
