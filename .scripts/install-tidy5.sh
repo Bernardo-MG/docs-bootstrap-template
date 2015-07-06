@@ -13,7 +13,7 @@ git clone https://github.com/w3c/tidy-html5
 cd tidy-html5
 
 cd build/cmake
-cmake ../.. [-DCMAKE_INSTALL_PREFIX=/path/for/install]
+cmake ../.. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release
 make
 make install
 cd ../../..

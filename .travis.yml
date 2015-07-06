@@ -8,6 +8,6 @@ install:
 before_script:
   - chmod +x ./.scripts/deploy.sh
 script:
-  - tidy **.*
+  - tidy5 **.*
 after_success:
   - ./.scripts/deploy.sh
