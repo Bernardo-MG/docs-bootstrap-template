@@ -8,7 +8,10 @@ fi
 
 sudo apt-get remove libtidy-0.99-0 tidy
 sudo apt-get install git-core automake libtool
-sudo apt-get install cmake
+
+sudo add-apt-repository ppa:george-edison55/cmake-3.x
+sudo apt-get update
+sudo apt-get upgrade
 
 git clone https://github.com/w3c/tidy-html5
 cd tidy-html5
