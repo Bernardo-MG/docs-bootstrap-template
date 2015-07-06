@@ -4,13 +4,15 @@
 
 .dl-version dt {
     float: left;
+    padding-right: 0.5em;
 }
 
-.dl-version dd {
+.dl-version-support dt {
+    float: left;
+    padding-right: 0.5em;
+}
+
+.dl-version-support dd {
     float: left;
     padding-right: 5px;
-}
-
-.dl-version dt {
-    padding-right: 0.5em;
 }
