@@ -14,7 +14,7 @@ The template project is partly a demo, showcasing the style configuration. This 
 
 ### Prerequisites
 
-The project makes use of Bootstrap 3, but a modified version of it comes included, and JQuery.
+The project makes use of Bootstrap 3, but a modified version of it comes included, JQuery and Font Awesome.
 
 Otherwise, it is just plain HTML, so any browser can be used to check it.
 
