@@ -13,3 +13,7 @@ body {
 .banner {
     padding-top: 0;
 }
+
+.navbar-icon {
+    padding: 10px 5px 10px 15px;
+}
