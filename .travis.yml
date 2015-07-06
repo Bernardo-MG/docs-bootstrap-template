@@ -10,6 +10,6 @@ before_script:
   - chmod +x ./.scripts/deploy.sh
 script:
   - html5validator
-  - jshint _static/js/*
+  - jshint **.*
 after_success:
   - ./.scripts/deploy.sh
