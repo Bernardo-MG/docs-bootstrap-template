@@ -11,7 +11,7 @@ sudo apt-get install git-core automake libtool
 
 #sudo add-apt-repository ppa:george-edison55/cmake-3.x
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade cmake
 
 git clone https://github.com/w3c/tidy-html5
 cd tidy-html5
