@@ -6,10 +6,12 @@ env:
 install:
   - pip install html5validator
   - npm install -g jshint
+  - npm install recess -g
 before_script:
   - chmod +x ./.scripts/deploy.sh
 script:
   - html5validator
-  - jshint _static/js/*
+  - jshint ./_static/js/*
+  - recess ./_static/css/*
 after_success:
   - ./.scripts/deploy.sh
