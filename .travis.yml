@@ -5,6 +5,8 @@ env:
   - DEPLOY=true
 before_install:
   - chmod +x ./.scripts/deploy.sh
+  - PULL_REQUEST = $TRAVIS_PULL_REQUEST
+  - CMS_BRANCH = $TRAVIS_BRANCH
 install:
   - pip install html5validator
 script:
