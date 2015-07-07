@@ -14,8 +14,8 @@ $(document).ready(function () {
  */
 function toggleChevronDown() {
     $(this).find('.chevron_toggleable')
-        .removeClass("glyphicon-chevron-right")
-        .addClass("glyphicon-chevron-down");
+        .removeClass("fa fa-chevron-right")
+        .addClass("fa fa-chevron-down");
 }
 
 /**
@@ -23,6 +23,6 @@ function toggleChevronDown() {
  */
 function toggleChevronRight() {
     $(this).find('.chevron_toggleable')
-        .removeClass("glyphicon-chevron-down")
-        .addClass("glyphicon-chevron-right");
+        .removeClass("fa fa-chevron-down")
+        .addClass("fa fa-chevron-right");
 }
