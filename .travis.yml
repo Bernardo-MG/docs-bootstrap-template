@@ -23,6 +23,6 @@ script:
   - recess ./_static/css/*
   # Accessibility Validation
   - nohup http-server -p 8080 >/dev/null 2>&1 &
-  - pa11y localhost:8080/index.html -r ci
+  - pa11y localhost:8080/index.html -s WCAG2AAA
 after_success:
   - ./.scripts/deploy.sh
