@@ -5,3 +5,7 @@
 .inverse-icon:hover {
     color: #f2e6ea;
 }
+
+.inverse-icon span {
+    color: #f2e6ea;
+}
