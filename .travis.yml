@@ -8,8 +8,10 @@ install:
   - npm install -g jshint
   - npm install -g recess
   - npm install -g node
+  - npm install -g http-server
   - npm install -g phantomjs
   - npm install -g pa11y
+  - npm install -g pa11y-reporter-ci
 before_script:
   - chmod +x ./.scripts/deploy.sh
 script:
@@ -20,6 +22,7 @@ script:
   # CSS Validation
   - recess ./_static/css/*
   # Accessibility Validation
-  - pa11y file:*.html
+  - nohup http-server -p 8080 >/dev/null 2>&1 &
+  - pa11y localhost:8080/index.html -r ci -s WCAG2AAA
 after_success:
   - ./.scripts/deploy.sh
