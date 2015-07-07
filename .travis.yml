@@ -6,9 +6,9 @@ env:
 install:
   - pip install html5validator
   - npm install -g jshint
-  - npm install recess -g
-  - brew install node
-  - brew install phantomjs
+  - npm install -g recess
+  - npm install -g node
+  - npm install -g phantomjs
   - npm install -g pa11y
 before_script:
   - chmod +x ./.scripts/deploy.sh
