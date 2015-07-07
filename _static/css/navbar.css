@@ -1,5 +1,9 @@
+.navbar {
+    margin-bottom: 50px;
+}
+
 body {
-    margin-top: 50px;
+    padding-top: 50px;
 }
 
 .navbar-brand {
@@ -12,8 +16,4 @@ body {
 
 .banner {
     padding-top: 0;
-}
-
-.navbar-icon {
-    padding: 10px 5px 10px 15px;
 }
