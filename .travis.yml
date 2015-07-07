@@ -20,6 +20,6 @@ script:
   # CSS Validation
   - recess ./_static/css/*
   # Accessibility Validation
-  - pa11y file://index.html
+  - pa11y file:index.html
 after_success:
   - ./.scripts/deploy.sh
