@@ -10,6 +10,10 @@
     margin-bottom: 50px;
 }
 
+.navbar .nav li a {
+    letter-spacing: 1px
+}
+
 body {
     padding-top: 50px;
 }

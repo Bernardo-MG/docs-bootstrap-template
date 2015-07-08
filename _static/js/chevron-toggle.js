@@ -14,7 +14,7 @@ $(document).ready(function () {
  */
 function toggleChevronDown() {
     $(this).find('.chevron_toggleable')
-        .removeClass("fa fa-chevron-right")
+        .removeClass("fa fa-chevron-up")
         .addClass("fa fa-chevron-down");
 }
 
@@ -24,5 +24,5 @@ function toggleChevronDown() {
 function toggleChevronRight() {
     $(this).find('.chevron_toggleable')
         .removeClass("fa fa-chevron-down")
-        .addClass("fa fa-chevron-right");
+        .addClass("fa fa-chevron-up");
 }
