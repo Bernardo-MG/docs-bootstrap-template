@@ -10,8 +10,26 @@ body {
     font-size: 30px;
 }
 
+@media (max-width: 62em) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 25em) {
+    .navbar-brand {
+        font-size: 15px;
+    }
+}
+
 .navbar-body {
     font-size: 20px;
+}
+
+@media (max-width: 62em) {
+    .navbar-body {
+        font-size: 15px;
+    }
 }
 
 .banner {
