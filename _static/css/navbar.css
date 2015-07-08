@@ -1,3 +1,11 @@
+/*!
+ * Docs Boostrap Template navigation bar styles
+ * Copyright 2015 Bernardo Martínez Garrido
+ * Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
+ *
+ * This file contains styles for the navigation bar.
+ */
+
 .navbar {
     margin-bottom: 50px;
 }
@@ -10,8 +18,26 @@ body {
     font-size: 30px;
 }
 
+@media (max-width: 62em) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 25em) {
+    .navbar-brand {
+        font-size: 15px;
+    }
+}
+
 .navbar-body {
     font-size: 20px;
+}
+
+@media (max-width: 62em) {
+    .navbar-body {
+        font-size: 15px;
+    }
 }
 
 .banner {

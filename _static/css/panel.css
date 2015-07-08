@@ -1,3 +1,11 @@
+/*!
+ * Docs Boostrap Template panels styles
+ * Copyright 2015 Bernardo Martínez Garrido
+ * Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
+ *
+ * This file contains styles for the Bootstrap panels.
+ */
+
 .panel > .panel-heading {
     border-bottom: 0;
 }
