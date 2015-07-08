@@ -34,12 +34,12 @@ body {
     }
 }
 
-.navbar-body {
+.navbar-body .dropdown {
     font-size: 20px;
 }
 
 @media (max-width: 62em) {
-    .navbar-body {
+    .navbar-body .dropdown {
         font-size: 15px;
     }
 }

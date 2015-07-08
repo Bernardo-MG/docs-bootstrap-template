@@ -62,48 +62,22 @@
     color: white;
 }
 
-@media (max-width: 768px) {
-    .navbar-icon {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
-    }
+.navbar-icons-list {
+    font-size: 20px;
+}
 
-    .navbar-icon:active,
-    .navbar-icon:focus {
-        position: static;
-        width: auto;
-        height: auto;
-        margin: 0;
-        overflow: visible;
-        clip: auto;
+@media (min-width: 768px) and (max-width: 62em) {
+    .navbar-icons-list {
+        font-size: 15px;
     }
 }
 
-@media (min-width: 768px) {
-    .navbar-icon-text {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        border: 0;
+@media (max-width: 768px) {
+    .navbar-icons-list {
+        font-size: 20px;
+        margin-left: 30px;
     }
-
-    .navbar-icon-text:active,
-    .navbar-icon-text:focus {
-        position: static;
-        width: auto;
-        height: auto;
-        margin: 0;
-        overflow: visible;
-        clip: auto;
+    .navbar-icons-list li {
+        margin: 0 0 15px 0;
     }
 }
