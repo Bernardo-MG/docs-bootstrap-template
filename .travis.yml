@@ -21,10 +21,7 @@ script:
   # CSS Validation
   - recess ./_static/css/*
   # Accessibility Validation
-  - nohup http-server -p 8080 >/dev/null 2>&1 &
-  - export SERVER_PID=$!
+  - http-server
   - pa11y localhost:8080/index.html -s WCAG2AAA
-after_script:
-  - kill $SERVER_PID
 after_success:
   - ./.scripts/deploy.sh
