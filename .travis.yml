@@ -6,12 +6,22 @@ env:
 install:
   - pip install html5validator
   - npm install -g jshint
-  - npm install recess -g
+  - npm install -g recess
+  - npm install -g node
+  - npm install -g http-server
+  - npm install -g phantomjs
+  - npm install -g pa11y
 before_script:
   - chmod +x ./.scripts/deploy.sh
 script:
+  # HTML5 Validation
   - html5validator
+  # Javascript validation
   - jshint ./_static/js/*
+  # CSS Validation
   - recess ./_static/css/*
+  # Accessibility Validation
+  - nohup http-server -p 8080 >/dev/null 2>&1 &
+  - pa11y localhost:8080/index.html -s WCAG2AAA
 after_success:
   - ./.scripts/deploy.sh

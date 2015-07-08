@@ -2,32 +2,41 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-
     <meta charset='utf-8'>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <title>Index - Docs Bootstrap Template</title>
+
+    <!-- Metadata -->
     <meta name="description"
-          content="Docs Bootstrap Template Demo.">
+          content="Docs Bootstrap Template Demo">
     <meta name="keywords" content="Bootstrap, template, documentation">
     <meta name="author" content="Bernardo Martínez Garrido">
 
-    <title>Index - Docs Bootstrap Template</title>
+    <!-- OpenGraph data -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Index - Docs Bootstrap Template" />
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="Documentation site template using Bootstrap" />
+    <meta name="twitter:site" content="@wandrell" />
+    <meta name="twitter:title" content="Docs Bootstrap Template Demo" />
+    <meta name="twitter:description" content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites" />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="_static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="_static/css/docs.css" type="text/css"/>
-
     <link rel="stylesheet" href="_static/font-awesome-4.3.0/css/font-awesome.min.css">
-
     <link rel='stylesheet' type='text/css'
           href='http://fonts.googleapis.com/css?family=Crete+Round&amp;subset=latin,latin-ext'>
 </head>
 <body role="document">
 <header class="header">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links"
                         aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -37,22 +46,29 @@
                 <a class="navbar-brand" href="#">Docs Bootstrap Template Demo</a>
             </div>
 
-            <div id="navbar" class="navbar-body navbar-collapse collapse">
+            <div id="navbar-links" class="navbar-body navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#"><i class="fa fa-download inverse-icon"></i></a>
+                        <ul class="list-inline list-icons">
+                            <li>
+                                <a href="#" title="Download"><span class="fa fa-download"></span></a></li>
+                        </ul>
                     </li>
                     <li>
                         <ul class="list-inline list-icons">
-                            <li><a href="#"><i class="fa fa-github inverse-icon"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook-official inverse-icon"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus-square inverse-icon"></i></a></li>
+                            <li><a href="#" title="Github"><span class="fa fa-github"
+                                                                 aria-hidden="true"></span></a></li>
+                            <li><a href="#" title="Facebook"><span class="fa fa-facebook-official"
+                                                                   aria-hidden="true"></span></a></li>
+                            <li><a href="#" title="Google+"><span class="fa fa-google-plus-square"
+                                                                  aria-hidden="true"></span></a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">Documentation
-                            <small><span class="chevron_toggleable glyphicon glyphicon-chevron-right"></span></small>
+                            <small><span class="chevron_toggleable fa fa-chevron-right"
+                                         aria-hidden="true"></span></small>
                         </a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Getting started</a></li>
@@ -63,7 +79,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">Info and Reports
-                            <small><span class="chevron_toggleable glyphicon glyphicon-chevron-right"></span></small>
+                            <small><span class="chevron_toggleable fa fa-chevron-right"
+                                         aria-hidden="true"></span></small>
                         </a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Info</a></li>
@@ -74,44 +91,52 @@
             </div>
         </div>
     </nav>
-    <div class="banner jumbotron subhead">
-        <div class="container">
-            <h1>Bootstrap Documentation for a Project</h1>
-        </div>
-    </div>
 </header>
-<div class="container">
-    <div class="section" id="cookiecutter-python-library">
-        <p>This template aims to give documentation sites a modern and responsive look, which will serve also to
-            homogenize their looks.</p>
+<section id="template-description" class="container">
+    <header class="page-header">
+        <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
+    </header>
+    <p>Taking modern features of Bootstrap and HTML5, this template aims to give a responsive web design to
+        documentation sites, allowing them to be readable on any device, and not only a home computer.</p>
 
-        <p>That way it doesn't matter if the site has been created with Maven Site, Sphinx or any other tool,
-            they all will have a same similar feeling, showing they are meant to be related.</p>
+    <p>But additionally as it is meant to be generic and reusable, it allows giving a homogeneous look to the
+        documentation pages of various projects. It doesn't matter if they use Maven Site, Sphinx, or any other tool
+        to build the doc site, just by adapting this template they will all show to be a documentation site.</p>
 
-        <div class="section" id="usage">
-            <h2>Usage</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <section id="usage">
+                <h2>Usage</h2>
 
-            <p>Just grab the template from GitHub and adapt the html files with your preferred templating
-                engine.</p>
+                <p>Just grab the template from GitHub and adapt the html files with your preferred templating
+                    engine.</p>
 
-            <p>All the static files are stored in the _static folder, and should not need any modification.</p>
+                <p>All the static files are stored in the _static folder, and should not need any modification.</p>
+            </section>
         </div>
 
-        <div class="section" id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
+        <div class="col-md-6">
+            <section id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>HTML5 semantic markup.</li>
+                    <li>Using Bootstrap for a responsive design, which adapts to the device being used.</li>
+                    <li>Icons created with Fonts Awesome.</li>
+                    <li>Simple look which invites to explore the different options.</li>
+                    <li>Semanting tags such as OpenGraph and Twitter card.</li>
+                    <li>Validated for HTML 5</li>
+                    <li>Validated for accessibility</li>
+                    <li>Validated CSS and JS</li>
+                </ul>
+            </section>
         </div>
     </div>
     <p class="pull-right"><a href="#">Back to top</a></p>
-</div>
-<footer class="footer">
+</section>
+<footer id="docs-footer" class="footer">
     <div class="container">
         <div class="row">
-            <nav class="col-md-8 nav-footer">
+            <nav id="nav-info" class="col-md-8 nav-footer">
                 <div class="row">
                     <div class="col-md-4">
                         <dl>
@@ -138,9 +163,16 @@
                     </div>
                 </div>
             </nav>
-            <div class="col-md-4">
-                <p class="version-date"><span class="projectVersion">Version: 1.2.3. </span><span class="publishDate">Last Published: 2015-07-03. </span>
-                <dl class="dl-version">
+            <div id="version-info" class="col-md-4">
+                <dl id="version-project" class="dl-version">
+                    <dt>Version</dt>
+                    <dd>1.2.3</dd>
+                    <dt>Last Published</dt>
+                    <dd>
+                        <time>2015-07-03</time>
+                    </dd>
+                </dl>
+                <dl id="version-supported" class="dl-version-support">
                     <dt>Supported versions</dt>
                     <dd>1.1</dd>
                     <dd>2.2</dd>
@@ -153,9 +185,10 @@
             </div>
         </div>
     </div>
-    <div class="copyright pull-right">
+    <div id="copyright" class="copyright pull-right">
         <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT
-            License</a> | <i class="fa fa-copyright"></i>2015 <a href="https://github.com/Bernardo-MG">Bernardo Martínez
+            License</a> | <span class="fa fa-copyright"><span class="sr-only">Copyright</span></span>2015 <a
+                href="https://github.com/Bernardo-MG">Bernardo Martínez
             Garrido</a>.</p>
     </div>
 </footer>

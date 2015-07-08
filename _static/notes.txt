@@ -4,7 +4,7 @@ Primary color:
 #122107
 
 White background complementary:
-#ebf0e8
+#FDFAFB
 
 Binary:
 #122107
