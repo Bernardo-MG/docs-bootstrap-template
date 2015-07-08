@@ -6,29 +6,17 @@
  * This file contains styles for the lists.
  */
 
-.list-icons {
-    padding: 10px 5px 10px 15px;
-}
-
-.list-icons a {
-    color: white;
-}
-
-.list-icons a:hover {
-    color: #f2e6ea;
-}
-
 .dl-version dt {
     float: left;
     padding-right: 0.5em;
 }
 
-.dl-version-support dt {
+.dl-inline dt {
     float: left;
     padding-right: 0.5em;
 }
 
-.dl-version-support dd {
+.dl-inline dd {
     float: left;
     padding-right: 5px;
 }
