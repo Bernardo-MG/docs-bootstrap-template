@@ -7,14 +7,30 @@
  */
 
 .footer {
+    bottom: 0;
     width: 100%;
     padding-top: 10px;
+    background-color: #f5f5f5;
     border-top: 1px solid #ccc;
 }
 
+
+.footer a {
+    color: #0050aa;
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: #2780e3;
+}
+
 .copyright {
-    padding-right: 10px;
-    padding-left: 10px;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: right;
+    background-color: #f5f5f5;
 }
 
 .nav-footer ul {
