@@ -14,9 +14,20 @@
     border-top: 1px solid #ccc;
 }
 
-
 .footer a {
     color: #0050aa;
+}
+
+.footer-link-note {
+    font-size: 65%;
+}
+
+.footer-link-note:after {
+    content: ")";
+}
+
+.footer-link-note:before {
+    content: "(";
 }
 
 .footer a:hover,
@@ -33,11 +44,10 @@
     background-color: #f5f5f5;
 }
 
-.nav-footer ul {
-    vertical-align: middle;
+.nav-dd dt {
+    font-size: 120%;
 }
 
-.nav-footer dl {
-    padding-top: 0;
-    margin-top: 0;
+.nav-dd {
+    text-align: center;
 }
