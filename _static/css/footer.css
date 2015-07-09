@@ -7,20 +7,20 @@
  */
 
 .footer {
+    bottom: 0;
     width: 100%;
     padding-top: 10px;
-    border-top: 1px solid #ccc;
     background-color: #ebf0e8;
-    bottom: 0;
+    border-top: 1px solid #ccc;
 }
 
 .copyright {
     width: 100%;
+    padding-top: 0.5em;
     padding-right: 1em;
     padding-left: 1em;
-    padding-top: 0.5em;
-    background-color: #A1A99D;
     text-align: right;
+    background-color: #A1A99D;
 }
 
 .nav-footer ul {
