@@ -63,18 +63,6 @@
     }
 }
 
-.navbar-icons-list a {
-    color: white;
-}
-
-.navbar-icons-list a:hover {
-    color: #f2e6ea;
-}
-
-.navbar-icon-text {
-    color: white;
-}
-
 .navbar-icons-list {
     font-size: 20px;
 }

@@ -10,7 +10,7 @@
     bottom: 0;
     width: 100%;
     padding-top: 10px;
-    background-color: #ebf0e8;
+    background-color: #eeeeee;
     border-top: 1px solid #ccc;
 }
 
@@ -20,7 +20,7 @@
     padding-right: 1em;
     padding-left: 1em;
     text-align: right;
-    background-color: #A1A99D;
+    background-color: #eeeeee;
 }
 
 .nav-footer ul {
