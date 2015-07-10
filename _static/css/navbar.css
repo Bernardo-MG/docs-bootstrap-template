@@ -7,39 +7,44 @@
  */
 
 .navbar {
-    margin-bottom: 50px;
+    padding-right: 1em;
+    font-size: 20px;
 }
 
-.navbar .nav li a {
+.navbar-main .navbar {
+    margin-bottom: 3em;
+}
+
+.navbar-main .navbar .nav li a {
     letter-spacing: 1px
 }
 
 body {
-    padding-top: 50px;
+    padding-top: 4em;
 }
 
-.navbar-brand {
+.navbar-main .navbar-brand {
     font-size: 30px;
 }
 
 @media (max-width: 62em) {
-    .navbar-brand {
+    .navbar-main .navbar-brand {
         font-size: 20px;
     }
 }
 
 @media (max-width: 25em) {
-    .navbar-brand {
+    .navbar-main .navbar-brand {
         font-size: 15px;
     }
 }
 
-.navbar-body .dropdown {
+.navbar-main .navbar-body .dropdown {
     font-size: 20px;
 }
 
 @media (max-width: 62em) {
-    .navbar-body .dropdown {
+    .navbar-main .navbar-body .dropdown {
         font-size: 15px;
     }
 }

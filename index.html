@@ -21,7 +21,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://www.wandrell.com/docs-bootstrap-template/"/>
     <meta property="og:site" content="Docs Bootstrap Template"/>
-    <meta property="og:title" content="Index- Docs Bootstrap Template"/>
+    <meta property="og:title" content="Index - Docs Bootstrap Template"/>
     <meta property="og:description"
           content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
 
@@ -39,8 +39,8 @@
 </head>
 <body role="document">
 <header class="header">
-    <nav id="navbar-main" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+    <nav id="navbar-main" class="navbar navbar-main navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links"
                         aria-expanded="false" aria-controls="navbar-main">
@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Docs Bootstrap Template Demo</a>
+                <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
             </div>
 
             <div id="navbar-links" class="navbar-body navbar-collapse collapse">
@@ -98,7 +98,7 @@
     <header class="page-header">
         <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
     </header>
-    <section id="description">
+    <section id="description" class="section">
         <p>Taking modern features of Bootstrap and HTML5, this template aims to give a responsive web design to
             documentation sites, allowing them to be readable on any device, and not only a home computer.</p>
 
@@ -134,15 +134,26 @@
             </section>
         </div>
     </div>
-    <p class="pull-right"><a href="#">Back to top</a></p>
+    <section id="pages" class="section">
+        <h2>Subpages</h2>
+
+        <p>The site is composed of several test pages, showing different documentation aspects where it may be
+            applied.</p>
+
+        <p>These are (apart from the index):</p>
+        <ul>
+            <li><a href="./tests_report.html">Tests report</a></li>
+        </ul>
+    </section>
+    <p class="pull-right internal-link"><a href="#">Back to top</a></p>
 </section>
 <footer id="docs-footer" class="footer">
     <div class="container">
         <div class="row">
-            <nav id="navbar-footer" class="col-md-10 nav-footer">
+            <div id="navbar-footer" class="col-md-10">
                 <div class="row">
                     <div class="col-md-4">
-                        <dl class="nav-dd">
+                        <dl class="dl-nav">
                             <dt>General Info</dt>
                             <dd><a href="#">Acquire</a></dd>
                             <dd><a href="#">Getting Started</a></dd>
@@ -150,7 +161,7 @@
                         </dl>
                     </div>
                     <div class="col-md-4">
-                        <dl class="nav-dd">
+                        <dl class="dl-nav">
                             <dt>Code & Contributions</dt>
                             <dd><a id="cms-link" href="#">CMS <span class="footer-link-note">GitHub</span></a></dd>
                             <dd><a id="ci-link" href="#">CI <span class="footer-link-note">Travis</span></a></dd>
@@ -159,14 +170,14 @@
                         </dl>
                     </div>
                     <div class="col-md-4">
-                        <dl class="nav-dd">
+                        <dl class="dl-nav">
                             <dt>Releases repositories</dt>
                             <dd><a href="#">Bintray</a></dd>
                             <dd><a href="#">Pypi</a></dd>
                         </dl>
                     </div>
                 </div>
-            </nav>
+            </div>
             <div id="version-info" class="col-md-2">
                 <dl id="list-project-version" class="dl-version">
                     <dt id="description-version">Version</dt>
@@ -188,9 +199,8 @@
             Martínez Garrido</a>.</p>
     </div>
 </footer>
-
-<script type="text/javascript" src="_static/jquery/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="_static/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="_static/js/chevron-toggle.js"></script>
+<script src="_static/jquery/jquery-1.11.3.min.js"></script>
+<script src="_static/bootstrap/js/bootstrap.min.js"></script>
+<script src="_static/js/chevron-toggle.js"></script>
 </body>
 </html>
