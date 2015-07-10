@@ -6,6 +6,11 @@
  * This file contains general-use styles.
  */
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background: url('../images/bg.png');
 }
