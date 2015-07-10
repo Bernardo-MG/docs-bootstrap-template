@@ -32,12 +32,12 @@ body {
     font-size: 65%;
 }
 
-.footer-link-note:after {
-    content: ")";
-}
-
 .footer-link-note:before {
     content: "(";
+}
+
+.footer-link-note:after {
+    content: ")";
 }
 
 .footer a:hover,

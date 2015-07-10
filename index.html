@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Docs Bootstrap Template Demo</a>
+                <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
             </div>
 
             <div id="navbar-links" class="navbar-body navbar-collapse collapse">
@@ -98,7 +98,7 @@
     <header class="page-header">
         <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
     </header>
-    <section id="description">
+    <section id="description" class="section">
         <p>Taking modern features of Bootstrap and HTML5, this template aims to give a responsive web design to
             documentation sites, allowing them to be readable on any device, and not only a home computer.</p>
 
@@ -109,7 +109,9 @@
     <div class="row">
         <div class="col-md-6">
             <section id="usage">
-                <h2>Usage</h2>
+                <header>
+                    <h2>Usage</h2>
+                </header>
 
                 <p>Just grab the template from GitHub and adapt the html files with your preferred templating
                     engine.</p>
@@ -120,7 +122,9 @@
 
         <div class="col-md-6">
             <section id="features">
-                <h2>Features</h2>
+                <header>
+                    <h2>Features</h2>
+                </header>
                 <ul>
                     <li>HTML5 semantic markup.</li>
                     <li>Using Bootstrap for a responsive design, which adapts to the device being used.</li>
@@ -134,7 +138,19 @@
             </section>
         </div>
     </div>
-    <p class="pull-right"><a href="#">Back to top</a></p>
+    <section id="pages" class="section">
+        <header>
+            <h2>Subpages</h2>
+        </header>
+        <p>The site is composed of several test pages, showing different documentation aspects where it may be
+            applied.</p>
+
+        <p>These are (apart from the index):</p>
+        <ul>
+            <li><a href="./tests_report.html">Tests report</a></li>
+        </ul>
+    </section>
+    <p class="pull-right internal-link"><a href="#">Back to top</a></p>
 </section>
 <footer id="docs-footer" class="footer">
     <div class="container">

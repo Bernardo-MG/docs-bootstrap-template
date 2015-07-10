@@ -18,3 +18,11 @@ body {
 .page-header {
     margin-top: 0;
 }
+
+.internal-link:before {
+    content: "[";
+}
+
+.internal-link:after {
+    content: "]";
+}
