@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Tests - Docs Bootstrap Template</title>
+    <title>Tests Report - Docs Bootstrap Template</title>
 
     <!-- Metadata -->
     <meta name="description"
@@ -21,7 +21,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://www.wandrell.com/docs-bootstrap-template/"/>
     <meta property="og:site" content="Docs Bootstrap Template"/>
-    <meta property="og:title" content="Index- Docs Bootstrap Template"/>
+    <meta property="og:title" content="Tests Report - Docs Bootstrap Template"/>
     <meta property="og:description"
           content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
 
@@ -39,8 +39,8 @@
 </head>
 <body role="document">
 <header class="header">
-    <nav id="navbar-main" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+    <nav id="navbar-main" class="navbar navbar-main navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-links"
                         aria-expanded="false" aria-controls="navbar-main">
@@ -98,14 +98,35 @@
     <header class="page-header">
         <h1>Example of a tests report</h1>
     </header>
+
+    <nav id="navbar-toc" class="navbar navbar-default">
+        <div class="navbar-inner">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#toc-nav-collapse"
+                        aria-expanded="false" aria-controls="navbar-toc">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div id="toc-nav-collapse" class="navbar-body navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a href="#tests-summary">Summary</a></li>
+                    <li><a href="#tests-suites">Test Suites</a></li>
+                    <li><a href="#tests-cases">Test Cases</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section class="section">
         <p>This example is based on the Surefire report for Maven, which shows the results of running various test
             suites.</p>
     </section>
     <section id="tests-summary" class="section">
-        <header>
-            <h2>Summary</h2>
-        </header>
+        <h2>Summary</h2>
         <table class="table table-bordered">
             <thead>
             <tr>
@@ -130,9 +151,7 @@
         </table>
     </section>
     <section id="tests-suites" class="section">
-        <header>
-            <h2>Test Suites</h2>
-        </header>
+        <h2>Test Suites</h2>
         <table class="table table-striped table-bordered">
             <thead>
             <tr>
@@ -191,13 +210,9 @@
         </table>
     </section>
     <section id="tests-cases" class="section">
-        <header>
-            <h2>Test Cases</h2>
-        </header>
+        <h2>Test Cases</h2>
         <section id="test-cases-1" class="section">
-            <header>
-                <h3>Test Suite 1</h3>
-            </header>
+            <h3>Test Suite 1</h3>
             <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -221,9 +236,7 @@
             </table>
         </section>
         <section id="test-cases-2" class="section">
-            <header>
-                <h3>Test Suite 2</h3>
-            </header>
+            <h3>Test Suite 2</h3>
             <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -252,9 +265,7 @@
             </table>
         </section>
         <section id="test-cases-3" class="section">
-            <header>
-                <h3>Test Suite 3</h3>
-            </header>
+            <h3>Test Suite 3</h3>
             <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -273,9 +284,7 @@
             </table>
         </section>
         <section id="test-cases-4" class="section">
-            <header>
-                <h3>Test Suite 4</h3>
-            </header>
+            <h3>Test Suite 4</h3>
             <table class="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -329,7 +338,7 @@
 <footer id="docs-footer" class="footer">
     <div class="container">
         <div class="row">
-            <nav id="navbar-footer" class="col-md-10">
+            <div id="navbar-footer" class="col-md-10">
                 <div class="row">
                     <div class="col-md-4">
                         <dl class="dl-nav">
@@ -356,7 +365,7 @@
                         </dl>
                     </div>
                 </div>
-            </nav>
+            </div>
             <div id="version-info" class="col-md-2">
                 <dl id="list-project-version" class="dl-version">
                     <dt id="description-version">Version</dt>
@@ -378,9 +387,8 @@
             Martínez Garrido</a>.</p>
     </div>
 </footer>
-
-<script type="text/javascript" src="_static/jquery/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="_static/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="_static/js/chevron-toggle.js"></script>
+<script src="_static/jquery/jquery-1.11.3.min.js"></script>
+<script src="_static/bootstrap/js/bootstrap.min.js"></script>
+<script src="_static/js/chevron-toggle.js"></script>
 </body>
 </html>
