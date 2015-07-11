@@ -1,0 +1,15 @@
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th {
+    background-color: #ffffff;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+.table:not(.table-striped) > thead > tr > td,
+.table:not(.table-striped) > tbody > tr > td,
+.table:not(.table-striped) > tfoot > tr > td {
+    background-color: #ffffff;
+}
