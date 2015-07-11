@@ -20,6 +20,12 @@ body {
     border-top: 1px solid #ccc;
 }
 
+.footer > .container {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
 .footer div {
     background-color: #f5f5f5;
 }
