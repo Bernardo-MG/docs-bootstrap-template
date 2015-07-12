@@ -34,8 +34,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="_static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="_static/css/docs.css" type="text/css"/>
+    <link rel="stylesheet" href="_static/css/docs.css">
     <link rel="stylesheet" href="_static/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_static/lightbox2/css/lightbox.css">
+    <link rel="stylesheet" href="_static/highlight/styles/default.css">
 </head>
 <body role="document">
 <header class="header">
@@ -106,9 +108,15 @@
     <p>This would hold information about a class, and probably links to more detailed docs, such as the Javadoc.</p>
 
     <p>To help explaining this code, diagrams would be used:</p>
-    <img src="demo/example_class_diagram.png" alt="Example diagram">
+    <div class="row">
+        <div class="col-md-2 col-md-offset-5">
+            <a href="demo/example_class_diagram.png" data-lightbox="image-1" data-title="Example diagram">
+                <img src="demo/example_class_diagram.png" alt="Example diagram"/>
+            </a>
+        </div>
+    </div>
 
-    <p>And also pieces of code:</p>
+    <p>And also pieces of code, which are automatically highlighted with the help of Highlight.js:</p>
     <pre><code>/**
 * The HelloWorldApp class implements an application that
 * simply prints "Hello World!" to standard output.
@@ -178,5 +186,8 @@ class HelloWorldApp {
 <script src="_static/bootstrap/js/bootstrap.min.js"></script>
 <script src="_static/js/chevron-toggle.js"></script>
 <script src="_static/js/smooth-scroll.js"></script>
+<script src="_static/lightbox2/js/lightbox.js"></script>
+<script src="_static/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

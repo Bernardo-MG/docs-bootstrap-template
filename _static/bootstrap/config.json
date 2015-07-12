@@ -328,7 +328,7 @@
     "@panel-danger-text": "@state-danger-text",
     "@panel-danger-border": "@state-danger-border",
     "@panel-danger-heading-bg": "@state-danger-bg",
-    "@thumbnail-padding": "4px",
+    "@thumbnail-padding": "1px",
     "@thumbnail-bg": "@body-bg",
     "@thumbnail-border": "#ddd",
     "@thumbnail-border-radius": "@border-radius-base",
@@ -430,5 +430,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=a10535d37fd3314962f0"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=19d94cff86da95e57aca"
 }
