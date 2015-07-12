@@ -9,3 +9,24 @@
 .panel > .panel-heading {
     border-bottom: 0;
 }
+
+.panel-summary dt:after {
+    content: ":";
+}
+
+.panel-summary dt {
+    float: left;
+    padding-right: 0.5em;
+}
+
+.panel-summary dl {
+    margin-bottom: 0;
+}
+
+.panel-summary .panel-heading {
+    font-size: 26px;
+}
+
+.panel-summary {
+    width: 13em;
+}
