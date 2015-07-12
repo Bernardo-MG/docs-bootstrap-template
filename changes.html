@@ -56,9 +56,10 @@
             <div id="navbar-links" class="navbar-body navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <ul class="list-unstyled navbar-icons-list">
-                            <li><a href="#" title="GitHub" aria-label="GitHub"><span class="navbar-icon fa fa-inverse fa-github"
-                                                                      aria-hidden="true"></span></a></li>
+                        <ul class="list-unstyled icons-list-inline">
+                            <li><a href="#" title="GitHub" aria-label="GitHub"><span
+                                    class="navbar-icon fa fa-inverse fa-github"
+                                    aria-hidden="true"></span></a></li>
                             <li><a href="#" title="Facebook" aria-label="Facebook"><span
                                     class="navbar-icon fa fa-inverse fa-facebook-official"
                                     aria-hidden="true"></span></a></li>
@@ -98,6 +99,7 @@
 <section id="main-section" class="container">
     <header class="page-header">
         <h1>Example of a changes log</h1>
+
         <p>This example is based on the changes report for Maven, which shows the changes log for the project.</p>
     </header>
     <section id="releases-history" class="section">
@@ -113,24 +115,35 @@
             <tbody>
             <tr>
                 <td><a href="#release_010">0.1.0</a></td>
-                <td>2015-04-03</td>
+                <td>
+                    <time>2015-04-03</time>
+                </td>
                 <td>First release</td>
             </tr>
             <tr>
                 <td><a href="#release_020">0.2.0</a></td>
-                <td>2015-05-04</td>
+                <td>
+                    <time>2015-05-04</time>
+                </td>
                 <td>Various enhancements</td>
             </tr>
             <tr>
                 <td><a href="#release_021">0.2.1</a></td>
-                <td>2015-05-07</td>
+                <td>
+                    <time>2015-05-07</time>
+                </td>
                 <td>A few patches</td>
             </tr>
             </tbody>
         </table>
     </section>
     <div id="release_010" class="section">
-        <h3>Release 0.1.0 – 2015-04-03</h3>
+        <h3>Release 0.1.0
+            <small>(
+                <time>2015-04-03</time>
+                )
+            </small>
+        </h3>
         <table class="table table-striped table-bordered">
             <thead>
             <tr>
@@ -150,7 +163,12 @@
         </table>
     </div>
     <div id="release_020" class="section">
-        <h3>Release 0.2.0 – 2015-05-04</h3>
+        <h3>Release 0.2.0
+            <small>(
+                <time>2015-05-04</time>
+                )
+            </small>
+        </h3>
         <table class="table table-striped table-bordered">
             <thead>
             <tr>
@@ -182,7 +200,12 @@
         </table>
     </div>
     <div id="release_021" class="section">
-        <h3>Release 0.2.1 – 2015-05-07</h3>
+        <h3>Release 0.2.1
+            <small>(
+                <time>2015-05-07</time>
+                )
+            </small>
+        </h3>
         <table class="table table-striped table-bordered">
             <thead>
             <tr>
@@ -224,9 +247,12 @@
                     <div class="col-md-4">
                         <dl class="dl-nav">
                             <dt>Code & Contributions</dt>
-                            <dd><a id="cms-link" href="#">CMS <span class="footer-link-note">GitHub</span></a></dd>
-                            <dd><a id="ci-link" href="#">CI <span class="footer-link-note">Travis</span></a></dd>
-                            <dd><a id="issues-link" href="#">Issues <span class="footer-link-note">GitHub</span></a>
+                            <dd><a id="cms-link" href="#" class="link-footed">CMS <span
+                                    class="footing">GitHub</span></a></dd>
+                            <dd><a id="ci-link" href="#" class="link-footed">CI <span class="footing">Travis</span></a>
+                            </dd>
+                            <dd><a id="issues-link" href="#" class="link-footed">Issues <span
+                                    class="footing">GitHub</span></a>
                             </dd>
                         </dl>
                     </div>
@@ -240,7 +266,7 @@
                 </div>
             </div>
             <div id="version-info" class="col-md-2">
-                <dl id="list-project-version" class="dl-summary">
+                <dl id="list-project-version" class="dl-inline-terms">
                     <dt id="description-version">Version</dt>
                     <dd>0.1.0</dd>
                     <dt id="description-published">Published</dt>

@@ -1,21 +1,28 @@
-// Support for smooth scrolling
-// (simplified version, taken from http://stackoverflow.com/a/14805098/1173184)
-$(window).load(function () {
-    $('a[href^="#"]:not([href^="#carousel"]):not([data-toggle="dropdown"])').on('click', function (e) {
+/**
+ * Functions for smooth scrolling.
+ *
+ * This makes internal links to the same page scroll smoothly to their anchors.
+ *
+ * Loading this file will automatically initialize the scripts. This way the scrolling works just by adding it.
+ */
 
-        // prevent default anchor click behavior
+/**
+ * Initializes the smooth scrolling.
+ *
+ * All internal links will use the smooth scrolling.
+ */
+$(window).load(function () {
+    $('a[href^="#"]').on('click', function (e) {
+
+        // Prevents default anchor click behavior
         e.preventDefault();
 
-        // store hash
         var hash = this.hash;
 
-        // animate
         $('html, body').animate({
-            scrollTop: $(this.hash).offset().top
+            scrollTop: $(hash).offset().top
         }, 300, function () {
-
-            // when done, add hash to url
-            // (default click behaviour)
+            // After ending, the hash is added to the URL
             window.location.hash = hash;
         });
 

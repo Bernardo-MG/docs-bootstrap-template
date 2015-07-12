@@ -1,0 +1,19 @@
+/*!
+ * Docs Boostrap Template link styles
+ * Copyright 2015 Bernardo Martínez Garrido
+ * Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
+ *
+ * This file contains styles for links.
+ */
+
+.link-footed .footing {
+    font-size: 65%;
+}
+
+.link-footed .footing:before {
+    content: "(";
+}
+
+.link-footed .footing:after {
+    content: ")";
+}

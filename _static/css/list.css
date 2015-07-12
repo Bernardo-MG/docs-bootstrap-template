@@ -6,19 +6,9 @@
  * This file contains styles for the lists.
  */
 
-.dl-summary dt {
+.dl-inline-terms dt {
     float: left;
     padding-right: 0.5em;
-}
-
-.dl-inline dt {
-    float: left;
-    padding-right: 0.5em;
-}
-
-.dl-inline dd {
-    float: left;
-    padding-right: 5px;
 }
 
 .dl-nav {
@@ -29,4 +19,14 @@
 .dl-nav dt {
     font-size: 120%;
     border-bottom: 1px solid #e6e6e6;
+}
+
+.icons-list-inline {
+    padding: 0.6em 0 0.6em 0;
+    font-size: 20px;
+    list-style: none;
+}
+
+.icons-list-inline > li {
+    display: inline-block;
 }
