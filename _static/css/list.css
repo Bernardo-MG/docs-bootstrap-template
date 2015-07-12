@@ -6,7 +6,7 @@
  * This file contains styles for the lists.
  */
 
-.dl-version dt {
+.dl-summary dt {
     float: left;
     padding-right: 0.5em;
 }
