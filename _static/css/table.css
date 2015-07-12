@@ -13,3 +13,9 @@
 .table:not(.table-striped) > tfoot > tr > td {
     background-color: #ffffff;
 }
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th {
+    background-color: #cccccc;
+}
