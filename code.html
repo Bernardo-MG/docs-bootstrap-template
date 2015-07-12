@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Index - Docs Bootstrap Template</title>
+    <title>Code Example - Docs Bootstrap Template</title>
 
     <!-- Metadata -->
     <meta name="description"
@@ -21,7 +21,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://www.wandrell.com/docs-bootstrap-template/"/>
     <meta property="og:site" content="Docs Bootstrap Template"/>
-    <meta property="og:title" content="Index - Docs Bootstrap Template"/>
+    <meta property="og:title" content="Code Example - Docs Bootstrap Template"/>
     <meta property="og:description"
           content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
 
@@ -57,8 +57,9 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <ul class="list-unstyled navbar-icons-list">
-                            <li><a href="#" title="GitHub" aria-label="GitHub"><span class="navbar-icon fa fa-inverse fa-github"
-                                                                                     aria-hidden="true"></span></a></li>
+                            <li><a href="#" title="GitHub" aria-label="GitHub"><span
+                                    class="navbar-icon fa fa-inverse fa-github"
+                                    aria-hidden="true"></span></a></li>
                             <li><a href="#" title="Facebook" aria-label="Facebook"><span
                                     class="navbar-icon fa fa-inverse fa-facebook-official"
                                     aria-hidden="true"></span></a></li>
@@ -97,59 +98,33 @@
 </header>
 <section id="main-section" class="container">
     <header class="page-header">
-        <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
+        <h1>Example documenting code</h1>
+
+        <p>This example shows a piece of code being documented.</p>
     </header>
-    <p>Taking modern features of Bootstrap and HTML5, this template aims to give a responsive web design to
-        documentation sites, allowing them to be readable on any device, and not only a home computer.</p>
+    <h2>Documentation for a class.</h2>
 
-    <p>But additionally as it is meant to be generic and reusable, it allows giving a homogeneous look to the
-        documentation pages of various projects. It doesn't matter if they use Maven Site, Sphinx, or any other tool
-        to build the doc site, just by adapting this template they will all show to be a documentation site.</p>
+    <p>This would hold information about a class, and probably links to more detailed docs, such as the Javadoc.</p>
 
+    <p>To help explaining this code, diagrams would be used:</p>
     <div class="row">
-        <div class="col-md-6">
-            <section id="usage">
-                <h2>Usage</h2>
-
-                <p>Just grab the template from GitHub and adapt the html files with your preferred templating
-                    engine.</p>
-
-                <p>All the static files are stored in the _static folder, and should not need any modification.</p>
-            </section>
-        </div>
-
-        <div class="col-md-6">
-            <section id="features">
-                <h2>Features</h2>
-                <ul>
-                    <li>HTML5 semantic markup.</li>
-                    <li>Using Bootstrap for a responsive design, which adapts to the device being used.</li>
-                    <li>Icons created with Fonts Awesome.</li>
-                    <li>Simple look which invites to explore the different options.</li>
-                    <li>Semantic tags for Facebook OpenGraph and Twitter Card.</li>
-                    <li>Validated for HTML 5.</li>
-                    <li>Validated for accessibility.</li>
-                    <li>Validated CSS and JS.</li>
-                </ul>
-            </section>
+        <div class="col-md-2 col-md-offset-5">
+            <a href="demo/example_class_diagram.png" data-lightbox="image-1" data-title="Example diagram">
+                <img src="demo/example_class_diagram.png" alt="Example diagram"/>
+            </a>
         </div>
     </div>
-    <section id="pages" class="section">
-        <h2>Subpages</h2>
 
-        <p>The site is composed of several test pages, showing different documentation aspects where it may be
-            applied.</p>
-
-        <p>These are (apart from the index):</p>
-        <ul>
-            <li><a href="./components_view.html">Components</a></li>
-            <li><a href="./tests_report.html">Tests report</a></li>
-            <li><a href="./changes.html">Changes log</a></li>
-            <li><a href="./code.html">Code documentation</a></li>
-        </ul>
-        <p>You can always go back to the index by clicking the project's name on the navigation bar.</p>
-    </section>
-    <p class="pull-right internal-link"><a href="#">Back to top</a></p>
+    <p>And also pieces of code, which are automatically highlighted with the help of Highlight.js:</p>
+    <pre><code>/**
+* The HelloWorldApp class implements an application that
+* simply prints "Hello World!" to standard output.
+*/
+class HelloWorldApp {
+    public static void main(String[] args) {
+        System.out.println("Hello World!"); // Display the string.
+    }
+}</code></pre>
 </section>
 <footer id="docs-footer" class="footer">
     <div class="container">

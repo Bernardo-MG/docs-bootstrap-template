@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>160</y>
+      <w>190</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>bg=orange
+/AbstractExampleClass/
+--
+-var1: int
+-var2: string
+--
++doSomething()
++doSomethingElse(i: int)
++returnSomething(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>370</y>
+      <w>190</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>bg=yellow
+ConcreteExampleClass
+--
+
+--
++newMethod(): string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>270</y>
+      <w>30</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+</diagram>

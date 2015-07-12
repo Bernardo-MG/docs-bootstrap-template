@@ -34,8 +34,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="_static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="_static/css/docs.css" type="text/css"/>
+    <link rel="stylesheet" href="_static/css/docs.css">
     <link rel="stylesheet" href="_static/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_static/highlight/styles/default.css">
 </head>
 <body role="document">
 <header class="header">
@@ -98,6 +99,8 @@
 <section id="main-section" class="container">
     <header class="page-header">
         <h1>Example of a tests report</h1>
+        <p>This example is based on the Surefire report for Maven, which shows the results of running various test
+            suites.</p>
     </header>
 
     <nav id="navbar-toc" class="navbar navbar-default">
@@ -123,8 +126,6 @@
             </div>
         </div>
     </nav>
-    <p>This example is based on the Surefire report for Maven, which shows the results of running various test
-        suites.</p>
     <section id="tests-summary" class="section">
         <h2>Summary</h2>
         <dl class="dl-summary">
@@ -403,5 +404,7 @@
 <script src="_static/bootstrap/js/bootstrap.min.js"></script>
 <script src="_static/js/chevron-toggle.js"></script>
 <script src="_static/js/smooth-scroll.js"></script>
+<script src="_static/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
