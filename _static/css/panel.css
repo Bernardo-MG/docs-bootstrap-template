@@ -9,3 +9,32 @@
 .panel > .panel-heading {
     border-bottom: 0;
 }
+
+.panel-summary dd {
+    font-weight: bold;
+}
+
+.panel-summary dt {
+    font-weight: normal;
+}
+
+.panel-summary dd:after {
+    content: ":";
+}
+
+.panel-summary dd {
+    float: left;
+    padding-right: 0.5em;
+}
+
+.panel-summary dl {
+    margin-bottom: 0;
+}
+
+.panel-summary .panel-heading {
+    font-size: 32px;
+}
+
+.panel-summary {
+    width: 13em;
+}
