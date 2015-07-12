@@ -24,28 +24,28 @@ body {
 }
 
 .navbar-main .navbar-brand {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 @media (max-width: 62em) {
     .navbar-main .navbar-brand {
-        font-size: 20px;
+        font-size: 90%;
     }
 }
 
 @media (max-width: 25em) {
     .navbar-main .navbar-brand {
-        font-size: 15px;
+        font-size: 70%;
     }
 }
 
 .navbar-main .navbar-body .dropdown {
-    font-size: 20px;
+        font-size: 19px;
 }
 
 @media (max-width: 62em) {
     .navbar-main .navbar-body .dropdown {
-        font-size: 15px;
+        font-size: 90%;
     }
 }
 
