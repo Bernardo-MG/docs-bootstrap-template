@@ -10,19 +10,11 @@
     border-bottom: 0;
 }
 
-.panel-summary dd {
-    font-weight: bold;
-}
-
-.panel-summary dt {
-    font-weight: normal;
-}
-
-.panel-summary dd:after {
+.panel-summary dt:after {
     content: ":";
 }
 
-.panel-summary dd {
+.panel-summary dt {
     float: left;
     padding-right: 0.5em;
 }

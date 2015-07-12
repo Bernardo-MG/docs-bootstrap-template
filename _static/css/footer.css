@@ -22,8 +22,8 @@ body {
 
 .footer > .container {
     width: 100%;
-    padding-left: 2em;
     padding-right: 2em;
+    padding-left: 2em;
 }
 
 .footer div {
