@@ -8,11 +8,17 @@
 
 pre {
     overflow-x: auto;
+    padding: 0;
 }
 
 pre code {
     overflow-wrap: normal;
     white-space: pre;
+}
+
+pre code {
+    margin: 0;
+    padding: 0;
 }
 
 /* Small Devices, Tablets */
