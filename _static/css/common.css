@@ -15,10 +15,6 @@ body {
     background: url('../images/bg.png');
 }
 
-.page-header {
-    margin-top: 0;
-}
-
 .internal-link:before {
     content: "[";
 }

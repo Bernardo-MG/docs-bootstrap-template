@@ -6,13 +6,26 @@
  * This file contains styles for the navigation bar.
  */
 
-.navbar {
-    padding-right: 1em;
-    font-size: 20px;
+h1[id]:before,
+h2[id]:before,
+h3[id]:before,
+h4[id]:before,
+h5[id]:before,
+h6[id]:before,
+a[name]:before,
+section[id]:before,
+article[id]:before,
+article[id]:before {
+    display:block;
+    content:"";
+    margin-top: -3em;
+    height: 3em;
+    visibility: hidden;
 }
 
-.navbar-main .navbar {
-    margin-bottom: 3em;
+.navbar {
+    padding-right: 1em;
+    font-size: 19px;
 }
 
 .navbar-main .navbar .nav li a {
@@ -20,7 +33,7 @@
 }
 
 body {
-    padding-top: 4em;
+    padding-top: 1em;
 }
 
 .navbar-main .navbar-brand {
@@ -47,10 +60,6 @@ body {
     .navbar-main .navbar-body .dropdown {
         font-size: 90%;
     }
-}
-
-.banner {
-    padding-top: 0;
 }
 
 @media (max-width: 768px) {
