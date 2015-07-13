@@ -6,9 +6,7 @@
  * This file contains styles for the navigation bar.
  */
 
-/**
-* Fix for the navigation bar covering the content when using internal links.
-*/
+/* Fix for the navigation bar covering the content when using internal links. */
 h1[id]:before,
 h2[id]:before,
 h3[id]:before,
@@ -26,9 +24,7 @@ article[id]:before {
     visibility: hidden;
 }
 
-/**
-* Separates the content from the navigation bar.
-*/
+/* Separates the content from the navigation bar. */
 body {
     padding-top: 1em;
 }
@@ -95,6 +91,7 @@ body {
 * Icons list resizing for various screen sizes.
 */
 
+/* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
     .navbar-main .icons-list-inline {
         padding-top: 0.8em;
@@ -110,7 +107,8 @@ body {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width : 992px) {
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
     .navbar-main .icons-list-inline {
         padding-top: 1em;
         padding-bottom: 1em;
@@ -125,6 +123,7 @@ body {
     }
 }
 
+/* Large Devices, Wide Screens */
 @media only screen and (min-width: 992px) {
     .navbar-main .icons-list-inline > li > a {
         padding: 0.6em 0.6em 0.6em 0.6em;
