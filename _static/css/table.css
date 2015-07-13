@@ -6,9 +6,15 @@
  * This file contains styles for tables.
  */
 
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > tfoot > tr > th {
+table {
+    -moz-box-shadow: 0 0 5px #cccccc;
+    -webkit-box-shadow: 0 0 5px #cccccc;
+    box-shadow: 0 0 5px #cccccc;
+}
+
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th {
     background-color: #ffffff;
 }
 
@@ -16,14 +22,14 @@
     background-color: #ffffff;
 }
 
-.table:not(.table-striped) > thead > tr > td,
-.table:not(.table-striped) > tbody > tr > td,
-.table:not(.table-striped) > tfoot > tr > td {
+table:not(.table-striped) > thead > tr > td,
+table:not(.table-striped) > tbody > tr > td,
+table:not(.table-striped) > tfoot > tr > td {
     background-color: #ffffff;
 }
 
-.table > thead > tr > th,
-.table > tbody > tr > th,
-.table > tfoot > tr > th {
+table > thead > tr > th,
+table > tbody > tr > th,
+table > tfoot > tr > th {
     background-color: #cccccc;
 }
