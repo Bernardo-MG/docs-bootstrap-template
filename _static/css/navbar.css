@@ -75,7 +75,7 @@ body {
 * Font resizing to fit various screen sizes.
 */
 
-@media only screen and (max-width: 62em) {
+@media only screen and (max-width: 992px) {
     .navbar-main .navbar-brand {
         font-size: 90%;
     }
@@ -85,7 +85,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width : 480px) {
     .navbar-main .navbar-brand {
         font-size: 70%;
     }
@@ -110,7 +110,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 62em) {
+@media only screen and (min-width: 768px) and (max-width : 992px) {
     .navbar-main .icons-list-inline {
         padding-top: 1em;
         padding-bottom: 1em;
@@ -125,7 +125,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 62em) {
+@media only screen and (min-width: 992px) {
     .navbar-main .icons-list-inline > li > a {
         padding: 0.6em 0.6em 0.6em 0.6em;
     }
