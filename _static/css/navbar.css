@@ -81,7 +81,7 @@ body {
     }
 }
 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width: 480px) {
     .navbar-main .navbar-brand {
         font-size: 70%;
     }
@@ -108,7 +108,7 @@ body {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
     .navbar-main .icons-list-inline {
         padding-top: 1em;
         padding-bottom: 1em;
