@@ -19,6 +19,8 @@ figure {
 
     border: 10px solid white;
 
+    background-color: white;
+
     -moz-box-shadow: 0 0 5px #cccccc;
     -webkit-box-shadow: 0 0 5px #cccccc;
     box-shadow: 0 0 5px #cccccc;
@@ -28,7 +30,8 @@ figure img {
     display: block;
 }
 
-figcaption {
+figure figcaption {
+    display: block;
     text-align: center;
     margin-top: 8px;
 }
