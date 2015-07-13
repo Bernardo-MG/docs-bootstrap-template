@@ -6,102 +6,53 @@
  * This file contains styles for the navigation bar.
  */
 
-.navbar {
-    padding-right: 1em;
-    font-size: 20px;
+/* Fix for the navigation bar covering the content when using internal links. */
+h1[id]:before,
+h2[id]:before,
+h3[id]:before,
+h4[id]:before,
+h5[id]:before,
+h6[id]:before,
+a[name]:before,
+section[id]:before,
+article[id]:before,
+article[id]:before {
+    display: block;
+    content: "";
+    margin-top: -3em;
+    height: 3em;
+    visibility: hidden;
 }
 
-.navbar-main .navbar {
-    margin-bottom: 3em;
+/* Separates the content from the navigation bar. */
+body {
+    padding-top: 1em;
+}
+
+/**
+* General navigation bar configuration.
+*/
+
+.navbar {
+    padding-right: 1em;
+    font-size: 19px;
 }
 
 .navbar-main .navbar .nav li a {
     letter-spacing: 1px
 }
 
-body {
-    padding-top: 4em;
-}
-
 .navbar-main .navbar-brand {
     font-size: 32px;
-}
-
-@media (max-width: 62em) {
-    .navbar-main .navbar-brand {
-        font-size: 90%;
-    }
-}
-
-@media (max-width: 25em) {
-    .navbar-main .navbar-brand {
-        font-size: 70%;
-    }
 }
 
 .navbar-main .navbar-body .dropdown {
     font-size: 19px;
 }
 
-@media (max-width: 62em) {
-    .navbar-main .navbar-body .dropdown {
-        font-size: 90%;
-    }
-}
-
-.banner {
-    padding-top: 0;
-}
-
-@media (max-width: 768px) {
-    .navbar-main .icons-list-inline {
-        padding-top: 0.8em;
-        padding-bottom: 0;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 62em) {
-    .navbar-main .icons-list-inline {
-        padding-top: 1em;
-        padding-bottom: 1em;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 62em) {
-    .navbar-main .icons-list-inline {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar-main .icons-list-inline > li {
-        margin: 0 0 15px 0;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar-main .icons-list-inline > li {
-        float: left;
-    }
-}
-
-@media (max-width: 768px) {
-    .navbar-main .icons-list-inline > li > a {
-        padding: 1em 1em 1em 1em;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 62em) {
-    .navbar-main .icons-list-inline > li > a {
-        padding: 1em 0.6em 1em 0.6em;
-    }
-}
-
-@media (min-width: 62em) {
-    .navbar-main .icons-list-inline > li > a {
-        padding: 0.6em 0.6em 0.6em 0.6em;
-    }
-}
+/**
+* Icons list hovering and focus.
+*/
 
 .navbar-main .icons-list-inline > li > a:hover,
 .navbar-main .icons-list-inline > li > a:focus {
@@ -114,4 +65,67 @@ body {
 .navbar-main .icons-list-inline > .active > a:focus {
     color: #ffffff;
     background-color: #090909;
+}
+
+/**
+* Font resizing to fit various screen sizes.
+*/
+
+@media only screen and (max-width: 992px) {
+    .navbar-main .navbar-brand {
+        font-size: 90%;
+    }
+
+    .navbar-main .navbar-body .dropdown {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar-main .navbar-brand {
+        font-size: 70%;
+    }
+}
+
+/**
+* Icons list resizing for various screen sizes.
+*/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    .navbar-main .icons-list-inline {
+        padding-top: 0.8em;
+        padding-bottom: 0;
+    }
+
+    .navbar-main .icons-list-inline > li {
+        margin: 0 0 15px 0;
+    }
+
+    .navbar-main .icons-list-inline > li > a {
+        padding: 1em 1em 1em 1em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .navbar-main .icons-list-inline {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .navbar-main .icons-list-inline {
+        font-size: 15px;
+    }
+
+    .navbar-main .icons-list-inline > li > a {
+        padding: 1em 0.6em 1em 0.6em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 992px) {
+    .navbar-main .icons-list-inline > li > a {
+        padding: 0.6em 0.6em 0.6em 0.6em;
+    }
 }
