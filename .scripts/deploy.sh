@@ -16,7 +16,9 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
 
     echo "Deploying template"
 
-    lftp -u "$REPO_USER","$REPO_PASSWORD" "$REPO_URL" < glob -a rm -r ./*.*
+    lftp -u "$REPO_USER","$REPO_PASSWORD" "$REPO_URL"
+    rm -r ./*.*
+    quit
 
     find . -type f -exec curl --user "$REPO_USER:$REPO_PASSWORD" --ftp-create-dirs -T {} "$REPO_URL{}" \;
 
