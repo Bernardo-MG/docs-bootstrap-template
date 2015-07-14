@@ -5,7 +5,7 @@ env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST CMS_BRANCH=$TRAVIS_BRANCH
 install:
   - pip install html5validator
-  - sudo apt-get install nodejs
+  - apt-get install nodejs
   - npm install -g jshint
   - npm install -g recess
   - npm install -g http-server
