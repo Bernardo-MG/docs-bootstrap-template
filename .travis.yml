@@ -3,10 +3,6 @@ python:
  - "2.7"
 env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST CMS_BRANCH=$TRAVIS_BRANCH
-addons:
-  apt:
-    packages:
-    - sshpass
 install:
   - pip install html5validator
   - npm install -g jshint

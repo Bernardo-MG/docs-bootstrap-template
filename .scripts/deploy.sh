@@ -16,7 +16,6 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
 
     echo "Deploying template"
 
-    sshpass -p "$REPO_PASSWORD" ssh -o StrictHostKeyChecking=no $REPO_USER@$REPO_URL
     ssh "$REPO_USER"@"$REPO_URL" 'rm ./*.**'
 
     find . -type f -exec curl --user "$REPO_USER:$REPO_PASSWORD" --ftp-create-dirs -T {} "$REPO_URL{}" \;
