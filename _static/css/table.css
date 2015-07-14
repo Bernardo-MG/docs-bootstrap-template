@@ -7,8 +7,8 @@
  */
 
 table {
-    -moz-box-shadow: 0 0 5px #cccccc;
     -webkit-box-shadow: 0 0 5px #cccccc;
+    -moz-box-shadow: 0 0 5px #cccccc;
     box-shadow: 0 0 5px #cccccc;
 }
 

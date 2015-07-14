@@ -18,9 +18,9 @@ section[id]:before,
 article[id]:before,
 article[id]:before {
     display: block;
-    content: "";
-    margin-top: -3em;
     height: 3em;
+    margin-top: -3em;
+    content: "";
     visibility: hidden;
 }
 

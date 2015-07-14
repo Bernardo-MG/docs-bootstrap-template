@@ -1,20 +1,26 @@
 # Docs Bootstrap Template
 
-A Bootstrap-based template for preparing documentation pages. It's meant to be used for giving a homogeneous look to documentation pages, not matter if they have been created with Maven Site, Sphinx or any other tool, and also be a bit better than the usual default template they use.
+A Bootstrap-based template for preparing documentation pages, offering a modern and responsive look which adapts to all screen sizes.
 
-For this it makes use of Bootstrap, allowing it to adapt to most view panes, including the screens of mobile phones.
+The project is as simple as possible, consisting of static content, as it is meant to be used as a basis for building more complex templates, after adapting it to a templating engine. This way it can be used with Maven Site, Sphinx or any other documentation tool.
 
 ## Check it
 
-The template can be checked at the [online demo site][demo-site]
+There is an [online demo site][demo-site] available for checking the template.
+
+It will reflect always the contents of the master branch, showing the current version of the template.
 
 ## Usage
 
-The template project is partly a demo, showcasing the style configuration. This means that while the static files, contained in the \_static folder, can be used as they are, the html one should be adapted, preferably with the use of a templating engine.
+This template is meant to be used as a basis for dynamic templates. And as such it contains several html files showing different aspects the documentation site should offer, and a folder with static content, where the required style and script files are kept.
+
+The static files folder, called '\_static', does not need to be modified, it can just be copied as a it is.
+
+The html files on the other hand need to be adapted to the templating engine being used.
 
 ### Prerequisites
 
-The project makes use of Bootstrap 3, but a modified version of it comes included, JQuery and Font Awesome.
+The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery] and [Font Awesome][font-awesome]. All of them come included.
 
 Otherwise, it is just plain HTML, so any browser can be used to check it.
 
@@ -37,7 +43,10 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 
 The project has been released under the [MIT License][license].
 
+[bootstrap]: http://getbootstrap.com/
 [demo-site]: http://www.wandrell.com/docs-bootstrap-template/
+[font-awesome]: http://fortawesome.github.io/Font-Awesome/
 [issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
+[jquery]: https://jquery.com/
 [license]: http://www.opensource.org/licenses/mit-license.php
 [scm]: http://github.com/Bernardo-MG/docs-bootstrap-template
