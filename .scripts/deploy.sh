@@ -16,7 +16,7 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
     for i in `curl -s -l ftp://"$REPO_USER":"$REPO_PASSWORD"@$ftp_ip/$ftp_path/ | grep *.*`; do
     {
            echo "deleting $i";
-           curl REPO_URL/${i} --user "${REPO_USER}:${REPO_PASSWORD}" -O --quote "DELE ${REPO_URL}/${i}"
+           curl $REPO_URL/${i} --user "${REPO_USER}:${REPO_PASSWORD}" -O --quote "DELE ${REPO_URL}/${i}"
     };
     done;
 
