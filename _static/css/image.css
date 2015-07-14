@@ -7,22 +7,18 @@
  */
 
 img {
-    border: 1px solid;
     margin-bottom: 1em;
+    border: 1px solid;
 }
 
 figure {
     display: inline-block;
-
-    margin: 10px;
     padding: 5px;
-
-    border: 10px solid white;
-
+    margin: 10px;
     background-color: white;
-
-    -moz-box-shadow: 0 0 5px #cccccc;
+    border: 10px solid white;
     -webkit-box-shadow: 0 0 5px #cccccc;
+    -moz-box-shadow: 0 0 5px #cccccc;
     box-shadow: 0 0 5px #cccccc;
 }
 
@@ -32,6 +28,6 @@ figure img {
 
 figure figcaption {
     display: block;
-    text-align: center;
     margin-top: 8px;
+    text-align: center;
 }
