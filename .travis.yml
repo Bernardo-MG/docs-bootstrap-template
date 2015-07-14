@@ -11,7 +11,7 @@ install:
   - npm install -g node
   - npm install -g phantomjs
   - npm install -g pa11y
-  - brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+  - apt-get install sshpass
 before_script:
   - chmod +x ./.scripts/deploy.sh
 script:
