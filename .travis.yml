@@ -5,6 +5,7 @@ env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST CMS_BRANCH=$TRAVIS_BRANCH
 install:
   - pip install html5validator
+  - npm install -g npm
   - npm install -g jshint
   - npm install -g recess
   - npm install -g node
