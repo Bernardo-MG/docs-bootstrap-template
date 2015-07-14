@@ -8,15 +8,18 @@
 # - PULL_REQUEST: boolean, indicates if this is a pull request, should be false for deployment
 # - DEPLOY: boolean, control flag for deployment, should be true to deploy
 # - CMS_BRANCH: string, the CMS branch from which the code has been taken
+# - REPO_URL: string, the URL to the FTP server o repository where the demo is deployed
+# - REPO_USER: string, the user for the FTP server o repository where the demo is deployed
+# - REPO_PASSWORD: string, the password for the FTP server o repository where the demo is deployed
 
 if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" == "master" ]; then
 
     echo "Deploying template"
 
-    for i in `curl -s -l --user "$REPO_USER":"$REPO_PASSWORD" "$REPO_URL" | find . -type f`; do
+    for i in `curl -s -l --user "$REPO_USER":"$REPO_PASSWORD" "$REPO_URL"`; do
     {
         echo "deleting $i";
-        curl "$REPO_URL"/"${i}" --user "${REPO_USER}:${REPO_PASSWORD}" -O --quote "DELE ${REPO_URL}/${i}"
+        curl "$REPO_URL"/"${i}" --user "${REPO_USER}:${REPO_PASSWORD}" -O --quote "DELETE ${REPO_URL}/${i}"
     };
     done;
 
