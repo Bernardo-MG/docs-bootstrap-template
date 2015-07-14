@@ -16,12 +16,7 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
 
     echo "Deploying template"
 
-    for i in `curl -s -l --user "$REPO_USER":"$REPO_PASSWORD" "$REPO_URL"`; do
-    {
-        echo "deleting $i";
-        curl "$REPO_URL"/"${i}" --user "${REPO_USER}:${REPO_PASSWORD}" -O --quote "DELETE ${REPO_URL}/${i}"
-    };
-    done;
+    lftp -u "$REPO_USER","$REPO_PASSWORD" "$REPO_URL" < glob -a rm -r ./*.*
 
     find . -type f -exec curl --user "$REPO_USER:$REPO_PASSWORD" --ftp-create-dirs -T {} "$REPO_URL{}" \;
 
