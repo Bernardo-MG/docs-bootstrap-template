@@ -16,7 +16,8 @@ img {
 
 figure {
     text-align: center;
-    display: inline-block;
+    display: table;
+    width: 1px; /* This can be any width, so long as it's narrower than any image */
     padding: 0.5em;
     margin-bottom: 1em;
     background-color: white;
@@ -27,10 +28,13 @@ figure {
 
 figure figcaption {
     font-style: italic;
+    display: table-row;
 }
 
 figure img {
     -webkit-box-shadow: 0 0 0 0;
     -moz-box-shadow: 0 0 0 0;
     box-shadow: 0 0 0 0;
+    display: table-row;
+    margin-bottom: 0.5em;
 }
