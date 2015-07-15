@@ -15,11 +15,11 @@ img {
 }
 
 figure {
-    text-align: center;
     display: table;
-    width: 1px; /* This can be any width, so long as it's narrower than any image */
+    width: 1px;
     padding: 0.5em;
     margin-bottom: 1em;
+    text-align: center;
     background-color: white;
     -webkit-box-shadow: 0 0 5px #cccccc;
     -moz-box-shadow: 0 0 5px #cccccc;
@@ -27,14 +27,14 @@ figure {
 }
 
 figure figcaption {
-    font-style: italic;
     display: table-row;
+    font-style: italic;
 }
 
 figure img {
+    display: table-row;
+    margin-bottom: 0.5em;
     -webkit-box-shadow: 0 0 0 0;
     -moz-box-shadow: 0 0 0 0;
     box-shadow: 0 0 0 0;
-    display: table-row;
-    margin-bottom: 0.5em;
 }
