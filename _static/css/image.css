@@ -8,26 +8,33 @@
 
 img {
     margin-bottom: 1em;
-    border: 1px solid;
-}
-
-figure {
-    display: inline-block;
-    padding: 5px;
-    margin: 10px;
-    background-color: white;
-    border: 10px solid white;
     -webkit-box-shadow: 0 0 5px #cccccc;
     -moz-box-shadow: 0 0 5px #cccccc;
     box-shadow: 0 0 5px #cccccc;
 }
 
-figure img {
-    display: block;
+figure {
+    display: table;
+    width: 1px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: white;
+    -webkit-box-shadow: 0 0 5px #cccccc;
+    -moz-box-shadow: 0 0 5px #cccccc;
+    box-shadow: 0 0 5px #cccccc;
 }
 
 figure figcaption {
-    display: block;
-    margin-top: 8px;
-    text-align: center;
+    display: table-row;
+    font-style: italic;
+}
+
+figure img {
+    display: table-row;
+    border: 1px solid;
+    margin-bottom: 0.5em;
+    -webkit-box-shadow: 0 0 0 0;
+    -moz-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
 }
