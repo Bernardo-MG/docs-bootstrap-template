@@ -6,12 +6,20 @@
  * This file contains styles for the images.
  */
 
+/**
+* Image configuration
+*/
+
 img {
     margin-bottom: 1em;
     -webkit-box-shadow: 0 0 5px #cccccc;
     -moz-box-shadow: 0 0 5px #cccccc;
     box-shadow: 0 0 5px #cccccc;
 }
+
+/**
+* General figure configuration.
+*/
 
 figure {
     display: table;
@@ -25,11 +33,6 @@ figure {
     box-shadow: 0 0 5px #cccccc;
 }
 
-figure figcaption {
-    display: table-row;
-    font-style: italic;
-}
-
 figure img {
     display: table-row;
     border: 1px solid;
@@ -37,4 +40,9 @@ figure img {
     -webkit-box-shadow: 0 0 0 0;
     -moz-box-shadow: 0 0 0 0;
     box-shadow: 0 0 0 0;
+}
+
+figure figcaption {
+    display: table-row;
+    font-style: italic;
 }

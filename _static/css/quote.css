@@ -6,6 +6,10 @@
  * This file contains quote styles.
  */
 
+/**
+* Preserve block.
+*/
+
 pre {
     padding: 0;
     overflow-x: auto;
@@ -13,6 +17,10 @@ pre {
     -moz-box-shadow: 0 0 5px #cccccc;
     box-shadow: 0 0 5px #cccccc;
 }
+
+/**
+* Preserved code block.
+*/
 
 pre code {
     white-space: pre;

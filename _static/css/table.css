@@ -15,21 +15,20 @@ table {
 table > thead > tr > th,
 table > tbody > tr > th,
 table > tfoot > tr > th {
-    background-color: #ffffff;
+    background-color: #cccccc;
 }
 
 .table-striped > tbody > tr:nth-of-type(even) {
     background-color: #ffffff;
 }
 
+/**
+* If the table is not stripped all the rows have the same background
+*
+* This is to avoid the tables from having transparent backgrounds.
+*/
 table:not(.table-striped) > thead > tr > td,
 table:not(.table-striped) > tbody > tr > td,
 table:not(.table-striped) > tfoot > tr > td {
     background-color: #ffffff;
-}
-
-table > thead > tr > th,
-table > tbody > tr > th,
-table > tfoot > tr > th {
-    background-color: #cccccc;
 }

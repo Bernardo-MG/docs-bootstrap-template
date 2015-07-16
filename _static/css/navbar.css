@@ -33,6 +33,10 @@ body {
 * General navigation bar configuration.
 */
 
+nav {
+    margin: 0;
+}
+
 .navbar {
     padding-right: 1em;
     font-size: 19px;

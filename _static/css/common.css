@@ -15,6 +15,11 @@ body {
     background: url('../img/bg.png');
 }
 
+/**
+* Internal links.
+*
+* These are links pointing to the same page, and are shown this way: "[link]".
+*/
 .internal-link:before {
     content: "[";
 }

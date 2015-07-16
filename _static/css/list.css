@@ -6,6 +6,10 @@
  * This file contains styles for the lists.
  */
 
+/**
+* Inline definition list.
+*/
+
 .dl-inline-terms dt {
     float: left;
     padding-right: 0.5em;
@@ -20,6 +24,10 @@
     font-size: 120%;
     border-bottom: 1px solid #e6e6e6;
 }
+
+/**
+* Icons inline list.
+*/
 
 .icons-list-inline {
     padding: 0.6em 0 0.6em 0;
