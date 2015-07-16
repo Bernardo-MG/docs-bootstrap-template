@@ -6,6 +6,10 @@
  * This file contains styles for the navigation bar icons lists.
  */
 
+.navbar-main .icons-list-inline {
+    line-height: 50px;
+}
+
 /**
 * Hovering and focus.
 */
