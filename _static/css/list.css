@@ -31,8 +31,10 @@
 
 .icons-list-inline {
     list-style: none;
+    font-size: 0;
 }
 
 .icons-list-inline > li {
+    font-size: 19px;
     display: inline-block;
 }
