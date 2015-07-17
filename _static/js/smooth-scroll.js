@@ -18,13 +18,15 @@ $(window).load(function () {
         e.preventDefault();
 
         var hash = this.hash;
-
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 300, function () {
-            // After ending, the hash is added to the URL
-            window.location.hash = hash;
-        });
+        var offset = $(hash).offset();
+        if(offset){
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 300, function () {
+                // After ending, the hash is added to the URL
+                window.location.hash = hash;
+            });
+        }
 
     });
 });
