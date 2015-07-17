@@ -15,14 +15,20 @@
     padding-right: 0.5em;
 }
 
+/**
+* Navigation definition list.
+*
+* These are used on the footer, grouping several links on a common theme.
+*/
+
 .dl-nav {
     width: 12em;
-    text-align: center;
     margin-bottom: 0.5em;
+    text-align: center;
 }
 
 .dl-nav dt {
-    font-size: 120%;
+    font-size: 19px;
     border-bottom: 1px solid #e6e6e6;
 }
 
@@ -31,11 +37,11 @@
 */
 
 .icons-list-inline {
-    list-style: none;
     font-size: 0;
+    list-style: none;
 }
 
 .icons-list-inline > li {
-    font-size: 19px;
     display: inline-block;
+    font-size: 19px;
 }
