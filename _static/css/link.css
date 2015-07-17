@@ -6,14 +6,24 @@
  * This file contains styles for links.
  */
 
-.link-footed .footing {
+/**
+* Link with a note.
+*
+* It will be shown like: "Link (note)".
+*
+* The note should be marked with <span class="note">note</span> right next to the link name.
+*
+* So a noted link would be: <a href="#" class="link-noted">Link <span class="note">note</span></a>.
+*/
+
+.link-noted .note {
     font-size: 65%;
 }
 
-.link-footed .footing:before {
+.link-noted .note:before {
     content: "(";
 }
 
-.link-footed .footing:after {
+.link-noted .note:after {
     content: ")";
 }
