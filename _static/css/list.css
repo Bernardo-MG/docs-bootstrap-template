@@ -17,8 +17,8 @@
 
 .dl-nav {
     width: 12em;
-    text-align: center;
     margin-bottom: 0.5em;
+    text-align: center;
 }
 
 .dl-nav dt {
@@ -31,11 +31,11 @@
 */
 
 .icons-list-inline {
-    list-style: none;
     font-size: 0;
+    list-style: none;
 }
 
 .icons-list-inline > li {
-    font-size: 19px;
     display: inline-block;
+    font-size: 19px;
 }

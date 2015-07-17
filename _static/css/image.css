@@ -35,8 +35,8 @@ figure {
 
 figure img {
     display: table-row;
-    border: 1px solid;
     margin-bottom: 0.5em;
+    border: 1px solid;
     -webkit-box-shadow: 0 0 0 0;
     -moz-box-shadow: 0 0 0 0;
     box-shadow: 0 0 0 0;
