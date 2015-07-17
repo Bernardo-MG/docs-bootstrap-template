@@ -15,6 +15,12 @@
     padding-right: 0.5em;
 }
 
+/**
+* Navigation definition list.
+*
+* These are used on the footer, grouping several links on a common theme.
+*/
+
 .dl-nav {
     width: 12em;
     margin-bottom: 0.5em;
@@ -22,7 +28,7 @@
 }
 
 .dl-nav dt {
-    font-size: 120%;
+    font-size: 19px;
     border-bottom: 1px solid #e6e6e6;
 }
 

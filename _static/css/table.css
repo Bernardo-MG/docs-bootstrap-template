@@ -22,6 +22,11 @@ table > tfoot > tr > th {
     background-color: #ffffff;
 }
 
+/* Centers the column with the icon */
+.table-with-icon > tbody td:first-child {
+    text-align: center;
+}
+
 /**
 * If the table is not stripped all the rows have the same background
 *

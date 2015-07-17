@@ -25,12 +25,20 @@ body {
     border-top: 1px solid #ccc;
 }
 
-.footer > .container {
-}
-
+/* To allow resizing and keeping the background color */
 .footer div {
     background-color: #f5f5f5;
 }
+
+.footer .dl-inline-terms {
+    margin-bottom: 0.5em;
+}
+
+/**
+* Footer links.
+*
+* Their colors are inverted to improve contrast against the background.
+*/
 
 .footer a {
     color: #0050aa;
@@ -40,6 +48,10 @@ body {
 .footer a:focus {
     color: #2780e3;
 }
+
+/**
+* Footer copyright info
+*/
 
 .footer .copyright {
     width: 100%;
@@ -51,9 +63,13 @@ body {
     margin: 0 0 0 0;
 }
 
-.footer .dl-inline-terms {
-    margin-bottom: 0.5em;
-}
+/**
+* Resizing to fit various screen sizes.
+*/
+
+/**
+* Navigation links resizing.
+*/
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
@@ -65,7 +81,7 @@ body {
 }
 
 /**
-* Resizing to fin various screen sizes.
+* Copyright info resizing.
 */
 
 /* Small Devices, Tablets */
@@ -73,10 +89,7 @@ body {
     .footer .copyright {
         text-align: right;
     }
-}
 
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
     .footer .list-copyright {
         padding-left: 0;
         list-style: none;
