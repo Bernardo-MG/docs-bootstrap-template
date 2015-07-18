@@ -23,10 +23,10 @@ pre {
 */
 
 pre code {
-    white-space: pre;
-    overflow-wrap: normal;
     padding: 0;
     margin: 0;
+    white-space: pre;
+    overflow-wrap: normal;
 }
 
 /**
