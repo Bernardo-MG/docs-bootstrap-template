@@ -4,6 +4,7 @@ python:
 env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST CMS_BRANCH=$TRAVIS_BRANCH
 install:
+  - apt-get install ncftp
   - pip install html5validator
   - npm install -g jshint
   - npm install -g recess
