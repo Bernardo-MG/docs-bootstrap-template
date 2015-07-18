@@ -16,7 +16,7 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
 
     echo "Deploying template"
 
-    ncftpput -R -v -u "$DEPLOY_USERNAME" -p "$DEPLOY_PASSWORD" "$DEPLOY_HOST" ./
+    ncftpput -R -v -u "$DEPLOY_USERNAME" -p "$DEPLOY_PASSWORD" "$DEPLOY_HOST" ./ ./
 
 else
 
