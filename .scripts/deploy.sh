@@ -16,7 +16,7 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
 
     echo "Deploying template"
 
-    find . -type f -exec curl --user "$DEPLOY_USERNAME:$DEPLOY_PASSWORD" --ftp-create-dirs -T {} "$DEPLOY_HOST{}" \;
+    find . -not -path '*/\.git*' -type f -exec curl --user "$DEPLOY_USERNAME:$DEPLOY_PASSWORD" --ftp-create-dirs -T {} "$DEPLOY_HOST{}" \;
 
 else
 
