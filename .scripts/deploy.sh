@@ -16,8 +16,6 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
 
     echo "Deploying template"
 
-    dir
-
     find . -type f -exec curl --user "$DEPLOY_USERNAME:$DEPLOY_PASSWORD" --ftp-create-dirs -T {} "$DEPLOY_HOST{}" \;
 
 else
