@@ -20,7 +20,7 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
     echo >> ~/.ssh/authorized_keys
     echo "$DEPLOY_SSH_KEY" >> ~/.ssh/authorized_keys
 
-    scp -v -r . "$DEPLOY_USERNAME"@"$DEPLOY_HOST{}":/
+    scp -v -r . "$DEPLOY_USERNAME"@"$DEPLOY_HOST":/
 
 else
 
