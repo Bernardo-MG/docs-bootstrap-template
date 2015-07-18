@@ -3,8 +3,11 @@ python:
  - "2.7"
 env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST CMS_BRANCH=$TRAVIS_BRANCH
+addons:
+  apt:
+    packages:
+    - ncftp
 install:
-  - gem install travis-custom-deploy
   - pip install html5validator
   - npm install -g jshint
   - npm install -g recess
