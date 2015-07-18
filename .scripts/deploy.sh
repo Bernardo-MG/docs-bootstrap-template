@@ -8,19 +8,15 @@
 # - PULL_REQUEST: boolean, indicates if this is a pull request, should be false for deployment
 # - DEPLOY: boolean, control flag for deployment, should be true to deploy
 # - CMS_BRANCH: string, the CMS branch from which the code has been taken
-# - REPO_URL: string, the URL to the FTP server o repository where the demo is deployed
-# - REPO_USER: string, the user for the FTP server o repository where the demo is deployed
-# - REPO_PASSWORD: string, the password for the FTP server o repository where the demo is deployed
+# - DEPLOY_HOST: string, the URL to the FTP server o repository where the demo is deployed
+# - DEPLOY_USERNAME: string, the user for the FTP server o repository where the demo is deployed
+# - DEPLOY_PASSWORD: string, the password for the FTP server o repository where the demo is deployed
 
 if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" == "master" ]; then
 
     echo "Deploying template"
 
-    echo "ssh-rsa" >> ~/.ssh/authorized_keys
-    echo >> ~/.ssh/authorized_keys
-    echo "$DEPLOY_SSH_KEY" >> ~/.ssh/authorized_keys
-
-    scp -v -r . "$DEPLOY_USERNAME"@"$DEPLOY_HOST":/
+    find . -type f -exec curl --user "$DEPLOY_USERNAME:$DEPLOY_PASSWORD" --ftp-create-dirs -T {} "$DEPLOY_HOST{}" \;
 
 else
 
