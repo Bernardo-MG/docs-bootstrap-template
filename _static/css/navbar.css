@@ -52,7 +52,7 @@ body {
 }
 
 /* Font size equals to h4 */
-.navbar {
+.navbar .navbar-body {
     font-size: 19px;
 }
 
@@ -62,25 +62,28 @@ body {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+    /* Font size equals to h3 */
     .navbar-main .navbar-brand {
-        font-size: 90%;
+        font-size: 26px;
     }
 
+    /* Font size equals to h5 */
     .navbar-main .navbar-body {
-        font-size: 90%;
+        font-size: 15px;
     }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+    /* Font size equals to h4 */
     .navbar-main .navbar-brand {
-        font-size: 80%;
+        font-size: 19px;
     }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
     .navbar-main .navbar-brand {
-        font-size: 70%;
+        font-size: 85%;
     }
 }
