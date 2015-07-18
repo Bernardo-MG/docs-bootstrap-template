@@ -16,7 +16,7 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
 
     echo "Deploying template"
 
-    bundle exec travis-custom-deploy sftp .
+    travis-custom-deploy sftp .
 
 else
 
