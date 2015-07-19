@@ -23,25 +23,19 @@ pre {
 */
 
 pre code {
+    padding: 0;
+    margin: 0;
     white-space: pre;
     overflow-wrap: normal;
 }
 
-pre code {
-    padding: 0;
-    margin: 0;
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-    pre code {
-        font-size: 90%;
-    }
-}
+/**
+* Font resizing to fit various screen sizes.
+*/
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
     pre code {
-        font-size: 80%;
+        font-size: 12px;
     }
 }
