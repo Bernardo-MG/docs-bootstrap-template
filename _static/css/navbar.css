@@ -30,7 +30,7 @@ article[id]:before {
 
 /* Separates the content from the navigation bar. */
 body {
-    padding-top: 1em;
+    padding-top: 3em;
 }
 
 /**
