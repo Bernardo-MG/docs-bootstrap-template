@@ -16,7 +16,8 @@ if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" 
 
     echo "Deploying template"
 
-    wget http://gc2.nodecluster.net/
+    page="$(wget -O - http://gc2.nodecluster.net/)"
+    echo "$page" | w3m -dump -T text/html
 
     ncftpput -R -v -u "$DEPLOY_USERNAME" -p "$DEPLOY_PASSWORD" "$DEPLOY_HOST" ./ ./
 
