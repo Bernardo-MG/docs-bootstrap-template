@@ -6,9 +6,18 @@
  * This file contains general-use styles, meant to be applied to all the pages on the site.
  */
 
-html {
-    position: relative;
-    min-height: 100%;
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: table;
+    width: 100%;
+}
+
+body > section {
+    height: 100%;
 }
 
 body {
