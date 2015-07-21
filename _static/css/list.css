@@ -6,13 +6,23 @@
  * This file contains styles for the lists.
  */
 
+dt:after {
+    content: ":";
+}
+
 /**
-* Inline definition list.
+* Horizontal definition list.
 */
 
-.dl-inline-terms dt {
-    float: left;
-    padding-right: 0.5em;
+@media (min-width: 768px) {
+    .dl-horizontal dt {
+        width: 5em;
+        text-align: left;
+    }
+
+    .dl-horizontal dd {
+        margin-left: 5em;
+    }
 }
 
 /**
