@@ -14,15 +14,15 @@ dt:after {
 * Horizontal definition list.
 */
 
-@media (min-width: 768px) {
-    .dl-horizontal dt {
-        width: 5em;
-        text-align: left;
-    }
+.dl-horizontal dt {
+    float: left;
+    white-space: normal;
+    width: 6em;
+    text-align: left;
+}
 
-    .dl-horizontal dd {
-        margin-left: 5em;
-    }
+.dl-horizontal dd {
+    margin-left: 6em;
 }
 
 /**
