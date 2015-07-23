@@ -64,8 +64,23 @@ body {
 }
 
 /**
-* Resizing to fit various screen sizes.
+* Adapting styles to various screen sizes.
 */
+
+/**
+* Separators on small sizes.
+*/
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 992px) {
+    .footer .footer-info {
+        border-top: 1px solid #e6e6e6;
+    }
+
+    .footer .list-copyright {
+        border-top: 1px solid #e6e6e6;
+    }
+}
 
 /**
 * Navigation links resizing.
@@ -73,8 +88,7 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-    .footer .dl-nav {
-        display: block;
+    .footer dl {
         margin-left: auto;
         margin-right: auto;
     }
