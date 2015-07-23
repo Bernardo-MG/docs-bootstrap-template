@@ -2,7 +2,15 @@
 
 A Bootstrap-based template for documentation pages, offering a modern and responsive look which adapts to all screen sizes.
 
-The project is as simple as possible, consisting just of a few static webpages, as it is meant to be used as a basis for building more complex sites by adapting it to a templating engine or documentation framework such as Jinja, Maven Site or Sphinx.
+The project is as simple as possible, consisting just of a few static webpages, as it is meant to be used as a basis for building more complex sites by adapting it to a templating engine or documentation framework such as Jinja, Maven Site or Sphinx, but offers all the features which a documentation site could need.
+
+## Features
+
+- Avoids unneeded complication to ease extensions.
+- HTML5 semantic markup.
+- Semantic tags for Facebook OpenGraph and Twitter Cards.
+- Bootstrap, Font Awesome and highlight.js.
+- Validated HTML 5, accessibility, CSS and JS.
 
 ## Check it
 
