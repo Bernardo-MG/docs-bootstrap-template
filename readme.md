@@ -1,8 +1,8 @@
 # Docs Bootstrap Template
 
-A Bootstrap-based template for preparing documentation pages, offering a modern and responsive look which adapts to all screen sizes.
+A Bootstrap-based template for documentation pages, offering a modern and responsive look which adapts to all screen sizes.
 
-The project is as simple as possible, consisting of static content, as it is meant to be used as a basis for building more complex templates, after adapting it to a templating engine. This way it can be used with Maven Site, Sphinx or any other documentation tool.
+The project is as simple as possible, consisting just of a few static webpages, as it is meant to be used as a basis for building more complex sites by adapting it to a templating engine or documentation framework such as Jinja, Maven Site or Sphinx.
 
 ## Check it
 
@@ -12,15 +12,15 @@ It will reflect always the contents of the master branch, showing the current ve
 
 ## Usage
 
-This template is meant to be used as a basis for dynamic templates. And as such it contains several html files showing different aspects the documentation site should offer, and a folder with static content, where the required style and script files are kept.
+This is a static template meant to be used as a basis for dynamic templates. For this reason most of the html files are just showcases which serve as a visual guide for several documentation features.
 
-The static files folder, called '\_static', does not need to be modified, it can just be copied as a it is.
+These pages should be adapted for the actual final template, taking into consideration that the footer and heading will be mostly the same for all the pages.
 
-The html files on the other hand need to be adapted to the templating engine being used.
+The custom style and script files are kept in the '\_static' folder, which includes also the libraries used.
 
 ### Prerequisites
 
-The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery] and [Font Awesome][font-awesome]. All of them come included.
+The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery], [Font Awesome][font-awesome] and [highlight.js][highlightjs]. All of them come included.
 
 Otherwise, it is just plain HTML, so any browser can be used to check it.
 
@@ -46,6 +46,7 @@ The project has been released under the [MIT License][license].
 [bootstrap]: http://getbootstrap.com/
 [demo-site]: http://www.wandrell.com/docs-bootstrap-template/
 [font-awesome]: http://fortawesome.github.io/Font-Awesome/
+[highlightjs]: https://highlightjs.org/
 [issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
 [jquery]: https://jquery.com/
 [license]: http://www.opensource.org/licenses/mit-license.php
