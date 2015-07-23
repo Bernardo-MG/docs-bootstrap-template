@@ -1,8 +1,8 @@
 # Docs Bootstrap Template
 
-A Bootstrap-based template for documentation pages, offering a modern and responsive look which adapts to all screen sizes.
+A Bootstrap-based HTML5 template for documentation pages, offering a modern and responsive look which adapts to all screen sizes and is easy to extend.
 
-The project is as simple as possible, consisting just of a few static webpages, as it is meant to be used as a basis for building more complex sites by adapting it to a templating engine or documentation framework such as Jinja, Maven Site or Sphinx, but offers all the features which a documentation site could need.
+It is meant to be used as a basis for building documentation sites, and so should be adapted to a templating engine or documentation framework such as Jinja, Maven Site or Sphinx.
 
 ## Features
 
@@ -14,23 +14,21 @@ The project is as simple as possible, consisting just of a few static webpages, 
 
 ## Check it
 
-There is an [online demo site][demo-site] available for checking the template.
-
-It will reflect always the contents of the master branch, showing the current version of the template.
+There is an [online demo site][demo-site] which always reflects the current contents of the master branch, which is the latest version of the template.
 
 ## Usage
 
-This is a static template meant to be used as a basis for dynamic templates. For this reason most of the html files are just showcases which serve as a visual guide for several documentation features.
+This is static template is meant to be transformed into a dynamic one, through the use of the preferred framework.
+ 
+For this the HTML files should be used as a basis, which will need to be adapted as much as required, and not used directly as offered.
 
-These pages should be adapted for the actual final template, taking into consideration that the footer and heading will be mostly the same for all the pages.
-
-The custom style and script files are kept in the '\_static' folder, which includes also the libraries used.
+The files contained in the '\_static' folder, which includes also the libraries used, should require little changes, but may require some corrections to adapt to any changes made.
 
 ### Prerequisites
 
-The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery], [Font Awesome][font-awesome] and [highlight.js][highlightjs]. All of them come included.
+The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery], [Font Awesome][font-awesome] and [highlight.js][highlightjs]. All of them come included in the '\_static\lib' folder.
 
-Otherwise, it is just plain HTML, so any browser can be used to check it.
+Otherwise, it is just plain HTML5 and CSS3.
 
 ## Collaborate
 
