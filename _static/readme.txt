@@ -1,0 +1,1 @@
+The favicon was created by DomainTools, LLC
