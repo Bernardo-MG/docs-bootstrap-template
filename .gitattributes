@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Known text files
+*.xml text
+*.yml text
+*.html text
+*.md text
+*.sh text
+*.css text
+*.txt text
