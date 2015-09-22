@@ -7,12 +7,12 @@
 # The following environmental variables are used:
 # - PULL_REQUEST: boolean, indicates if this is a pull request, should be false for deployment
 # - DEPLOY: boolean, control flag for deployment, should be true to deploy
-# - CMS_BRANCH: string, the CMS branch from which the code has been taken
+# - SCM_BRANCH: string, the CMS branch from which the code has been taken
 # - DEPLOY_HOST: string, the URL to the FTP server o repository where the demo is deployed
 # - DEPLOY_USERNAME: string, the user for the FTP server o repository where the demo is deployed
 # - DEPLOY_PASSWORD: string, the password for the FTP server o repository where the demo is deployed
 
-if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$CMS_BRANCH" == "master" ]; then
+if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$SCM_BRANCH" == "master" ]; then
 
     echo "Deploying template"
 
