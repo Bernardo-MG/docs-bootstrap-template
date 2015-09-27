@@ -16,6 +16,13 @@ It is meant to be used as a basis for building documentation sites, and so shoul
 
 There is an [online demo site][demo-site] which always reflects the current contents of the master branch, which is the latest version of the template.
 
+### Projects based on this template
+
+A few projects have been created based on this template, meant to ease documenting projects:
+
+- [Docs Maven Skin][docs-maven-skin]
+- [Sphinx Docs Theme][sphinx-docs-theme]
+
 ## Usage
 
 This is static template is meant to be transformed into a dynamic one, through the use of the preferred framework.
@@ -57,3 +64,5 @@ The project has been released under the [MIT License][license].
 [jquery]: https://jquery.com/
 [license]: http://www.opensource.org/licenses/mit-license.php
 [scm]: http://github.com/Bernardo-MG/docs-bootstrap-template
+[docs-maven-skin]: https://github.com/Bernardo-MG/docs-maven-skin
+[sphinx-docs-theme]: https://github.com/Bernardo-MG/sphinx-docs-theme
