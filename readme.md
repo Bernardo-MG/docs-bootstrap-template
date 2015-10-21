@@ -20,8 +20,8 @@ There is an [online demo site][demo-site] which always reflects the current cont
 
 A few projects have been created based on this template, meant to ease documenting projects:
 
-- [Docs Maven Skin][docs-maven-skin]
-- [Sphinx Docs Theme][sphinx-docs-theme]
+- [Docs Maven Skin][docs-maven-skin], adapts the template for [Maven Site][maven-site].
+- [Sphinx Docs Theme][sphinx-docs-theme], adapts the template for [Sphinx][sphinx].
 
 ## Usage
 
@@ -66,3 +66,5 @@ The project has been released under the [MIT License][license].
 [scm]: http://github.com/Bernardo-MG/docs-bootstrap-template
 [docs-maven-skin]: https://github.com/Bernardo-MG/docs-maven-skin
 [sphinx-docs-theme]: https://github.com/Bernardo-MG/sphinx-docs-theme
+[maven-site]: https://maven.apache.org/plugins/maven-site-plugin
+[sphinx]: http://sphinx-doc.org/
