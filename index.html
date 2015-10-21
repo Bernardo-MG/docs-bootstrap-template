@@ -112,25 +112,16 @@
     <header class="page-header">
         <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
     </header>
-    <p>Taking modern features of Bootstrap and HTML5, this template aims to give a modern and responsive web design to
-        documentation sites, so they can be read easily from any kind of device.</p>
+    <p>Making use of the latest features of Bootstrap and HTML5, this template aims to give a modern and responsive web
+        design to
+        documentation sites, allowing them to be read from any kind of device.</p>
 
-    <p>It's meant to be used for any kind of project, and so it is generic and reusable, easy to adapt for any concrete
-        needs, and to any template engine or documentation framework, such as Jinja, Maven Site or Sphinx.</p>
+    <p>Any kind of project can take advantage of this template, as it is meant to be generic and reusable. Just adapt it
+        for wathever
+        documentation or templating framework you are using, and modify it for your needs, may it be Jinja, Maven Site,
+        Sphinx or anything else.</p>
 
     <div class="row">
-        <div class="col-md-6">
-            <section id="usage">
-                <h2>Usage</h2>
-
-                <p>Just grab the template from <a
-                        href="https://github.com/Bernardo-MG/docs-bootstrap-template">GitHub</a> and adapt the html
-                    files for your preferred templating engine.</p>
-
-                <p>All the static files, which are required for the template, are stored in the _static folder.</p>
-            </section>
-        </div>
-
         <div class="col-md-6">
             <section id="features">
                 <h2>Features</h2>
@@ -140,7 +131,7 @@
                     <li>Semantic tags for <a href="http://ogp.me/">Facebook OpenGraph</a> and
                         <a href="https://dev.twitter.com/cards/overview">Twitter Cards</a>.
                     </li>
-                    <li><a href="http://getbootstrap.com/">Bootstrap</a> used for a responsive design which adapts to
+                    <li><a href="http://getbootstrap.com/">Bootstrap 3</a> used for a responsive design which adapts to
                         the device being used.
                     </li>
                     <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> for the icons.</li>
@@ -161,30 +152,70 @@
                 </ul>
             </section>
         </div>
+        <div class="col-md-6">
+            <section id="projects" class="section">
+                <h2>Projects making use of the template</h2>
+
+                <p>Some projects have adapted this template into a real documentation project. These are a good example
+                    of what can be achieved by the Docs Bootstrap Template.</p>
+
+                <ul>
+                    <li>The <a href="https://github.com/Bernardo-MG/docs-maven-skin">Docs Maven Skin</a> adapts the
+                        template to be used on a <a href="https://maven.apache.org/plugins/maven-site-plugin/">Maven
+                            Site</a>.
+                    </li>
+                    <li>The <a href="https://github.com/Bernardo-MG/sphinx-docs-theme">Sphinx Docs Theme</a> adapts the
+                        template for <a href="http://sphinx-doc.org/">Sphinx</a>.
+                    </li>
+                </ul>
+            </section>
+        </div>
     </div>
-    <section id="examples" class="section">
-        <h2>Examples</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <section id="usage">
+                <h2>Usage</h2>
 
-        <p>To illustrate the template several pages have been created. These are divided into two groups, first there
-            are some pages showcasing different uses of the template, which serve also smaller subtemplates, and there
-            are also some test pages, for checking that the template works as expected.</p>
+                <p>Just grab the template from <a
+                        href="https://github.com/Bernardo-MG/docs-bootstrap-template">GitHub</a> and adapt the html
+                    files for your preferred templating engine.</p>
 
-        <p>General use cases:</p>
-        <ul>
-            <li><a href="./tests_report.html">Tests report</a></li>
-            <li><a href="./changes.html">Changes log</a></li>
-            <li><a href="./code.html">Code documentation</a></li>
-        </ul>
+                <p>All the static files, which are required for the template, are stored in the _static folder.</p>
 
-        <p>Tests to check the UI:</p>
-        <ul>
-            <li><a href="./components_view.html">Components</a></li>
-            <li><a href="min-page.html">A page with minimal content</a></li>
-        </ul>
+                <p>If you want to change the Bootstrap configuration, a config.json file is included in the
+                    Bootstrap folder. This can be used on the <a href="http://getbootstrap.com/customize/">
+                        Bootstrap Customize</a> page to change said configuration.</p>
+            </section>
+        </div>
+        <div class="col-md-6">
+            <section id="examples" class="section">
+                <h2>Examples</h2>
 
-        <p>In all of these pages you can always go back to the index by clicking the project's name on the navigation
-            bar.</p>
-    </section>
+                <p>To illustrate the template several pages have been created. These are divided into two groups, first
+                    there
+                    are some pages showcasing different uses of the template, which serve also smaller subtemplates, and
+                    there
+                    are also some test pages, for checking that the template works as expected.</p>
+
+                <p>General use cases:</p>
+                <ul>
+                    <li><a href="./tests_report.html">Tests report</a></li>
+                    <li><a href="./changes.html">Changes log</a></li>
+                    <li><a href="./code.html">Code documentation</a></li>
+                </ul>
+
+                <p>Tests to check the UI:</p>
+                <ul>
+                    <li><a href="./components_view.html">Bootstrap Components</a></li>
+                    <li><a href="min-page.html">A page with minimal content</a></li>
+                </ul>
+
+                <p>In all of these pages you can always go back to the index by clicking the project's name on the
+                    navigation
+                    bar.</p>
+            </section>
+        </div>
+    </div>
     <p class="pull-right internal-link"><a href="#main-section">Back to top</a></p>
 </section>
 <footer class="footer">
@@ -229,7 +260,7 @@
                         <div class="col-md-12 col-sm-4 col-xs-12">
                             <dl class="dl-horizontal">
                                 <dt id="project-version">Version</dt>
-                                <dd>0.1.1</dd>
+                                <dd>0.1.2</dd>
                                 <dt id="project-published">Published</dt>
                                 <dd>
                                     <time>2015-10-22</time>
