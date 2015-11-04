@@ -7,9 +7,9 @@ It is meant to be used as a basis for building documentation sites, and so shoul
 ## Features
 
 - Avoids unneeded complication to ease extensions.
-- HTML5 semantic markup.
-- Semantic tags for Facebook OpenGraph and Twitter Cards.
-- Bootstrap, Font Awesome and highlight.js.
+- [HTML5][html5] semantic markup.
+- Semantic tags for [Facebook OpenGraph][opengraph] and [Twitter Cards][twitter-cards].
+- [Bootstrap 3][bootstrap], [Font Awesome][fontawesome] and [highlight.js][highlightjs].
 - Validated HTML 5, accessibility, CSS and JS.
 
 ## Check it
@@ -64,7 +64,18 @@ The project has been released under the [MIT License][license].
 [jquery]: https://jquery.com/
 [license]: http://www.opensource.org/licenses/mit-license.php
 [scm]: http://github.com/Bernardo-MG/docs-bootstrap-template
+
 [docs-maven-skin]: https://github.com/Bernardo-MG/docs-maven-skin
 [sphinx-docs-theme]: https://github.com/Bernardo-MG/sphinx-docs-theme
+
 [maven-site]: https://maven.apache.org/plugins/maven-site-plugin
 [sphinx]: http://sphinx-doc.org/
+
+[opengraph]: http://ogp.me/
+[twitter-cards]: https://dev.twitter.com/cards/overview
+
+[html5]: http://www.w3.org/TR/html5/
+
+[bootstrap]: http://getbootstrap.com/
+[fontawesome]: https://fortawesome.github.io/Font-Awesome/
+[highlightjs]: https://highlightjs.org/
