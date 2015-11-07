@@ -7,23 +7,23 @@
  */
 
 body {
-    counter-reset: h2counter;
+    counter-reset: h2 h3;
 }
 
 h1 {
-    counter-reset: h2counter;
-}
-
-h2:before {
-    content: counter(h2counter) ".\0000a0\0000a0";
-    counter-increment: h2counter;
+    counter-reset: h2;
 }
 
 h2 {
-    counter-reset: h3counter;
+    counter-reset: h3;
+}
+
+h2:before {
+    content: counter(h2, decimal) ". ";
+    counter-increment: h2;
 }
 
 h3:before {
-    content: counter(h2counter) "." counter(h3counter) ".\0000a0\0000a0";
-    counter-increment: h3counter;
+    content: counter(h2, decimal) "." counter(h3, decimal) ". ";
+    counter-increment: h3;
 }
