@@ -57,7 +57,7 @@ function headingNumbering() {
         }
 
         // Getting out of the heading hierarchy
-        if (indices[hIndex] == undefined) {
+        if (indices[hIndex] === undefined) {
             indices[hIndex] = 0;
         }
 
