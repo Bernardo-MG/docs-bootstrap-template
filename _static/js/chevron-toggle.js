@@ -1,4 +1,7 @@
 /**
+ * Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
+ */
+/**
  * Functions for toggling chevrons on menus, so they indicate if the menu is deployed or not.
  *
  * This is purely for visual purposes. While chevrons help to indicate a menu option can be opened, animating them
