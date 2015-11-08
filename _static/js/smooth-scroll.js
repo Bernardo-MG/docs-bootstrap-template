@@ -1,4 +1,7 @@
 /**
+ * Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
+ */
+/**
  * Functions for smooth scrolling.
  *
  * This makes internal links to the same page scroll smoothly to their anchors.
