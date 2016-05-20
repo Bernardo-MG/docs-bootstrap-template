@@ -12,7 +12,7 @@
 # - DEPLOY_USERNAME: string, the user for the FTP server o repository where the demo is deployed
 # - DEPLOY_PASSWORD: string, the password for the FTP server o repository where the demo is deployed
 
-if [ "$PULL_REQUEST" == "false" ] && [ "$DEPLOY" == "true" ] && [ "$SCM_BRANCH" == "master" ]; then
+if [ "$DEPLOY" == "true" ] && [ "$PULL_REQUEST" == "false" ] && [ "$VERSION_TYPE" == "release" ]; then
 
     echo "Deploying template"
 
