@@ -25,11 +25,11 @@ A few projects have been created based on this template, meant to ease documenti
 
 ## Usage
 
-This is static template is meant to be transformed into a dynamic one, through the use of the preferred framework.
- 
-For this the HTML files should be used as a basis, which will need to be adapted as much as required, and not used directly as offered.
+This is a static template, meant to be used as a basis to create a dynamic one. As this is just a template any framework can be used for that.
 
-The files contained in the '\_static' folder, which includes also the libraries used, should require little changes, but may require some corrections to adapt to any changes made.
+The included HTML files are just an skeleton, meant to be modified as much as required, and not to be used as they are offered.
+
+The files contained in the '\_static' folder, which includes also the libraries used, should require little changes, but may need some corrections to adapt to any changes made.
 
 ### Prerequisites
 
