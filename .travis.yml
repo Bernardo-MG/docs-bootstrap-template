@@ -1,22 +1,22 @@
 language: python
 python:
  - "2.7"
-addons:
- apt:
-   packages:
-     - oracle-java8-installer
 env:
-  - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST SCM_BRANCH=$TRAVIS_BRANCH
+  - DEPLOY=true
+before_install:
+  # Scripts are set as executable
+  - chmod +x ./.scripts/load-travis-environment.sh
+  - chmod +x ./.scripts/deploy.sh
+  # Prepares CI environment
+  - source ./.scripts/load-travis-environment.sh
 install:
-  - pip install html5validator
+  - pip install html5validator==0.1.14
   - npm install -g jshint
   - npm install -g recess
   - npm install -g http-server
   - npm install -g node
   - npm install -g phantomjs
   - npm install -g pa11y
-before_script:
-  - chmod +x ./.scripts/deploy.sh
 script:
   # HTML5 Validation
   - html5validator
