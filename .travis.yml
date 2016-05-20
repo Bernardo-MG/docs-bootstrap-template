@@ -1,6 +1,10 @@
 language: python
 python:
  - "2.7"
+addons:
+ apt:
+   packages:
+     - oracle-java8-installer
 env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST SCM_BRANCH=$TRAVIS_BRANCH
 install:
