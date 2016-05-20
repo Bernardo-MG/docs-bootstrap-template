@@ -1,14 +1,10 @@
 language: python
 python:
  - "2.7"
-addons:
- apt:
-   packages:
-     - oracle-java7-installer
 env:
   - DEPLOY=true PULL_REQUEST=$TRAVIS_PULL_REQUEST SCM_BRANCH=$TRAVIS_BRANCH
 install:
-  - pip install html5validator
+  - pip install html5validator==0.1.14
   - npm install -g jshint
   - npm install -g recess
   - npm install -g http-server
