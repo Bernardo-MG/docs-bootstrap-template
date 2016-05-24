@@ -35,6 +35,23 @@ body {
 }
 
 /**
+* Colors changed to improve contrast against the background.
+*/
+
+.footer {
+    color: #535353;
+}
+
+.footer a {
+    color: #0050aa;
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: #2780e3;
+}
+
+/**
 * Footer copyright info
 */
 
