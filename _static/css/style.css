@@ -1,6 +1,6 @@
 /*!
  * Docs Boostrap Template combined CSS styles
- * Copyright 2015 Bernardo Martínez Garrido
+ * Copyright 2015 Bernardo Martï¿½nez Garrido
  * Licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
  *
  * This file combines all the CSS files being used on the template.
@@ -10,7 +10,6 @@
 @import url('navbar-icons.css');
 @import url('footer.css');
 @import url('list.css');
-@import url('font.css');
 @import url('table.css');
 @import url('image.css');
 @import url('link.css');
