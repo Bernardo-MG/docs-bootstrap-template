@@ -34,6 +34,14 @@ body {
 }
 
 /**
+* Colors changed to improve contrast against the background.
+*/
+
+.navbar a {
+    color: #1552bc;
+}
+
+/**
 * General navigation bar configuration.
 */
 
