@@ -19,6 +19,10 @@ a {
     color: #1552bc;
 }
 
+table a {
+    color: #0050aa;
+}
+
 /**
 * Internal links.
 *
