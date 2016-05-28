@@ -13,21 +13,16 @@
  * The way the chevrons work is simple: the one pointing up indicates the menu is closed, while the one pointing down
  * indicates it is open. All menus should have the closed chevron by default on the html file.
  *
- * Loading this file will automatically initialize the scripts. This way the menus work just by adding it.
+ * To initialize the chevron toggle use the initChevronToggle() function.
  */
 
 /**
- * Initializes the chevron toggling.
- *
- * This will prepare only the dropdown menus.
+ * Initialize the chevron toggle feature.
  */
-$(document).ready(function () {
-
+function initChevronToggle() {
     $('.dropdown').on('show.bs.dropdown', toggleDropdownChevronOpen);
-
     $('.dropdown').on('hide.bs.dropdown', toggleDropdownChevronClosed);
-
-});
+}
 
 /**
  * Toggles the chevron on the active dropdown menu, so it points down, indicating it is open.
