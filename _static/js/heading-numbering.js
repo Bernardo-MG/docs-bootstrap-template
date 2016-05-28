@@ -21,14 +21,12 @@
  * Loading this file will automatically initialize the scripts. This way the headings are numbered just by adding it.
  */
 
-var indices = [];
-
 /**
  * Initializes the heading numbering.
  */
 $(document).ready(function () {
 
-    headingNumbering();
+    numberHeadings();
 
 });
 
@@ -44,19 +42,17 @@ $(document).ready(function () {
  * 2.1 Level 3 heading
  * 2.2 Level 3 heading
  */
-function headingNumbering() {
+function numberHeadings() {
+    var indices = [];
 
-    jQuery('h2,h3').each(function (i, e) {
+    jQuery('h2,h3').each(function () {
         var hIndex;
 
+        // Prepares the index for this heading
+        // The numbering is corrected, as h1 is skipped
         hIndex = parseInt(this.nodeName.substring(1)) - 2;
 
-        // Getting deeper into the heading hierarchy
-        if (indices.length - 1 > hIndex) {
-            indices = indices.slice(0, hIndex + 1);
-        }
-
-        // Getting out of the heading hierarchy
+        // Initializes heading index
         if (indices[hIndex] === undefined) {
             indices[hIndex] = 0;
         }
@@ -65,7 +61,8 @@ function headingNumbering() {
         indices[hIndex]++;
 
         // Displays the heading numbering
-        jQuery(this).prepend(indices.join(".") + ". ");
+        var numbering = indices.join(".") + ". ";
+        jQuery(this).prepend(numbering);
     });
 
 }
