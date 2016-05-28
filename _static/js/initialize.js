@@ -3,7 +3,7 @@
  */
 /**
  * Loads all the Javascript functions used by the site.
- * 
+ *
  * This requires access to the code in the following Javascript files:
  * - chevron-toggle.js
  * - heading-numbering.js
@@ -23,5 +23,5 @@ $(document).ready(function () {
 
     // Sets up smooth scroll
     initSmoothScroll();
-    
+
 });

@@ -33,17 +33,20 @@
  */
 function numberHeadings() {
     var indices = [];
+    var firstHeading = 2;
 
     jQuery('h2,h3').each(function () {
         var hIndex;
 
         // Prepares the index for this heading
-        // The numbering is corrected, as h1 is skipped
-        hIndex = parseInt(this.nodeName.substring(1)) - 2;
+        hIndex = parseInt(this.nodeName.substring(1)) - firstHeading;
 
         // Initializes heading index
-        if (indices[hIndex] === undefined) {
-            indices[hIndex] = 0;
+        if (indices.length < (hIndex + 1)) {
+            // There are gaps in the numbering array
+            for (var i = indices.length; i <= hIndex; i++) {
+                indices[i] = 0;
+            }
         }
 
         // Increases the count for the current heading

@@ -26,9 +26,9 @@ function initSmoothScroll() {
  *
  * @param hash hash for the element where to scroll
  */
-function smoothScroll(hash){
+function smoothScroll(hash) {
     var offset = $(hash).offset();
-    if(offset){
+    if (offset) {
         $('html, body').animate({
             scrollTop: $(hash).offset().top
         }, 300, function () {
