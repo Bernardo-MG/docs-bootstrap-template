@@ -17,18 +17,7 @@
  *
  * Also, the headings order is expected to be respected, and no heading level should be skipped, for example by
  * adding a level 3 heading after a level 1 heading.
- *
- * Loading this file will automatically initialize the scripts. This way the headings are numbered just by adding it.
  */
-
-/**
- * Initializes the heading numbering.
- */
-$(document).ready(function () {
-
-    numberHeadings();
-
-});
 
 /**
  * Gives a number to the headings of level 2 and 3.
