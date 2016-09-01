@@ -1,22 +1,36 @@
+# Travis CI Configuration file
+# @link https://travis-ci.org/
+
+# Using Python for the project
 language: python
 python:
  - "2.7"
 env:
   - DEPLOY=true
+
 before_install:
-  # Scripts are set as executable
-  - chmod +x ./.scripts/load-travis-environment.sh
-  - chmod +x ./.scripts/deploy.sh
+  # Gets scripts
+  - git clone -b v0.1.6 --single-branch https://github.com/Bernardo-MG/ci-shell-scripts.git ~/.scripts
+  # Sets scripts as executable
+  - chmod -R +x ~/.scripts/*
   # Prepares CI environment
-  - source ./.scripts/load-travis-environment.sh
+  - source ~/.scripts/travis/load-travis-environment.sh
 install:
+  # HTML 5 validator
   - pip install html5validator==0.1.14
+  # JSHint
   - npm install -g jshint
+  # Recess
   - npm install -g recess
+  # HTTP server
   - npm install -g http-server
+  # pa11y
   - npm install -g node
   - npm install -g phantomjs
   - npm install -g pa11y
+before_script:
+  # Creates Maven settings
+  - ~/.scripts/java/maven/create-maven-settings.sh $VERSION_TYPE
 script:
   # HTML5 Validation
   - html5validator
@@ -30,4 +44,4 @@ script:
   - pa11y localhost:8080/changes.html -s WCAG2AAA
   - pa11y localhost:8080/tests_report.html -s WCAG2AAA
 after_success:
-  - ./.scripts/deploy.sh
+  - ~/.scripts/other/deploy-ftp.sh $DO_DEPLOY
