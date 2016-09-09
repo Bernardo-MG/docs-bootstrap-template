@@ -17,7 +17,7 @@ before_install:
   - source ~/.scripts/travis/load-travis-environment.sh
 install:
   # HTML 5 validator
-  - pip install html5validator==0.1.14
+  - pip install html5validator==0.2.5
   # JSHint
   - npm install -g jshint
   # Recess
@@ -28,6 +28,10 @@ install:
   - npm install -g node
   - npm install -g phantomjs
   - npm install -g pa11y
+  # Updates Java
+  - sudo apt-get update
+  - sudo apt-get install oracle-java8-installer
+  - sudo update-java-alternatives -s java-8-oracle
 script:
   # HTML5 Validation
   - html5validator
