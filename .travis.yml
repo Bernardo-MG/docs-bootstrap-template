@@ -16,8 +16,12 @@ before_install:
   # Prepares CI environment
   - source ~/.scripts/travis/load-travis-environment.sh
 install:
+  # Updates Java
+  - sudo apt-get update
+  - sudo apt-get install oracle-java8-installer
+  - sudo update-java-alternatives -s java-8-oracle
   # HTML 5 validator
-  - pip install html5validator==0.1.14
+  - pip install html5validator==0.2.5
   # JSHint
   - npm install -g jshint
   # Recess
