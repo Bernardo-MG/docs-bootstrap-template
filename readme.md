@@ -7,6 +7,7 @@ It is meant to be used as a basis for building documentation sites, and so shoul
 ## Features
 
 - Avoids unneeded complication to ease extensions.
+- Response design prepared for mobiles
 - [HTML5][html5] semantic markup.
 - Semantic tags for [Facebook OpenGraph][opengraph] and [Twitter Cards][twitter-cards].
 - [Bootstrap 3][bootstrap], [Font Awesome][fontawesome] and [highlight.js][highlightjs].
