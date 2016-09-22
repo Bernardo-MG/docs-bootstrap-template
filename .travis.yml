@@ -36,7 +36,7 @@ script:
   # HTML5 Validation
   - html5validator
   # Javascript validation
-  - jshint ./_static/js/*
+  - jshint ./_static/js/* --config .jshintrc
   # CSS Validation
   - recess ./_static/css/*
   # Accessibility Validation
