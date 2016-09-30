@@ -58,7 +58,7 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 The project has been released under the [MIT License][license].
 
 [bootstrap]: http://getbootstrap.com/
-[demo-site]: http://www.wandrell.com/docs-bootstrap-template/
+[demo-site]: http://docs.wandrell.com/docs-bootstrap-template/
 [font-awesome]: http://fortawesome.github.io/Font-Awesome/
 [highlightjs]: https://highlightjs.org/
 [issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
