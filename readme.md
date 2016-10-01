@@ -7,6 +7,7 @@ It is meant to be used as a basis for building documentation sites, and so shoul
 ## Features
 
 - Avoids unneeded complication to ease extensions.
+- Response design prepared for mobiles
 - [HTML5][html5] semantic markup.
 - Semantic tags for [Facebook OpenGraph][opengraph] and [Twitter Cards][twitter-cards].
 - [Bootstrap 3][bootstrap], [Font Awesome][fontawesome] and [highlight.js][highlightjs].
@@ -57,7 +58,7 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 The project has been released under the [MIT License][license].
 
 [bootstrap]: http://getbootstrap.com/
-[demo-site]: http://www.wandrell.com/docs-bootstrap-template/
+[demo-site]: http://docs.wandrell.com/docs-bootstrap-template/
 [font-awesome]: http://fortawesome.github.io/Font-Awesome/
 [highlightjs]: https://highlightjs.org/
 [issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
