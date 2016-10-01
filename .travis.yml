@@ -34,7 +34,7 @@ install:
   - npm install -g phantomjs
   - npm install -g pa11y
   # sshpass for deployment
-  - sudo apt-get sshpass
+  - sudo apt-get install sshpass
 script:
   # HTML5 Validation
   - html5validator
