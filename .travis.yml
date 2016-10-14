@@ -15,7 +15,6 @@ before_install:
   - chmod -R +x ~/.scripts/*
   # Prepares CI environment
   - source ~/.scripts/travis/load-travis-environment.sh
-  - export DO_DEPLOY=( $DO_DEPLOY $$ [ $VERSION_TYPE -eq "release" ] );
 install:
   # Updates Java
   - sudo apt-get update
