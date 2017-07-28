@@ -31,7 +31,7 @@ install:
   # pa11y
   - npm install -g node-bin-setup
   - npm install -g node
-  - npm install -g phantomjs
+  - npm install -g phantomjs-prebuilt
   - npm install -g pa11y
   # sshpass for deployment
   - sudo apt-get install sshpass
