@@ -19,6 +19,7 @@ before_install:
   - npm install -g npm@'>=1.4.3'
   # Update node
   - npm install -g n
+  - n stable
 install:
   # Updates Java
   - sudo apt-get update
