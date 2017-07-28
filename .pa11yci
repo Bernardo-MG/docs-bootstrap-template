@@ -1,6 +1,12 @@
 {
    "defaults": {
-      "timeout": 1000
+      "timeout": 2000,
+      "page": {
+            "viewport": {
+                "width": 320,
+                "height": 480
+            }
+        }
    },
    "urls": [
       "http://localhost:8080/index.html",
