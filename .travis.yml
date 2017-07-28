@@ -2,9 +2,9 @@
 # @link https://travis-ci.org/
 
 # Using Python for the project
-language: node_js
+language: python
 python:
- - "7"
+ - "2.7"
 env:
   - DEPLOY=true
 
@@ -15,6 +15,8 @@ before_install:
   - chmod -R +x ~/.scripts/*
   # Prepares CI environment
   - source ~/.scripts/travis/load-travis-environment.sh
+  # Update npm
+  - npm install -g npm@'>=1.4.3'
 install:
   # Updates Java
   - sudo apt-get update
