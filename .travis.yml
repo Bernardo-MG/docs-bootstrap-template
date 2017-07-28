@@ -10,12 +10,11 @@ env:
 
 before_install:
   # Gets scripts
-  - git clone -b v0.2.10 --single-branch https://github.com/Bernardo-MG/ci-shell-scripts.git ~/.scripts
+  - git clone -b v1.0.0 --single-branch https://github.com/Bernardo-MG/ci-shell-scripts.git ~/.scripts
   # Sets scripts as executable
   - chmod -R +x ~/.scripts/*
   # Prepares CI environment
   - source ~/.scripts/travis/load-travis-environment.sh
-  - export DO_DEPLOY=( $DO_DEPLOY $$ [ $VERSION_TYPE -eq "release" ] );
 install:
   # Updates Java
   - sudo apt-get update
@@ -30,9 +29,10 @@ install:
   # HTTP server
   - npm install -g http-server
   # pa11y
+  - npm install -g node-bin-setup
   - npm install -g node
-  - npm install -g phantomjs
-  - npm install -g pa11y
+  - npm install -g phantomjs-prebuilt
+  - npm install -g pa11y-ci
   # sshpass for deployment
   - sudo apt-get install sshpass
 script:
@@ -44,9 +44,7 @@ script:
   - recess ./_static/css/*
   # Accessibility Validation
   - http-server -p 8080 >/dev/null 2>&1 &
-  - pa11y localhost:8080/index.html -s WCAG2AAA
-  - pa11y localhost:8080/changes.html -s WCAG2AAA
-  - pa11y localhost:8080/tests_report.html -s WCAG2AAA
+  - npm run test-pa11y;
 after_success:
   # Deploys the site as a demo site
-  - ~/.scripts/other/deploy-ssh.sh $DO_DEPLOY
+  - ~/.scripts/deploy/deploy-ssh.sh $DO_DEPLOY_DOCS_RELEASE $DEPLOY_USERNAME $DEPLOY_PASSWORD $DEPLOY_HOST $DEPLOY_PORT $DEPLOY_PATH

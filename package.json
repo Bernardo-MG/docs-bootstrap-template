@@ -1,0 +1,13 @@
+{
+	"name": "docs-bootstrap-template",
+	"version": "0.3.0",
+	"dependencies": {
+		
+	},
+	"devDependencies": {
+		"pa11y-ci": "~1.2.0"
+	},
+	"scripts": {
+		"test-pa11y": "~/.nvm/versions/node/v7.4.0/lib/node_modules/node/bin/pa11y-ci"
+	}
+}
