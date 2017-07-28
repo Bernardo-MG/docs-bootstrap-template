@@ -6,6 +6,6 @@
     "pa11y-ci": "~1.2.0"
   },
   "scripts": {
-    "test-pa11y": "./node_modules/node/bin/pa11y-ci"
+    "test-pa11y": "/home/travis/.nvm/versions/node/v7.4.0/lib/node_modules/node/bin/pa11y-ci"
   }
 }
