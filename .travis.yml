@@ -15,11 +15,6 @@ before_install:
   - chmod -R +x ~/.scripts/*
   # Prepares CI environment
   - source ~/.scripts/travis/load-travis-environment.sh
-  # Update npm
-  - npm install -g npm@'>=1.4.3'
-  # Update node
-  - npm install -g n
-  - n stable
 install:
   # Updates Java
   - sudo apt-get update
@@ -34,6 +29,7 @@ install:
   # HTTP server
   - npm install -g http-server
   # pa11y
+  - npm install -g node-bin-setup
   - npm install -g node
   - npm install -g phantomjs
   - npm install -g pa11y
