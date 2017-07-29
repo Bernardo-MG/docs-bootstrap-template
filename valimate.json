@@ -1,0 +1,7 @@
+{
+	"urls": [
+      "http://localhost:8080/index.html",
+      "http://localhost:8080/changes.html",
+      "http://localhost:8080/tests_report.html"
+	]
+}

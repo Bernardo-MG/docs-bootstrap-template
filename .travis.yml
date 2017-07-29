@@ -29,14 +29,15 @@ install:
   # sshpass for deployment
   - sudo apt-get install sshpass
 script:
-  # HTML5 Validation
-  - html5validator
   # Javascript validation
   - npm run jshint
   # CSS Validation
   - npm run recess
-  # Accessibility Validation
+  # Files are loaded into a local server
   - http-server -p 8080 >/dev/null 2>&1 &
+  # HTML5 Validation
+  - npm run validate-html5
+  # Accessibility Validation
   - npm run test-pa11y
 after_success:
   # Deploys the site as a demo site
