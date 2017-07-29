@@ -22,7 +22,7 @@ install:
   - sudo update-java-alternatives -s java-8-oracle
   # HTML 5 validator
   - pip install html5validator==0.2.5
-  # npm dependecies
+  # npm dependencies
   - npm install
   # sshpass for deployment
   - sudo apt-get install sshpass
