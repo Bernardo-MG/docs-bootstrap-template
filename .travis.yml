@@ -2,9 +2,9 @@
 # @link https://travis-ci.org/
 
 # Using Python for the project
-language: python
+language: node_js
 python:
- - "2.7"
+ - "7"
 env:
   - DEPLOY_DOCS=true
 
