@@ -20,8 +20,6 @@ install:
   - sudo apt-get update
   - sudo apt-get install oracle-java8-installer
   - sudo update-java-alternatives -s java-8-oracle
-  # HTML 5 validator
-  - pip install html5validator==0.2.5
   # npm dependencies
   - npm install -g node-bin-setup
   - npm install -g node
