@@ -23,6 +23,8 @@ install:
   # HTML 5 validator
   - pip install html5validator==0.2.5
   # npm dependencies
+  - npm install -g node-bin-setup
+  - npm install -g node
   - npm install
   # sshpass for deployment
   - sudo apt-get install sshpass
