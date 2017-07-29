@@ -7,7 +7,10 @@
 	"devDependencies": {
       "http-server": "~0.10.0",
       "jshint": "~2.9.5",
+      "node-bin-setup": "~1.0.6",
+      "node": "~8.2.1",
 		"pa11y-ci": "~1.2.0",
+      "phantomjs-prebuilt": "~2.1.14",
       "recess": "~1.1.9"
 	},
 	"scripts": {

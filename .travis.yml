@@ -22,10 +22,6 @@ install:
   - sudo update-java-alternatives -s java-8-oracle
   # HTML 5 validator
   - pip install html5validator==0.2.5
-  # pa11y
-  - npm install -g node-bin-setup
-  - npm install -g node
-  - npm install -g phantomjs-prebuilt
   # npm dependecies
   - npm install
   # sshpass for deployment
