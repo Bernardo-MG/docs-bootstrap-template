@@ -11,8 +11,8 @@
 	"devDependencies": {
 	},
 	"scripts": {
-      "jshint": "~/.nvm/versions/node/v7.4.0/lib/node_modules/.bin/jshint ./_static/js/* --config .jshintrc",
-      "recess": "~/.nvm/versions/node/v7.4.0/lib/node_modules/.bin/recess ./_static/css/*",
-		"test-pa11y": "~/.nvm/versions/node/v7.4.0/lib/node_modules/node/bin/pa11y-ci"
+      "jshint": "./node_modules/.bin/jshint ./_static/js/* --config .jshintrc",
+      "recess": "./node_modules/.bin/recess ./_static/css/*",
+		"test-pa11y": "./node_modules/.bin/pa11y-ci"
 	}
 }
