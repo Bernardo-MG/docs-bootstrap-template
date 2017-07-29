@@ -32,12 +32,12 @@ script:
   # HTML5 Validation
   - html5validator
   # Javascript validation
-  - jshint ./_static/js/* --config .jshintrc
+  - npm run jshint
   # CSS Validation
-  - recess ./_static/css/*
+  - npm run recess
   # Accessibility Validation
   - http-server -p 8080 >/dev/null 2>&1 &
-  - npm run test-pa11y;
+  - npm run test-pa11y
 after_success:
   # Deploys the site as a demo site
   - ~/.scripts/deploy/deploy-ssh.sh $DO_DEPLOY_DOCS_RELEASE $DEPLOY_USERNAME $DEPLOY_PASSWORD $DEPLOY_HOST $DEPLOY_PORT $DEPLOY_PATH
