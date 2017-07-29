@@ -16,10 +16,6 @@ before_install:
   # Prepares CI environment
   - source ~/.scripts/travis/load-travis-environment.sh
 install:
-  # Updates Java
-  - sudo apt-get update
-  - sudo apt-get install oracle-java8-installer
-  - sudo update-java-alternatives -s java-8-oracle
   # npm dependencies
   - npm install -g node-bin-setup
   - npm install -g node
