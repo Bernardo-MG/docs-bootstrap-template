@@ -34,7 +34,7 @@ script:
   # CSS Validation
   - npm run recess
   # Files are loaded into a local server
-  - http-server -p 8080 >/dev/null 2>&1 &
+  - npm run server
   # HTML5 Validation
   - npm run validate-html5
   # Accessibility Validation

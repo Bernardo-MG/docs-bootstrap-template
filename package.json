@@ -12,6 +12,7 @@
 	"devDependencies": {
 	},
 	"scripts": {
+      "server": "./node_modules/.bin/http-server -p 8080 >/dev/null 2>&1 &",
       "jshint": "./node_modules/.bin/jshint ./_static/js/* --config .jshintrc",
       "recess": "./node_modules/.bin/recess ./_static/css/*",
 		"test-pa11y": "./node_modules/.bin/pa11y-ci",
