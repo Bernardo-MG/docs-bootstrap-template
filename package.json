@@ -1,36 +1,37 @@
 {
-	"name": "docs-bootstrap-template",
-	"version": "1.0.0",
+   "name": "docs-bootstrap-template",
+   "version": "1.0.0",
    "description": "Bootstrap-based HTML template for documentation sites.",
    "author": "Bernardo Martínez Garrido",
    "homepage": "https://github.com/Bernardo-MG/docs-bootstrap-template",
    "license": "MIT",
    "keywords": [
-     "template",
-     "bootstrap"
+      "template",
+      "bootstrap"
    ],
    "repository": {
-     "type": "git",
-     "url": "git@github.com:bernardo-mg/docs-bootstrap-template.git"
+      "type": "git",
+      "url": "git@github.com:bernardo-mg/docs-bootstrap-template.git"
    },
    "bugs": {
-     "url": "https://www.github.com/bernardo-mg/docs-bootstrap-template/issues"
+      "url": "https://www.github.com/bernardo-mg/docs-bootstrap-template/issues"
    },
    "scripts": {
       "server": "./node_modules/.bin/http-server -p 8080 >/dev/null 2>&1 &",
-      "jshint": "./node_modules/.bin/jshint ./_static/js/* --config .jshintrc",
-      "recess": "./node_modules/.bin/recess ./_static/css/*",
-      "test-pa11y": "./node_modules/.bin/pa11y-ci",
+      "validate-js": "./node_modules/.bin/jshint ./_static/js/* --config .jshintrc",
+      "validate-css": "./node_modules/.bin/recess ./_static/css/*",
+      "validate-access": "./node_modules/.bin/pa11y-ci",
       "validate-html5": "./node_modules/.bin/valimate"
    },
-	"dependencies": {
+   "dependencies": {
       "http-server": "~0.10.0",
       "jshint": "~2.9.5",
       "pa11y-ci": "~1.2.0",
       "phantomjs-prebuilt": "~2.1.14",
       "recess": "~1.1.9",
       "valimate": "~2.3.0"
-	},
-	"devDependencies": {
-	}
+   },
+   "devDependencies": {
+      
+   }
 }
