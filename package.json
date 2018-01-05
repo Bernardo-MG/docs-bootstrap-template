@@ -22,7 +22,7 @@
       "copy-fontawesome": "cpx \"node_modules/font-awesome/**/*\" src/static/lib/font-awesome",
       "copy-html5shiv": "cpx \"node_modules/html5shiv/dist/*.css\" src/static/lib/html5shiv",
       "copy-jquery": "cpx \"node_modules/jquery/dist/*.js\" src/static/lib/jquery",
-      "server": "./node_modules/.bin/http-server -p 8080 >/dev/null 2>&1 &",
+      "server": "./node_modules/.bin/http-server ./src -p 8080 >/dev/null 2>&1 &",
       "validate-js": "./node_modules/.bin/jshint ./src/static/js/* --config .jshintrc",
       "validate-css": "./node_modules/.bin/recess ./src/static/css/*",
       "validate-access": "./node_modules/.bin/pa11y-ci",

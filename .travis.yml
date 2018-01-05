@@ -34,9 +34,7 @@ script:
   # CSS Validation
   - npm run validate-css
   # Files are loaded into a local server
-  - cd src
   - npm run server
-  - cd ..
   # HTML5 Validation
   - npm run validate-html5
   # Accessibility Validation
