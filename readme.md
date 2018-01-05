@@ -26,17 +26,37 @@ A few projects have been created based on this template, meant to ease documenti
 
 ## Usage
 
-This is a static template, meant to be used as a basis to create a dynamic one. As this is just a template any framework can be used for that.
+This is a static template, meant to be used as an skeleton to create a dynamic one.
 
-The included HTML files are just an skeleton, meant to be modified as much as required, and not to be used as they are offered.
-
-The files contained in the '\_static' folder, which includes also the libraries used, should require little changes, but may need some corrections to adapt to any changes made.
+It contains a few dependencies which require the project to be built. Otherwise all the required code is contained in 'src/static', while the HTML files in 'src' are the examples to be used as a basis for the templates.
 
 ### Prerequisites
 
-The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery], [Font Awesome][font-awesome] and [highlight.js][highlightjs]. All of them come included in the '\_static\lib' folder.
+The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery], [Font Awesome][font-awesome] and [highlight.js][highlightjs], installed with [npm][npm].
 
 Otherwise, it is just plain HTML5 and CSS3.
+
+### Building the project
+
+[npm][npm] is used for building the project, which requires running a few commands. All of these should be executed from the project root.
+
+First of all the dependencies should be installed:
+
+```
+$ npm install
+```
+
+Afterwards these dependencies should be copied to the resources folders:
+
+```
+$ npm run copy-bootstrap
+$ npm run copy-bootswatch
+$ npm run copy-fontawesome
+$ npm run copy-html5shiv
+$ npm run copy-jquery
+```
+
+Once this is done, the project is ready, and the index file inside the src folder can be opened.
 
 ## Collaborate
 
@@ -64,6 +84,7 @@ The project has been released under the [MIT License][license].
 [issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
 [jquery]: https://jquery.com/
 [license]: http://www.opensource.org/licenses/mit-license.php
+[npm]: https://www.npmjs.com/
 [scm]: http://github.com/Bernardo-MG/docs-bootstrap-template
 
 [docs-maven-skin]: https://github.com/Bernardo-MG/docs-maven-skin
