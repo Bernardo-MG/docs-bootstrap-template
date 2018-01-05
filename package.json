@@ -18,8 +18,8 @@
    },
    "scripts": {
       "copy-bootstrap": "cpx \"node_modules/bootstrap/dist/js/*.js\" _static/lib/bootstrap/js",
-      "copy-bootswatch": "cpx \"node_modules/bootswatch/readable/*.css\" _static/lib/bootstrap/css",
-      "copy-fontawesome": "cpx \"node_modules/font-awesome/css/*.css\" _static/lib/font-awesome/css",
+      "copy-bootswatch": "cpx \"node_modules/bootswatch/readable/*.css\" _static/lib/bootswatch/readable",
+      "copy-fontawesome": "cpx \"node_modules/font-awesome/**/*\" _static/lib/font-awesome",
       "copy-html5shiv": "cpx \"node_modules/html5shiv/dist/*.css\" _static/lib/html5shiv",
       "copy-jquery": "cpx \"node_modules/jquery/dist/*.js\" _static/lib/jquery",
       "server": "./node_modules/.bin/http-server -p 8080 >/dev/null 2>&1 &",
