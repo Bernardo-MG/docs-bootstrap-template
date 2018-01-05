@@ -23,6 +23,8 @@ install:
   # sshpass for deployment
   - sudo apt-get install sshpass
 script:
+  # Builds site
+  - npm run copy
   # Javascript validation
   - npm run validate-js
   # CSS Validation
