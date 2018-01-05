@@ -46,7 +46,7 @@ First of all the dependencies should be installed:
 $ npm install
 ```
 
-Afterwards the dependencies should be copied to the resources folders:
+Afterwards these dependencies should be copied to the resources folders:
 
 ```
 $ npm run copy-bootstrap
