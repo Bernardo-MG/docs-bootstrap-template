@@ -29,3 +29,9 @@ Desktop.ini
 # Node
 /node_modules/
 package-lock.json
+
+# Dependencies
+src/static/lib/bootstrap
+src/static/lib/bootswatch
+src/static/lib/font-awesome
+src/static/lib/jquery

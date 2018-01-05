@@ -8,8 +8,8 @@
     <!-- IE Compatibility tag -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Index - Docs Bootstrap Template</title>
-    <link href="./_static/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <title>Changes Log - Docs Bootstrap Template</title>
+    <link href="./static/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 
     <!-- Metadata -->
     <meta name="description"
@@ -24,7 +24,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="http://www.bernardomg.com/docs-bootstrap-template/"/>
     <meta property="og:site" content="Docs Bootstrap Template"/>
-    <meta property="og:title" content="Index - Docs Bootstrap Template"/>
+    <meta property="og:title" content="Changes Log - Docs Bootstrap Template"/>
     <meta property="og:description"
           content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
 
@@ -36,15 +36,15 @@
           content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./_static/lib/bootswatch/readable/bootstrap.min.css">
-    <link rel="stylesheet" href="./_static/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./_static/lib/highlight/styles/default.css">
+    <link rel="stylesheet" href="./static/lib/bootswatch/readable/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/lib/highlight/styles/default.css">
     <!-- Docs Template style -->
-    <link rel="stylesheet" href="_static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
     <!-- HTML5 Shiv. For IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="./_static/lib/html5shiv/html5shiv.min.js"></script>
+    <script src="./static/lib/html5shiv/html5shiv.min.js"></script>
     <![endif]-->
 
 </head>
@@ -111,99 +111,137 @@
 </header>
 <section id="main-section" class="container">
     <header class="page-header">
-        <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
+        <h1>Example of a changes log</h1>
+
+        <p>This example is based on the changes report for Maven, which shows the changes log for the project.</p>
     </header>
-    <p>Making use of the latest features of Bootstrap and HTML5, this template aims to give a modern and responsive web
-        design to
-        documentation sites, allowing them to be read from any kind of device.</p>
-
-    <p>Any kind of project can take advantage of this template, as it is meant to be generic and reusable. Just adapt it
-        for wathever
-        documentation or templating framework you are using, and modify it for your needs, may it be Jinja, Maven Site,
-        Sphinx or anything else.</p>
-
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Simple style, avoiding unneeded complexities.</li>
-            <li>HTML5 semantic markup.</li>
-            <li>Semantic tags for <a href="http://ogp.me/">Facebook OpenGraph</a> and
-                <a href="https://dev.twitter.com/cards/overview">Twitter Cards</a>.
-            </li>
-            <li><a href="http://getbootstrap.com/">Bootstrap 3</a> used for a responsive design which adapts to
-                the device being used.
-            </li>
-            <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> for the icons.</li>
-            <li><a href="https://highlightjs.org/">highlight.js</a> for code highlighting.</li>
-            <li>Validated for HTML 5, following the <a href="https://validator.w3.org/">W3C guidelines</a>.</li>
-            <li>Validated for accessibility, following the <a href="http://achecker.ca/checker/index.php">WCAG
-                2.0</a> (Level AA) guidelines, and also checked with <a
-                    href="http://wave.webaim.org/">Wave</a>.
-            </li>
-            <li>Validated CSS, following the <a href="https://validator.w3.org/">W3C</a> and <a
-                    href="http://twitter.github.io/recess/">Twitter recess</a> guidelines.
-            </li>
-            <li>Validated JS.</li>
-            <li>Additionally it is being continuously validated with other tools through <a
-                    href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template/">Travis
-                CI</a>.
-            </li>
-        </ul>
+    <section id="releases-history" class="section">
+        <h2>Releases History</h2>
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr>
+                <th>Version</th>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="#release_010">0.1.0</a></td>
+                <td>
+                    <time>2015-04-03</time>
+                </td>
+                <td>First release</td>
+            </tr>
+            <tr>
+                <td><a href="#release_020">0.2.0</a></td>
+                <td>
+                    <time>2015-05-04</time>
+                </td>
+                <td>Various enhancements</td>
+            </tr>
+            <tr>
+                <td><a href="#release_021">0.2.1</a></td>
+                <td>
+                    <time>2015-05-07</time>
+                </td>
+                <td>A few patches</td>
+            </tr>
+            </tbody>
+        </table>
     </section>
-    <section id="projects" class="section">
-        <h2>Projects making use of the template</h2>
-
-        <p>Some projects have adapted this template into a real documentation project. These are a good example
-            of what can be achieved by the Docs Bootstrap Template.</p>
-
-        <ul>
-            <li>The <a href="https://github.com/Bernardo-MG/docs-maven-skin">Docs Maven Skin</a> adapts the
-                template to be used on a <a href="https://maven.apache.org/plugins/maven-site-plugin/">Maven
-                    Site</a>.
-            </li>
-            <li>The <a href="https://github.com/Bernardo-MG/sphinx-docs-theme">Sphinx Docs Theme</a> adapts the
-                template for <a href="http://sphinx-doc.org/">Sphinx</a>.
-            </li>
-        </ul>
+    <section id="release_010" class="section">
+        <h3>Release 0.1.0
+            <small>(
+                <time>2015-04-03</time>
+                )
+            </small>
+        </h3>
+        <table class="table table-striped table-bordered table-with-icon">
+            <thead>
+            <tr>
+                <th>Type</th>
+                <th>Changes</th>
+                <th>By</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span class="fa fa-plus"
+                          aria-hidden="true"></span><span class="sr-only">Addition</span></td>
+                <td>First release of the library.</td>
+                <td><a href="#">bmg</a></td>
+            </tr>
+            </tbody>
+        </table>
     </section>
-    <section id="usage">
-        <h2>Usage</h2>
-
-        <p>Just grab the template from <a
-                href="https://github.com/Bernardo-MG/docs-bootstrap-template">GitHub</a> and adapt the html
-            files for your preferred templating engine.</p>
-
-        <p>All the static files, which are required for the template, are stored in the _static folder.</p>
-
-        <p>If you want to change the Bootstrap configuration, a config.json file is included in the
-            Bootstrap folder. This can be used on the <a href="http://getbootstrap.com/customize/">
-                Bootstrap Customize</a> page to change said configuration.</p>
+    <section id="release_020" class="section">
+        <h3>Release 0.2.0
+            <small>(
+                <time>2015-05-04</time>
+                )
+            </small>
+        </h3>
+        <table class="table table-striped table-bordered table-with-icon">
+            <thead>
+            <tr>
+                <th>Type</th>
+                <th>Changes</th>
+                <th>By</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span class="fa fa-plus"
+                          aria-hidden="true"></span><span class="sr-only">Addition</span></td>
+                <td>This is an addition.</td>
+                <td><a href="#">bmg</a></td>
+            </tr>
+            <tr>
+                <td><span class="fa fa-refresh"
+                          aria-hidden="true"></span><span class="sr-only">Refresh</span></td>
+                <td>This is an update.</td>
+                <td><a href="#">bmg</a></td>
+            </tr>
+            <tr>
+                <td><span class="fa fa-wrench"
+                          aria-hidden="true"></span><span class="sr-only">Fix</span></td>
+                <td>This is a fix.</td>
+                <td><a href="#">bmg</a></td>
+            </tr>
+            </tbody>
+        </table>
     </section>
-    <section id="examples" class="section">
-        <h2>Examples</h2>
-
-        <p>To illustrate the template several pages have been created. These are divided into two groups, first
-            there
-            are some pages showcasing different uses of the template, which serve also smaller subtemplates, and
-            there
-            are also some test pages, for checking that the template works as expected.</p>
-
-        <p>General use cases:</p>
-        <ul>
-            <li><a href="./tests_report.html">Tests report</a></li>
-            <li><a href="./changes.html">Changes log</a></li>
-            <li><a href="./code.html">Code documentation</a></li>
-        </ul>
-
-        <p>Tests to check the UI:</p>
-        <ul>
-            <li><a href="./components_view.html">Bootstrap Components</a></li>
-            <li><a href="min-page.html">A page with minimal content</a></li>
-        </ul>
-
-        <p>In all of these pages you can always go back to the index by clicking the project's name on the
-            navigation
-            bar.</p>
+    <section id="release_021" class="section">
+        <h3>Release 0.2.1
+            <small>(
+                <time>2015-05-07</time>
+                )
+            </small>
+        </h3>
+        <table class="table table-striped table-bordered table-with-icon">
+            <thead>
+            <tr>
+                <th>Type</th>
+                <th>Changes</th>
+                <th>By</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span class="fa fa-wrench"
+                          aria-hidden="true"></span><span class="sr-only">Fix</span></td>
+                <td>A patch.</td>
+                <td><a href="#">bmg</a></td>
+            </tr>
+            <tr>
+                <td><span class="fa fa-wrench"
+                          aria-hidden="true"></span><span class="sr-only">Fix</span></td>
+                <td>Another patch.</td>
+                <td><a href="#">bmg</a></td>
+            </tr>
+            </tbody>
+        </table>
     </section>
     <p class="pull-right internal-link"><a href="#main-section">Back to top</a></p>
 </section>
@@ -242,7 +280,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12"><span class="fa fa-copyright"></span>2015-2016 <a id="author-link"
-                                                                       href="https://github.com/Bernardo-MG">Bernardo
+                                                                                                             href="https://github.com/Bernardo-MG">Bernardo
                     Martínez Garrido</a> - <a id="license-link"
                                               href="http://www.opensource.org/licenses/mit-license.php">MIT
                     License</a></div>
@@ -252,13 +290,13 @@
         </div>
     </div>
 </footer>
-<script src="./_static/lib/jquery/jquery.min.js"></script>
-<script src="./_static/lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="./_static/js/chevron-toggle.js"></script>
-<script src="./_static/js/smooth-scroll.js"></script>
-<script src="./_static/js/heading-numbering.js"></script>
-<script src="./_static/lib/highlight/highlight.pack.js"></script>
-<script src="./_static/js/initialize.js"></script>
+<script src="./static/lib/jquery/jquery.min.js"></script>
+<script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="./static/js/chevron-toggle.js"></script>
+<script src="./static/js/smooth-scroll.js"></script>
+<script src="./static/js/heading-numbering.js"></script>
+<script src="./static/lib/highlight/highlight.pack.js"></script>
+<script src="./static/js/initialize.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

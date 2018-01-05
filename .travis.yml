@@ -34,11 +34,14 @@ script:
   # CSS Validation
   - npm run validate-css
   # Files are loaded into a local server
+  - cd src
   - npm run server
+  - cd ..
   # HTML5 Validation
   - npm run validate-html5
   # Accessibility Validation
   - npm run validate-access
 after_success:
   # Deploys the site as a demo site
+  - cd src
   - ~/.scripts/deploy/deploy-ssh.sh $DO_DEPLOY_DOCS_RELEASE $DEPLOY_DOCS_USERNAME $DEPLOY_DOCS_PASSWORD $DEPLOY_DOCS_HOST $DEPLOY_DOCS_PORT $DEPLOY_DOCS_PATH
