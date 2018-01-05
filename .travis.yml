@@ -24,7 +24,11 @@ install:
   - sudo apt-get install sshpass
 script:
   # Builds site
-  - npm run copy
+  - npm run copy-bootstrap
+  - npm run copy-bootswatch
+  - npm run copy-fontawesome
+  - npm run copy-html5shiv
+  - npm run copy-jquery
   # Javascript validation
   - npm run validate-js
   # CSS Validation

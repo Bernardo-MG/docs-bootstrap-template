@@ -17,16 +17,25 @@
       "url": "https://www.github.com/bernardo-mg/docs-bootstrap-template/issues"
    },
    "scripts": {
+      "copy-bootstrap": "cpx \"node_modules/bootstrap/dist/js/*.js\" _static/lib/bootstrap/js",
+      "copy-bootswatch": "cpx \"node_modules/bootswatch/readable/*.css\" _static/lib/bootstrap/css",
+      "copy-fontawesome": "cpx \"node_modules/font-awesome/css/*.css\" _static/lib/font-awesome/css",
+      "copy-html5shiv": "cpx \"node_modules/html5shiv/dist/*.css\" _static/lib/html5shiv",
+      "copy-jquery": "cpx \"node_modules/jquery/dist/*.js\" _static/lib/jquery",
       "server": "./node_modules/.bin/http-server -p 8080 >/dev/null 2>&1 &",
       "validate-js": "./node_modules/.bin/jshint ./_static/js/* --config .jshintrc",
       "validate-css": "./node_modules/.bin/recess ./_static/css/*",
       "validate-access": "./node_modules/.bin/pa11y-ci",
-      "validate-html5": "./node_modules/.bin/valimate",
-      "copy": "cpx \"node_modules/jquery/dist/*.js\" _static/lib/jquery"
+      "validate-html5": "./node_modules/.bin/valimate"
    },
    "devDependencies": {
+      "bootstrap": "~3.3.7",
+      "bootswatch": "~3.3.7",
       "cpx": "~1.5.0",
+      "font-awesome": "~4.7.0",
+      "html5shiv": "~3.7.3",
       "http-server": "~0.10.0",
+      "jquery": "~3.2.1",
       "jshint": "~2.9.5",
       "pa11y-ci": "~1.2.0",
       "phantomjs-prebuilt": "~2.1.14",
