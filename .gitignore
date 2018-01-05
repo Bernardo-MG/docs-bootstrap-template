@@ -11,7 +11,7 @@
 .settings/
 bin/**
 
-# IntelliJ Idea fileas
+# IntelliJ Idea files
 .idea
 *.iml
 

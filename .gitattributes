@@ -2,10 +2,14 @@
 * text=auto
 
 # Known text files
-*.xml text
-*.yml text
-*.html text
-*.md text
-*.sh text
-*.css text
-*.txt text
+*.css           text diff=css
+*.js            text
+*.json          text
+*.htm           text diff=html
+*.html          text diff=html
+*.properties    text
+*.sh            text
+*.md            text
+*.txt           text
+*.xml           text
+*.yml           text
