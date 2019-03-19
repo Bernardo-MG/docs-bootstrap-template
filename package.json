@@ -22,6 +22,7 @@
       "copy-fontawesome": "cpx \"node_modules/font-awesome/**/*\" src/static/lib/font-awesome",
       "copy-html5shiv": "cpx \"node_modules/html5shiv/dist/*.css\" src/static/lib/html5shiv",
       "copy-jquery": "cpx \"node_modules/jquery/dist/*.js\" src/static/lib/jquery",
+      "copy-all": "run-s copy-bootstrap copy-bootswatch copy-fontawesome copy-html5shiv copy-jquery",
       "server": "./node_modules/.bin/http-server ./src -p 8080 >/dev/null 2>&1 &",
       "validate-js": "./node_modules/.bin/jshint ./src/static/js/* --config .jshintrc",
       "validate-css": "./node_modules/.bin/recess ./src/static/css/*",
@@ -29,17 +30,18 @@
       "validate-html5": "./node_modules/.bin/valimate"
    },
    "devDependencies": {
-      "bootstrap": "~3.3.7",
-      "bootswatch": "~3.3.7",
+      "bootstrap": "~3.4.1",
+      "bootswatch": "~3.4.1",
       "cpx": "~1.5.0",
       "font-awesome": "~4.7.0",
       "html5shiv": "~3.7.3",
-      "http-server": "~0.10.0",
-      "jquery": "~3.2.1",
-      "jshint": "~2.9.5",
+      "http-server": "~0.11.1",
+      "jquery": "~3.3.1",
+      "jshint": "~2.10.2",
       "pa11y-ci": "~1.3.1",
       "phantomjs-prebuilt": "~2.1.16",
       "recess": "~1.1.9",
+      "npm-run-all": "~4.1.5",
       "valimate": "~2.3.0"
    }
 }

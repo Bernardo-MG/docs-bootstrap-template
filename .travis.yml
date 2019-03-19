@@ -10,7 +10,7 @@ env:
 
 before_install:
   # Gets scripts
-  - git clone -b v1.1.3 --single-branch https://github.com/Bernardo-MG/ci-shell-scripts.git ~/.scripts
+  - git clone -b v1.2.2 --single-branch https://github.com/Bernardo-MG/ci-shell-scripts.git ~/.scripts
   # Sets scripts as executable
   - chmod -R +x ~/.scripts/*
   # Prepares CI environment
@@ -24,11 +24,7 @@ install:
   - sudo apt-get install sshpass
 script:
   # Builds site
-  - npm run copy-bootstrap
-  - npm run copy-bootswatch
-  - npm run copy-fontawesome
-  - npm run copy-html5shiv
-  - npm run copy-jquery
+  - npm run copy-all
   # Javascript validation
   - npm run validate-js
   # CSS Validation
