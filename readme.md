@@ -49,11 +49,7 @@ $ npm install
 Afterwards these dependencies should be copied to the resources folders:
 
 ```
-$ npm run copy-bootstrap
-$ npm run copy-bootswatch
-$ npm run copy-fontawesome
-$ npm run copy-html5shiv
-$ npm run copy-jquery
+$ npm run copy-all
 ```
 
 Once this is done, the project is ready, and the index file inside the src folder can be opened.
