@@ -30,8 +30,8 @@
       "validate-html5": "./node_modules/.bin/valimate"
    },
    "devDependencies": {
-      "bootstrap": "~3.4.1",
-      "bootswatch": "~3.4.1",
+      "bootstrap": "~4.3.1",
+      "bootswatch": "~4.3.1",
       "cpx": "~1.5.0",
       "font-awesome": "~4.7.0",
       "html5shiv": "~3.7.3",
