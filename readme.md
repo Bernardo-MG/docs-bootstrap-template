@@ -1,8 +1,8 @@
 # Docs Bootstrap Template
 
-A Bootstrap-based HTML5 template for documentation pages, offering a modern and responsive look which adapts to all screen sizes and is easy to extend.
+A static template making use of Bootstrap and HTML5, meant to be used for creating responsive documentation pages.
 
-It is meant to be used as a basis for building documentation sites, and so should be adapted to a templating engine or documentation framework such as Jinja, Maven Site or Sphinx.
+It is used to create other, dynamic, templates, with the help of tools such as Jinja, Maven Site or Sphinx.
 
 ## Features
 
