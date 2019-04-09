@@ -51,52 +51,56 @@
 </head>
 <body>
 <header class="header">
-    <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top">
-         <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
-         <button type="button" class="navbar-toggler" data-toggle="collapse"
-                 data-target="#navbar-main-body"
-                 aria-expanded="false" aria-controls="navbar-main">
-             <span class="sr-only">Toggle navigation</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-         </button>
+    <nav id="navbar-main" class="navbar navbar-main navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-main-body"
+                        aria-expanded="false" aria-controls="navbar-main">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
+            </div>
 
-         <div id="navbar-main-body" class="collapse navbar-collapse justify-content-md-right">
-             <small class="navbar-text">v1.1.2 (<time>2019-03-19</time>)</small>
-             <ul class="navbar-nav mr-auto">
-                 <li class="nav-item">
-                     <ul class="list-unstyled icons-list">
-                         <li><a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span
-                                 class="navbar-icon fa fa-github"
-                                 aria-hidden="true"></span><span class="hidden-md hidden-lg"> Github</span></a></li>
-                     </ul>
-                 </li>
-                 <li class="nav-item dropdown">
-                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                        aria-expanded="false">Use Cases
-                         <span class="chevron_toggleable fa fa-chevron-up"
-                               aria-hidden="true"></span>
-                     </a>
-                     <ul class="dropdown-menu" role="menu">
-                         <li><a href="./tests_report.html">Tests report</a></li>
-                         <li><a href="./changes.html">Changes log</a></li>
-                         <li><a href="./code.html">Code documentation</a></li>
-                     </ul>
-                 </li>
-                 <li class="nav-item dropdown">
-                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                        aria-expanded="false">UI Examples
-                         <span class="chevron_toggleable fa fa-chevron-up"
-                               aria-hidden="true"></span>
-                     </a>
-                     <ul class="dropdown-menu" role="menu">
-                         <li><a href="./components_view.html">Bootstrap Components</a></li>
-                         <li><a href="min-page.html">A page with minimal content</a></li>
-                     </ul>
-                 </li>
-             </ul>
-         </div>
+            <div id="navbar-main-body" class="navbar-body navbar-collapse collapse">
+                <small class="navbar-text">v1.1.2 (<time>2019-03-19</time>)</small>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <ul class="list-unstyled icons-list">
+                            <li><a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span
+                                    class="navbar-icon fa fa-github"
+                                    aria-hidden="true"></span><span class="hidden-md hidden-lg"> Github</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Use Cases
+                            <span class="chevron_toggleable fa fa-chevron-up"
+                                  aria-hidden="true"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./tests_report.html">Tests report</a></li>
+                            <li><a href="./changes.html">Changes log</a></li>
+                            <li><a href="./code.html">Code documentation</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">UI Examples
+                            <span class="chevron_toggleable fa fa-chevron-up"
+                                  aria-hidden="true"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="./components_view.html">Bootstrap Components</a></li>
+                            <li><a href="min-page.html">A page with minimal content</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 <section id="main-section" class="container">
