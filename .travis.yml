@@ -19,7 +19,7 @@ install:
   # npm dependencies
   - npm install -g node-bin-setup
   - npm install -g node
-  - npm install
+  - npm ci
   # sshpass for deployment
   - sudo apt-get install sshpass
 script:
