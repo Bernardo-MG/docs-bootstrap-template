@@ -3,8 +3,8 @@
 
 # Using Python for the project
 language: node_js
-python:
- - "7"
+node_js:
+  - node
 env:
   - DEPLOY_DOCS=true
 
