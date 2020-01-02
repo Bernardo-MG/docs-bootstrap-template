@@ -30,8 +30,8 @@
       "validate-html5": "valimate"
    },
    "devDependencies": {
-      "bootstrap": "~4.3.1",
-      "bootswatch": "~4.3.1",
+      "bootstrap": "~4.4.1",
+      "bootswatch": "~4.4.1",
       "cpx": "~1.5.0",
       "csslint": "~1.0.5",
       "font-awesome": "~4.7.0",
