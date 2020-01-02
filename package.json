@@ -2,7 +2,7 @@
    "name": "docs-bootstrap-template",
    "version": "1.1.1",
    "description": "Bootstrap-based HTML template for documentation sites.",
-   "author": "Bernardo Martínez Garrido",
+   "author": "Bernardo MartÃ­nez Garrido",
    "homepage": "https://github.com/Bernardo-MG/docs-bootstrap-template",
    "license": "MIT",
    "keywords": [
@@ -25,7 +25,7 @@
       "copy-all": "run-s copy-bootstrap copy-bootswatch copy-fontawesome copy-html5shiv copy-jquery",
       "server": "http-server ./src -p 8080 >/dev/null 2>&1 &",
       "validate-js": "jshint ./src/static/js/* --config .jshintrc",
-      "validate-css": "recess ./src/static/css/*",
+      "validate-css": "csslint ./src/static/css/",
       "validate-access": "pa11y-ci",
       "validate-html5": "valimate"
    },
@@ -33,14 +33,14 @@
       "bootstrap": "~4.3.1",
       "bootswatch": "~4.3.1",
       "cpx": "~1.5.0",
+      "csslint": "~1.0.5",
       "font-awesome": "~4.7.0",
       "html5shiv": "~3.7.3",
       "http-server": "~0.11.1",
-      "jquery": "~3.3.1",
+      "jquery": "~3.4.1",
       "jshint": "~2.10.2",
       "pa11y-ci": "~1.3.1",
       "phantomjs-prebuilt": "~2.1.16",
-      "recess": "~1.1.9",
       "npm-run-all": "~4.1.5",
       "valimate": "~2.3.0"
    }

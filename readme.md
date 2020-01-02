@@ -54,6 +54,10 @@ $ npm run copy-all
 
 Once this is done, the project is ready, and the index file inside the src folder can be opened.
 
+### Remote Deployment
+
+Any change to the master branch triggers an automatic deployment to the remote server. The CI procedures take care of this.
+
 ## Collaborate
 
 Any kind of help with the project will be well received, and there are two main ways to give such help:
