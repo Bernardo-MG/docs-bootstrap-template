@@ -10,7 +10,7 @@ It is used to create other, dynamic, templates, with the help of tools such as J
 - Response design prepared for mobiles
 - [HTML5][html5] semantic markup.
 - Semantic tags for [Facebook OpenGraph][opengraph] and [Twitter Cards][twitter-cards].
-- [Bootstrap 3][bootstrap], [Font Awesome][fontawesome] and [highlight.js][highlightjs].
+- [Bootstrap 4][bootstrap], [Font Awesome][fontawesome] and [highlight.js][highlightjs].
 - Validated HTML 5, accessibility, CSS and JS.
 
 ## Check it
