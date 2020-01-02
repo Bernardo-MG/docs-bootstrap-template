@@ -2,7 +2,7 @@
    "name": "docs-bootstrap-template",
    "version": "1.1.1",
    "description": "Bootstrap-based HTML template for documentation sites.",
-   "author": "Bernardo Martínez Garrido",
+   "author": "Bernardo MartÃ­nez Garrido",
    "homepage": "https://github.com/Bernardo-MG/docs-bootstrap-template",
    "license": "MIT",
    "keywords": [
@@ -18,7 +18,7 @@
    },
    "scripts": {
       "copy-bootstrap": "cpx \"node_modules/bootstrap/dist/js/*.js\" src/static/lib/bootstrap/js",
-      "copy-bootswatch": "cpx \"node_modules/bootswatch/readable/*.css\" src/static/lib/bootswatch/readable",
+      "copy-bootswatch": "cpx \"node_modules/bootswatch/dist/litera/*.css\" src/static/lib/bootswatch/litera",
       "copy-fontawesome": "cpx \"node_modules/font-awesome/**/*\" src/static/lib/font-awesome",
       "copy-html5shiv": "cpx \"node_modules/html5shiv/dist/*.css\" src/static/lib/html5shiv",
       "copy-jquery": "cpx \"node_modules/jquery/dist/*.js\" src/static/lib/jquery",
@@ -30,8 +30,8 @@
       "validate-html5": "valimate"
    },
    "devDependencies": {
-      "bootstrap": "~3.4.1",
-      "bootswatch": "~3.4.1",
+      "bootstrap": "~4.3.1",
+      "bootswatch": "~4.3.1",
       "cpx": "~1.5.0",
       "csslint": "~1.0.5",
       "font-awesome": "~4.7.0",
