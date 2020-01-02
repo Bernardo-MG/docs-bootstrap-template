@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- IE Compatibility tag -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Index - Docs Bootstrap Template</title>
-    <link href="./static/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="./static/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <!-- Metadata -->
-    <meta name="description"
-          content="Docs Bootstrap Template Demo">
+    <meta name="description" content="Docs Bootstrap Template Demo">
     <meta name="keywords" content="Bootstrap, template, documentation">
     <meta name="author" content="Bernardo Martínez Garrido">
 
@@ -21,20 +21,18 @@
     <link rel="canonical" href="http://docs.bernardomg.com/docs-bootstrap-template/">
 
     <!-- Facebook OpenGraph -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="./static/favicon.ico"/>
-    <meta property="og:url" content="http://docs.bernardomg.com/docs-bootstrap-template/"/>
-    <meta property="og:site_name" content="Docs Bootstrap Template"/>
-    <meta property="og:title" content="Index - Docs Bootstrap Template"/>
-    <meta property="og:description"
-          content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./static/favicon.ico" />
+    <meta property="og:url" content="http://docs.bernardomg.com/docs-bootstrap-template/" />
+    <meta property="og:site_name" content="Docs Bootstrap Template" />
+    <meta property="og:title" content="Index - Docs Bootstrap Template" />
+    <meta property="og:description" content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:creator" content="@BernardoMartG"/>
-    <meta name="twitter:title" content="Docs Bootstrap Template Demo"/>
-    <meta name="twitter:description"
-          content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@BernardoMartG" />
+    <meta name="twitter:title" content="Docs Bootstrap Template Demo" />
+    <meta name="twitter:description" content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./static/lib/bootswatch/litera/bootstrap.min.css">
@@ -49,212 +47,189 @@
     <![endif]-->
 
 </head>
-<body>
-<header class="header">
-    <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#navbar-main-body"
-                        aria-expanded="false" aria-controls="navbar-main">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
-            </div>
 
-            <div id="navbar-main-body" class="navbar-body navbar-collapse collapse">
+<body>
+    <header class="header">
+        <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-body" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-main-menu">
                 <small class="navbar-text">v1.1.3 (<time>2019-07-07</time>)</small>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="navbar-nav mr-auto">
                     <li>
                         <ul class="list-unstyled icons-list">
-                            <li><a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span
-                                    class="navbar-icon fa fa-github"
-                                    aria-hidden="true"></span><span class="hidden-md hidden-lg"> Github</span></a></li>
+                            <li><a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span class="navbar-icon fa fa-github" aria-hidden="true"></span><span class="hidden-md hidden-lg"> Github</span></a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Use Cases
-                            <span class="chevron_toggleable fa fa-chevron-up"
-                                  aria-hidden="true"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="./tests_report.html">Tests report</a></li>
-                            <li><a href="./changes.html">Changes log</a></li>
-                            <li><a href="./code.html">Code documentation</a></li>
-                            <li><a href="./content.html">Page filled with content</a></li>
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://example.com" id="useCaseDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Use Cases</a>
+                        <div class="dropdown-menu" aria-labelledby="useCaseDropdown">
+                            <a class="dropdown-item" href="./tests_report.html">Tests report</a>
+                            <a class="dropdown-item" href="./changes.html">Changes log</a>
+                            <a class="dropdown-item" href="./code.html">Code documentation</a>
+                            <a class="dropdown-item" href="./content.html">Page filled with content</a>
+                        </div>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">UI Examples
-                            <span class="chevron_toggleable fa fa-chevron-up"
-                                  aria-hidden="true"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="./components_view.html">Bootstrap Components</a></li>
-                            <li><a href="min-page.html">A page with minimal content</a></li>
-                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://example.com" id="examplesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UI Examples</a>
+                        <div class="dropdown-menu" aria-labelledby="examplesDropdown">
+                            <a class="dropdown-item" href="./components_view.html">Bootstrap Components</a>
+                            <a class="dropdown-item" href="min-page.html">A page with minimal content</a>
+                        </div>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-</header>
-<section id="main-section" class="container">
-    <header class="page-header">
-        <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
+        </nav>
     </header>
-    <p>Making use of the latest features of Bootstrap and HTML5, this template aims to give a modern and responsive web
-        design to
-        documentation sites, allowing them to be read from any kind of device.</p>
+    <section id="main-section" class="container">
+        <header class="page-header">
+            <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
+        </header>
+        <p>Making use of the latest features of Bootstrap and HTML5, this template aims to give a modern and responsive web
+            design to
+            documentation sites, allowing them to be read from any kind of device.</p>
 
-    <p>Any kind of project can take advantage of this template, as it is meant to be generic and reusable. Just adapt it
-        for wathever
-        documentation or templating framework you are using, and modify it for your needs, may it be Jinja, Maven Site,
-        Sphinx or anything else.</p>
+        <p>Any kind of project can take advantage of this template, as it is meant to be generic and reusable. Just adapt it
+            for wathever
+            documentation or templating framework you are using, and modify it for your needs, may it be Jinja, Maven Site,
+            Sphinx or anything else.</p>
 
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Simple style, avoiding unneeded complexities.</li>
-            <li>HTML5 semantic markup.</li>
-            <li>Semantic tags for <a href="http://ogp.me/">Facebook OpenGraph</a> and
-                <a href="https://dev.twitter.com/cards/overview">Twitter Cards</a>.
-            </li>
-            <li><a href="http://getbootstrap.com/">Bootstrap 3</a> used for a responsive design which adapts to
-                the device being used.
-            </li>
-            <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> for the icons.</li>
-            <li><a href="https://highlightjs.org/">highlight.js</a> for code highlighting.</li>
-            <li>Validated for HTML 5, following the <a href="https://validator.w3.org/">W3C guidelines</a>.</li>
-            <li>Validated for accessibility, following the <a href="http://achecker.ca/checker/index.php">WCAG
-                2.0</a> (Level AA) guidelines, and also checked with <a
-                    href="http://wave.webaim.org/">Wave</a>.
-            </li>
-            <li>Validated CSS, following the <a href="https://validator.w3.org/">W3C</a> and <a
-                    href="http://twitter.github.io/recess/">Twitter recess</a> guidelines.
-            </li>
-            <li>Validated JS.</li>
-            <li>Additionally it is being continuously validated with other tools through <a
-                    href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template/">Travis
-                CI</a>.
-            </li>
-        </ul>
+        <section id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Simple style, avoiding unneeded complexities.</li>
+                <li>HTML5 semantic markup.</li>
+                <li>Semantic tags for <a href="http://ogp.me/">Facebook OpenGraph</a> and
+                    <a href="https://dev.twitter.com/cards/overview">Twitter Cards</a>.
+                </li>
+                <li><a href="http://getbootstrap.com/">Bootstrap 3</a> used for a responsive design which adapts to
+                    the device being used.
+                </li>
+                <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> for the icons.</li>
+                <li><a href="https://highlightjs.org/">highlight.js</a> for code highlighting.</li>
+                <li>Validated for HTML 5, following the <a href="https://validator.w3.org/">W3C guidelines</a>.</li>
+                <li>Validated for accessibility, following the <a href="http://achecker.ca/checker/index.php">WCAG
+            2.0</a> (Level AA) guidelines, and also checked with <a href="http://wave.webaim.org/">Wave</a>.
+                </li>
+                <li>Validated CSS, following the <a href="https://validator.w3.org/">W3C</a> and <a href="http://twitter.github.io/recess/">Twitter recess</a> guidelines.
+                </li>
+                <li>Validated JS.</li>
+                <li>Additionally it is being continuously validated with other tools through <a href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template/">Travis
+            CI</a>.
+                </li>
+            </ul>
+        </section>
+        <section id="projects" class="section">
+            <h2>Projects making use of the template</h2>
+
+            <p>Some projects have adapted this template into a real documentation project. These are a good example
+                of what can be achieved by the Docs Bootstrap Template.</p>
+
+            <ul>
+                <li>The <a href="https://github.com/Bernardo-MG/docs-maven-skin">Docs Maven Skin</a> adapts the
+                    template to be used on a <a href="https://maven.apache.org/plugins/maven-site-plugin/">Maven
+            Site</a>.
+                </li>
+                <li>The <a href="https://github.com/Bernardo-MG/sphinx-docs-theme">Sphinx Docs Theme</a> adapts the
+                    template for <a href="http://sphinx-doc.org/">Sphinx</a>.
+                </li>
+            </ul>
+        </section>
+        <section id="usage">
+            <h2>Usage</h2>
+
+            <p>Just grab the template from <a href="https://github.com/Bernardo-MG/docs-bootstrap-template">GitHub</a> and adapt the html
+                files for your preferred templating engine.</p>
+
+            <p>All the static files, which are required for the template, are stored in the static folder.</p>
+
+            <p>If you want to change the Bootstrap configuration, a config.json file is included in the
+                Bootstrap folder. This can be used on the <a href="http://getbootstrap.com/customize/">
+          Bootstrap Customize</a> page to change said configuration.</p>
+        </section>
+        <section id="examples" class="section">
+            <h2>Examples</h2>
+
+            <p>To illustrate the template several pages have been created. These are divided into two groups, first
+                there
+                are some pages showcasing different uses of the template, which serve also smaller subtemplates, and
+                there
+                are also some test pages, for checking that the template works as expected.</p>
+
+            <p>General use cases:</p>
+            <ul>
+                <li><a href="./tests_report.html">Tests report</a></li>
+                <li><a href="./changes.html">Changes log</a></li>
+                <li><a href="./code.html">Code documentation</a></li>
+            </ul>
+
+            <p>Tests to check the UI:</p>
+            <ul>
+                <li><a href="./components_view.html">Bootstrap Components</a></li>
+                <li><a href="min-page.html">A page with minimal content</a></li>
+            </ul>
+
+            <p>In all of these pages you can always go back to the index by clicking the project's name on the
+                navigation
+                bar.</p>
+        </section>
+        <p class="pull-right internal-link"><a href="#main-section">Back to top</a></p>
     </section>
-    <section id="projects" class="section">
-        <h2>Projects making use of the template</h2>
-
-        <p>Some projects have adapted this template into a real documentation project. These are a good example
-            of what can be achieved by the Docs Bootstrap Template.</p>
-
-        <ul>
-            <li>The <a href="https://github.com/Bernardo-MG/docs-maven-skin">Docs Maven Skin</a> adapts the
-                template to be used on a <a href="https://maven.apache.org/plugins/maven-site-plugin/">Maven
-                    Site</a>.
-            </li>
-            <li>The <a href="https://github.com/Bernardo-MG/sphinx-docs-theme">Sphinx Docs Theme</a> adapts the
-                template for <a href="http://sphinx-doc.org/">Sphinx</a>.
-            </li>
-        </ul>
-    </section>
-    <section id="usage">
-        <h2>Usage</h2>
-
-        <p>Just grab the template from <a
-                href="https://github.com/Bernardo-MG/docs-bootstrap-template">GitHub</a> and adapt the html
-            files for your preferred templating engine.</p>
-
-        <p>All the static files, which are required for the template, are stored in the static folder.</p>
-
-        <p>If you want to change the Bootstrap configuration, a config.json file is included in the
-            Bootstrap folder. This can be used on the <a href="http://getbootstrap.com/customize/">
-                Bootstrap Customize</a> page to change said configuration.</p>
-    </section>
-    <section id="examples" class="section">
-        <h2>Examples</h2>
-
-        <p>To illustrate the template several pages have been created. These are divided into two groups, first
-            there
-            are some pages showcasing different uses of the template, which serve also smaller subtemplates, and
-            there
-            are also some test pages, for checking that the template works as expected.</p>
-
-        <p>General use cases:</p>
-        <ul>
-            <li><a href="./tests_report.html">Tests report</a></li>
-            <li><a href="./changes.html">Changes log</a></li>
-            <li><a href="./code.html">Code documentation</a></li>
-        </ul>
-
-        <p>Tests to check the UI:</p>
-        <ul>
-            <li><a href="./components_view.html">Bootstrap Components</a></li>
-            <li><a href="min-page.html">A page with minimal content</a></li>
-        </ul>
-
-        <p>In all of these pages you can always go back to the index by clicking the project's name on the
-            navigation
-            bar.</p>
-    </section>
-    <p class="pull-right internal-link"><a href="#main-section">Back to top</a></p>
-</section>
-<footer class="footer">
-    <div class="footer-content">
-        <div class="container-fluid">
-            <div id="navbar-footer" class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <dl class="dl-nav">
-                        <dt>General Info</dt>
-                        <dd><a href="#">Acquire</a></dd>
-                        <dd><a href="#">Getting Started</a></dd>
-                        <dd><a href="#">Changes Log</a></dd>
-                    </dl>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="container-fluid">
+                <div id="navbar-footer" class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <dl class="dl-nav">
+                            <dt>General Info</dt>
+                            <dd><a href="#">Acquire</a></dd>
+                            <dd><a href="#">Getting Started</a></dd>
+                            <dd><a href="#">Changes Log</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <dl class="dl-nav">
+                            <dt>Code</dt>
+                            <dd><a id="scm-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template" class="link-noted">SCM <span class="note">GitHub</span></a>
+                            </dd>
+                            <dd><a id="ci-link" href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template" class="link-noted">CI <span class="note">Travis</span></a>
+                            </dd>
+                            <dd><a id="issues-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template/issues" class="link-noted">Issues <span class="note">GitHub</span></a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <dl class="dl-nav">
+                            <dt>Releases</dt>
+                            <dd><a href="#">Bintray</a></dd>
+                            <dd><a href="#">Maven Central</a></dd>
+                        </dl>
+                    </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <dl class="dl-nav">
-                        <dt>Code</dt>
-                        <dd><a id="scm-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template" class="link-noted">SCM <span
-                                class="note">GitHub</span></a>
-                        </dd>
-                        <dd><a id="ci-link" href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template" class="link-noted">CI <span class="note">Travis</span></a>
-                        </dd>
-                        <dd><a id="issues-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template/issues" class="link-noted">Issues <span
-                                class="note">GitHub</span></a>
-                        </dd>
-                    </dl>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12"><span class="fa fa-copyright"></span>2015-2019 <a id="author-link" href="https://github.com/Bernardo-MG">Bernardo
+              Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
+              License</a></div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a href="http://getbootstrap.com/">Bootstrap</a></div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <dl class="dl-nav">
-                        <dt>Releases</dt>
-                        <dd><a href="#">Bintray</a></dd>
-                        <dd><a href="#">Maven Central</a></dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12"><span class="fa fa-copyright"></span>2015-2019 <a id="author-link"
-                                                                       href="https://github.com/Bernardo-MG">Bernardo
-                    Martínez Garrido</a> - <a id="license-link"
-                                              href="http://www.opensource.org/licenses/mit-license.php">MIT
-                    License</a></div>
-                <div class="col-md-12 col-sm-12 col-xs-12">Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a
-                        href="http://getbootstrap.com/">Bootstrap</a></div>
             </div>
         </div>
-    </div>
-</footer>
-<script src="./static/lib/jquery/jquery.min.js"></script>
-<script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="./static/js/chevron-toggle.js"></script>
-<script src="./static/js/smooth-scroll.js"></script>
-<script src="./static/js/heading-numbering.js"></script>
-<script src="./static/lib/highlight/highlight.pack.js"></script>
-<script src="./static/js/initialize.js"></script>
-<script src="./static/js/initializeHighlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+    </footer>
+    <script src="./static/lib/jquery/jquery.min.js"></script>
+    <script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./static/js/chevron-toggle.js"></script>
+    <script src="./static/js/smooth-scroll.js"></script>
+    <script src="./static/js/heading-numbering.js"></script>
+    <script src="./static/lib/highlight/highlight.pack.js"></script>
+    <script src="./static/js/initialize.js"></script>
+    <script src="./static/js/initializeHighlight.js"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+
+    </script>
 </body>
+
 </html>
