@@ -17,8 +17,6 @@ before_install:
   - source ~/.scripts/travis/load-travis-environment.sh
 install:
   # npm dependencies
-  - npm install -g node-bin-setup
-  - npm install -g node
   - npm ci
   # sshpass for deployment
   - sudo apt-get install sshpass
