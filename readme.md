@@ -52,7 +52,11 @@ Afterwards these dependencies should be copied to the resources folders:
 $ npm run copy-all
 ```
 
-Once this is done, the project is ready, and the index file inside the src folder can be opened.
+Once this is done, the index file is ready to open at:
+
+```
+/src/index.html
+```
 
 ### Remote Deployment
 
