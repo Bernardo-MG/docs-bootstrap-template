@@ -31,12 +31,3 @@ article[id]:before {
 body {
     padding-top: 3em;
 }
-
-/**
-* General navigation bar configuration.
-*/
-
-/* To remove the unneeded navbar margin */
-.navbar-fixed-top {
-    margin-bottom: 0;
-}
