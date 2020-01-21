@@ -33,17 +33,6 @@ body {
 }
 
 /**
-* Colors changed to improve contrast against the background.
-*/
-
-header nav a,
-.navbar-brand,
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav>li>a{
-    color: #1552bc;
-}
-
-/**
 * General navigation bar configuration.
 */
 
