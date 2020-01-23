@@ -18,7 +18,6 @@ body {
     bottom: 0;
     height: 9em;
     position: absolute;
-    width: 100%;
 }
 /**
 * Adapting styles to various screen sizes.
