@@ -6,7 +6,7 @@
  *
  * This makes internal links to the same page scroll smoothly to the elements they are anchored to.
  *
- * To initialize the chevron toggle use the initSmoothScroll() function.
+ * To initialize use the initSmoothScroll() function.
  */
 
 /**
