@@ -1,5 +1,5 @@
 { 
-   "defaults":{ 
+   "default":{ 
       "timeout":50000,
       "page":{ 
          "viewport":{ 
