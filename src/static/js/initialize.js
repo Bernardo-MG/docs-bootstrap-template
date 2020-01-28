@@ -17,7 +17,4 @@ $(document).ready(function () {
     // Numbers headings
     numberHeadings();
 
-    // Sets up smooth scroll
-    initSmoothScroll();
-
 });
