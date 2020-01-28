@@ -11,9 +11,6 @@
 
 img {
     margin-bottom: 1em;
-    -moz-box-shadow: 0 0 5px #cccccc;
-    -webkit-box-shadow: 0 0 5px #cccccc;
-    box-shadow: 0 0 5px #cccccc;
 }
 
 /**
@@ -26,17 +23,10 @@ figure {
     margin-bottom: 1em;
     padding: 0.5em;
     text-align: center;
-    -moz-box-shadow: 0 0 5px #cccccc;
-    -webkit-box-shadow: 0 0 5px #cccccc;
-    box-shadow: 0 0 5px #cccccc;
 }
 
 figure img {
-    border: 1px solid;
     display: table-row;
-    -webkit-box-shadow: 0 0 0 0;
-    -moz-box-shadow: 0 0 0 0;
-    box-shadow: 0 0 0 0;
 }
 
 figure figcaption {
