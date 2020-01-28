@@ -5,9 +5,8 @@
  * General-use styles, meant to be applied to all the pages on the site.
  */
 
-html {
-    min-height: 100%;
-    position: relative;
+body {
+  min-height: 100vh; 
 }
 
 /**
