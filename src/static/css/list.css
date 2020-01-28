@@ -5,10 +5,6 @@
  * List styles.
  */
 
-dt:after {
-    content: ":";
-}
-
 /**
 * Navigation definition list.
 *
@@ -22,12 +18,7 @@ dt:after {
 }
 
 .dl-nav dt {
-    border-bottom: 1px solid #e6e6e6;
     font-size: 19px;
-}
-
-.dl-nav dt:after {
-    content: "";
 }
 
 .icons-list > li {
