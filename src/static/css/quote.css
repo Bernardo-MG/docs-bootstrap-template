@@ -12,9 +12,6 @@
 pre {
     overflow-x: auto;
     padding: 0;
-    -moz-box-shadow: 0 0 5px #cccccc;
-    -webkit-box-shadow: 0 0 5px #cccccc;
-    box-shadow: 0 0 5px #cccccc;
 }
 
 /**
