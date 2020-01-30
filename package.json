@@ -39,7 +39,7 @@
       "html-validator-cli": "~7.0.0",
       "http-server": "~0.11.1",
       "jquery": "~3.4.1",
-      "jshint": "~2.10.2",
+      "jshint": "~2.11.0",
       "pa11y-ci": "~2.3.0",
       "phantomjs-prebuilt": "~2.1.16"
    }
