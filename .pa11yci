@@ -30,10 +30,9 @@
             "WCAG2AA.Principle1.Guideline1_4.1_4_3.G145.Fail",
             "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G17.Fail",
             "WCAG2AAA.Principle1.Guideline1_4.1_4_6.G18.Fail"
-         ],
-
+         ]
       },
-	  "http://localhost:8080/changes.html",
+      "http://localhost:8080/changes.html",
       "http://localhost:8080/tests_report.html"
    ]
 }
