@@ -23,8 +23,6 @@ install:
 script:
   # Builds site
   - npm run copy-all
-  # Javascript validation
-  - npm run validate-js
   # CSS Validation
   - npm run validate-css
   # Files are loaded into a local server

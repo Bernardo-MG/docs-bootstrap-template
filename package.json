@@ -24,7 +24,6 @@
       "copy-jquery": "cpx \"node_modules/jquery/dist/*.js\" src/static/lib/jquery",
       "copy-all": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-fontawesome && npm run copy-html5shiv && npm run copy-jquery",
       "server": "http-server ./src -p 8080 >/dev/null 2>&1 &",
-      "validate-js": "jshint ./src/static/js/* --config .jshintrc",
       "validate-css": "csslint ./src/static/css/",
       "validate-access": "pa11y-ci",
       "validate-html5": "html-validator http://localhost:8080/tests_report.html --islocal"
@@ -39,7 +38,6 @@
       "html-validator-cli": "~7.0.0",
       "http-server": "~0.12.1",
       "jquery": "~3.4.1",
-      "jshint": "~2.11.0",
       "pa11y-ci": "~2.3.0",
       "phantomjs-prebuilt": "~2.1.16"
    }
