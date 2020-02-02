@@ -11,10 +11,6 @@
 * These are used on the footer, grouping several links on a common theme.
 */
 
-.dl-nav {
-    width: 12em;
-}
-
 .dl-nav dt {
     font-size: 19px;
 }
