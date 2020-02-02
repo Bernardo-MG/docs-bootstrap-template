@@ -5,12 +5,6 @@
  * Table styles.
  */
 
-table {
-    -webkit-box-shadow: 0 0 5px #cccccc;
-    -moz-box-shadow: 0 0 5px #cccccc;
-    box-shadow: 0 0 5px #cccccc;
-}
-
 table > thead > tr > th,
 table > tbody > tr > th,
 table > tfoot > tr > th {
