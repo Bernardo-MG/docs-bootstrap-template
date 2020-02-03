@@ -1,228 +1,178 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- IE Compatibility tag -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- IE Compatibility tag -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Page with Content - Docs Bootstrap Template</title>
-    <link href="./static/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+      <title>Index - Docs Bootstrap Template</title>
+      <link href="./static/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <!-- Metadata -->
-    <meta name="description"
-          content="Docs Bootstrap Template Demo">
-    <meta name="keywords" content="Bootstrap, template, documentation">
-    <meta name="author" content="Bernardo Martínez Garrido">
+      <!-- Metadata -->
+      <meta name="description" content="Docs Bootstrap Template Demo">
+      <meta name="keywords" content="Bootstrap, template, documentation">
+      <meta name="author" content="Bernardo Martínez Garrido">
 
-    <!-- Linking Metadata -->
-    <link rel="canonical" href="http://docs.bernardomg.com/docs-bootstrap-template/">
+      <!-- Linking Metadata -->
+      <link rel="canonical" href="http://docs.bernardomg.com/docs-bootstrap-template/">
 
-    <!-- Facebook OpenGraph -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="./static/favicon.png"/>
-    <meta property="og:url" content="http://docs.bernardomg.com/docs-bootstrap-template/"/>
-    <meta property="og:site_name" content="Docs Bootstrap Template"/>
-    <meta property="og:title" content="Page with Content - Docs Bootstrap Template"/>
-    <meta property="og:description"
-          content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
+      <!-- Facebook OpenGraph -->
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="./static/favicon.ico" />
+      <meta property="og:url" content="http://docs.bernardomg.com/docs-bootstrap-template/" />
+      <meta property="og:site_name" content="Docs Bootstrap Template" />
+      <meta property="og:title" content="Index - Docs Bootstrap Template" />
+      <meta property="og:description" content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites" />
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:creator" content="@BernardoMartG"/>
-    <meta name="twitter:title" content="Docs Bootstrap Template Demo"/>
-    <meta name="twitter:description"
-          content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites"/>
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content="@BernardoMartG" />
+      <meta name="twitter:title" content="Docs Bootstrap Template Demo" />
+      <meta name="twitter:description" content="Check the demo for the Docs Bootstrap Template, a modern template for documentation sites" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./static/lib/bootswatch/readable/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./static/lib/highlight/styles/default.css">
-    <!-- Docs Template style -->
-    <link rel="stylesheet" href="static/css/style.css">
+      <!-- CSS -->
+      <link rel="stylesheet" href="./static/lib/bootswatch/litera/bootstrap.min.css">
+      <link rel="stylesheet" href="./static/lib/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./static/lib/highlight/styles/default.css">
+      <!-- Docs Template style -->
+      <link rel="stylesheet" href="static/css/style.css">
 
-    <!-- HTML5 Shiv. For IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 Shiv. For IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
     <script src="./static/lib/html5shiv/html5shiv.min.js"></script>
     <![endif]-->
 
-</head>
-<body>
-<header class="header">
-    <nav id="navbar-main" class="navbar navbar-main navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#navbar-main-body"
-                        aria-expanded="false" aria-controls="navbar-main">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
+   </head>
+
+   <body class="d-flex flex-column">
+      <header>
+         <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-body" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-main-menu">
+               <small class="navbar-text">v2.0.0 (<time>2020-01-30</time>)</small>
+               <div class="ml-auto d-flex align-items-center">
+                  <a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span class="navbar-icon fa fa-github pl-1" aria-hidden="true"></span><span class="d-none d-sm-block d-md-none">
+                        Github</span></a>
+                  <ul class="navbar-nav">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="examplesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UI Examples</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="examplesDropdown">
+                           <a class="dropdown-item" href="./tests_report.html">Tests report</a>
+                           <a class="dropdown-item" href="./changes.html">Changes log</a>
+                           <a class="dropdown-item" href="./code.html">Code documentation</a>
+                           <a class="dropdown-item" href="./content.html">Page filled with content</a>
+                           <a class="dropdown-item" href="./min-page.html">A page with minimal content</a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
             </div>
-
-            <div id="navbar-main-body" class="navbar-body navbar-collapse collapse">
-                <small class="navbar-text">v1.1.3 (<time>2019-07-07</time>)</small>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <ul class="list-unstyled icons-list">
-                            <li><a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span
-                                    class="navbar-icon fa fa-github"
-                                    aria-hidden="true"></span><span class="hidden-md hidden-lg"> Github</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">Use Cases
-                            <span class="chevron_toggleable fa fa-chevron-up"
-                                  aria-hidden="true"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="./tests_report.html">Tests report</a></li>
-                            <li><a href="./changes.html">Changes log</a></li>
-                            <li><a href="./code.html">Code documentation</a></li>
-                            <li><a href="./content.html">Page filled with content</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">UI Examples
-                            <span class="chevron_toggleable fa fa-chevron-up"
-                                  aria-hidden="true"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="./components_view.html">Bootstrap Components</a></li>
-                            <li><a href="min-page.html">A page with minimal content</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<section id="main-section" class="container">
-    <header class="page-header">
-        <h1>Page with Content</h1>
-
-        <p>This example shows content to see how it is displayed.</p>
-    </header>
-    <h2>A Page with Content</h2>
-
-    <p>Just to have something to fill the screen, and check how the template displays content.</p>
-
-    <h3>A Big Image</h3>
-
-    <p>This is just a big image taken from <a href="https://commons.wikimedia.org/wiki/File:Fronalpstock_big.jpg">Wikimedia</a> to fill the page.</p>
-   
-    <p>Actually it is meant to be bigger than the page, and show how the set up a responsive image.</p>
-    
-    <div class="row">
-        <div>
-             <a href="./static/img/Fronalpstock_big.jpg"><img class="img-responsive" src="static/img/Fronalpstock_big.jpg" alt="Fronalpstock"/></a>
-        </div>
-    </div>
-    
-    <p>Here that same image is wrapped in a figure:</p>
-
-    <div class="row">
-        <div>
-            <figure>
-                <a href="./static/img/Fronalpstock_big.jpg"><img class="img-responsive" src="static/img/Fronalpstock_big.jpg" alt="Fronalpstock"/></a>
-                <figcaption>A big image</figcaption>
-            </figure>
-        </div>
-    </div>
-
-    <p>And now a smaller image:</p>
-
-    <div class="row">
-        <div>
-             <img class="img-responsive" src="static/img/example_class_diagram.png" alt="Example diagram"/>
-        </div>
-    </div>
-
-    <p>Again, that same image wrapped in a figure:</p>
-
-    <div class="row">
-        <div>
-            <figure>
-                <img class="img-responsive" src="static/img/example_class_diagram.png" alt="Example diagram"/>
-                <figcaption>Example diagram</figcaption>
-            </figure>
-        </div>
-    </div>
-
-    <h3>Lots of Text</h3>
-	
-	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, velit ac iaculis vehicula, sem arcu eleifend leo, nec imperdiet purus erat non arcu. Pellentesque magna felis, facilisis luctus tristique a, sagittis eu dui. Donec imperdiet nibh orci, sollicitudin tristique libero vulputate at. Phasellus blandit massa ac urna consequat, vel tincidunt risus porta. Nunc nisl ipsum, rhoncus ac tristique eu, vestibulum et erat. Phasellus diam augue, imperdiet vitae neque ut, tincidunt accumsan eros. Sed tortor massa, placerat et lacinia quis, porttitor nec tortor. Cras pulvinar ante a condimentum accumsan. Ut ut dolor tellus. Vivamus sed velit vitae risus laoreet rutrum. Ut sit amet pretium felis, id sagittis ante. Fusce id ultrices nunc. Proin in ipsum ut mauris scelerisque accumsan at eget ipsum. Nam mattis nisl ac iaculis mattis.</p>
-	
-	 <p>Phasellus vehicula erat eget orci finibus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Maecenas nulla ipsum, condimentum ac lectus at, tempus mattis turpis. Proin ornare a tortor ac laoreet. Quisque ex quam, posuere vitae lacinia eget, tristique ac purus. Duis a scelerisque velit. Praesent sit amet lacus sed nulla vehicula molestie sit amet sed ipsum. Maecenas non quam eget nisl efficitur consectetur eget sit amet sapien.</p>
-	
-	 <p>Donec viverra gravida enim, sit amet convallis diam accumsan eget. Nam vel ante rutrum, pulvinar sem non, efficitur nisl. Phasellus euismod volutpat est, non finibus magna suscipit vel. Sed urna mauris, lacinia at ante at, vehicula hendrerit augue. Sed scelerisque vel sem rutrum cursus. Donec dapibus rutrum nibh, eu dapibus ante rhoncus ac. Fusce malesuada ipsum nulla, ut fringilla purus ornare at. Curabitur vestibulum pulvinar tortor, non porta tortor malesuada sed. Fusce non metus eros. Morbi id blandit neque, sodales consectetur ante. Morbi faucibus arcu ac tristique ornare. Fusce lobortis dui sed varius luctus.</p>
-	
-	 <p>Fusce et lacinia erat, a mollis orci. Morbi eget ultrices ipsum. Fusce sit amet nisi lorem. Praesent sollicitudin nunc vitae ex mollis auctor. Pellentesque sollicitudin commodo ex a tristique. Nulla dictum fermentum lacus consequat feugiat. Donec molestie placerat lorem, a bibendum ligula elementum vel. Nulla ut accumsan orci. Mauris magna ante, mattis et magna at, viverra mattis felis. Nunc nisi mauris, pulvinar sit amet rhoncus quis, dapibus et justo. Aliquam vel velit libero. Integer pretium eleifend diam, quis convallis lacus pellentesque aliquam. Sed vel erat id dolor vulputate pellentesque in sed nulla.</p>
-
-	 <p>Vestibulum tempus mollis sapien nec tempor. Etiam sodales vestibulum ligula in venenatis. Donec sollicitudin id leo a dictum. Nullam a tellus dignissim, fringilla dolor quis, varius dui. Mauris faucibus sollicitudin diam, non fermentum nunc lacinia nec. Cras tristique facilisis bibendum. Nam condimentum, leo at viverra venenatis, nulla purus vehicula urna, non dapibus diam diam eget purus. Mauris euismod mi id dui pretium, non facilisis turpis varius. Proin ullamcorper, dui vitae suscipit condimentum, metus ex finibus risus, vitae blandit ex mi non magna. Curabitur malesuada magna vitae suscipit rhoncus. Mauris sollicitudin ullamcorper blandit. Phasellus dapibus lacus at arcu malesuada malesuada.</p>
-
-    <p class="pull-right internal-link"><a href="#main-section">Back to top</a></p>
-</section>
-<footer class="footer">
-    <div class="footer-content">
-        <div class="container-fluid">
+         </nav>
+      </header>
+      <section id="main-section" class="container">
+          <header class="page-header">
+              <h1>Page with Content</h1>
+      
+              <p>This example shows content to see how it is displayed.</p>
+          </header>
+          <h2>A Page with Content</h2>
+      
+          <p>Just to have something to fill the screen, and check how the template displays content.</p>
+      
+          <h3>A Big Image</h3>
+      
+          <p>This is just a big image taken from <a href="https://commons.wikimedia.org/wiki/File:Fronalpstock_big.jpg">Wikimedia</a> to fill the page.</p>
+         
+          <p>Actually it is meant to be bigger than the page, and show how the set up a responsive image.</p>
+          
+		   <a href="./static/img/Fronalpstock_big.jpg"><img class="img-fluid" src="static/img/Fronalpstock_big.jpg" alt="Fronalpstock"/></a>
+          
+          <p>Here that same image is wrapped in a figure:</p>
+      
+		  <figure>
+			  <a href="./static/img/Fronalpstock_big.jpg"><img class="img-fluid" src="static/img/Fronalpstock_big.jpg" alt="Fronalpstock"/></a>
+			  <figcaption class="font-italic">A big image</figcaption>
+		  </figure>
+      
+          <p>And now a smaller image:</p>
+      
+          <div class="row">
+              <img class="img-fluid shadow-lg bg-white rounded" src="static/img/example_class_diagram.png" alt="Example diagram"/>
+          </div>
+      
+          <p>Again, that same image wrapped in a figure:</p>
+      
+		  <figure class="shadow bg-white rounded p-2">
+			  <img class="img-fluid border shadow-none rounded" src="static/img/example_class_diagram.png" alt="Example diagram"/>
+			  <figcaption class="font-italic">Example diagram</figcaption>
+		  </figure>
+      
+          <h3>Lots of Text</h3>
+      	
+      	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate, velit ac iaculis vehicula, sem arcu eleifend leo, nec imperdiet purus erat non arcu. Pellentesque magna felis, facilisis luctus tristique a, sagittis eu dui. Donec imperdiet nibh orci, sollicitudin tristique libero vulputate at. Phasellus blandit massa ac urna consequat, vel tincidunt risus porta. Nunc nisl ipsum, rhoncus ac tristique eu, vestibulum et erat. Phasellus diam augue, imperdiet vitae neque ut, tincidunt accumsan eros. Sed tortor massa, placerat et lacinia quis, porttitor nec tortor. Cras pulvinar ante a condimentum accumsan. Ut ut dolor tellus. Vivamus sed velit vitae risus laoreet rutrum. Ut sit amet pretium felis, id sagittis ante. Fusce id ultrices nunc. Proin in ipsum ut mauris scelerisque accumsan at eget ipsum. Nam mattis nisl ac iaculis mattis.</p>
+      	
+      	 <p>Phasellus vehicula erat eget orci finibus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Maecenas nulla ipsum, condimentum ac lectus at, tempus mattis turpis. Proin ornare a tortor ac laoreet. Quisque ex quam, posuere vitae lacinia eget, tristique ac purus. Duis a scelerisque velit. Praesent sit amet lacus sed nulla vehicula molestie sit amet sed ipsum. Maecenas non quam eget nisl efficitur consectetur eget sit amet sapien.</p>
+      	
+      	 <p>Donec viverra gravida enim, sit amet convallis diam accumsan eget. Nam vel ante rutrum, pulvinar sem non, efficitur nisl. Phasellus euismod volutpat est, non finibus magna suscipit vel. Sed urna mauris, lacinia at ante at, vehicula hendrerit augue. Sed scelerisque vel sem rutrum cursus. Donec dapibus rutrum nibh, eu dapibus ante rhoncus ac. Fusce malesuada ipsum nulla, ut fringilla purus ornare at. Curabitur vestibulum pulvinar tortor, non porta tortor malesuada sed. Fusce non metus eros. Morbi id blandit neque, sodales consectetur ante. Morbi faucibus arcu ac tristique ornare. Fusce lobortis dui sed varius luctus.</p>
+      	
+      	 <p>Fusce et lacinia erat, a mollis orci. Morbi eget ultrices ipsum. Fusce sit amet nisi lorem. Praesent sollicitudin nunc vitae ex mollis auctor. Pellentesque sollicitudin commodo ex a tristique. Nulla dictum fermentum lacus consequat feugiat. Donec molestie placerat lorem, a bibendum ligula elementum vel. Nulla ut accumsan orci. Mauris magna ante, mattis et magna at, viverra mattis felis. Nunc nisi mauris, pulvinar sit amet rhoncus quis, dapibus et justo. Aliquam vel velit libero. Integer pretium eleifend diam, quis convallis lacus pellentesque aliquam. Sed vel erat id dolor vulputate pellentesque in sed nulla.</p>
+      
+      	 <p>Vestibulum tempus mollis sapien nec tempor. Etiam sodales vestibulum ligula in venenatis. Donec sollicitudin id leo a dictum. Nullam a tellus dignissim, fringilla dolor quis, varius dui. Mauris faucibus sollicitudin diam, non fermentum nunc lacinia nec. Cras tristique facilisis bibendum. Nam condimentum, leo at viverra venenatis, nulla purus vehicula urna, non dapibus diam diam eget purus. Mauris euismod mi id dui pretium, non facilisis turpis varius. Proin ullamcorper, dui vitae suscipit condimentum, metus ex finibus risus, vitae blandit ex mi non magna. Curabitur malesuada magna vitae suscipit rhoncus. Mauris sollicitudin ullamcorper blandit. Phasellus dapibus lacus at arcu malesuada malesuada.</p>
+      
+      </section>
+      <footer class="footer w-100 pt-2 border-top bg-light">
+         <div id="footer-nav" class="bg-light container">
             <div id="navbar-footer" class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <dl class="dl-nav">
-                        <dt>General Info</dt>
-                        <dd><a href="#">Acquire</a></dd>
-                        <dd><a href="#">Getting Started</a></dd>
-                        <dd><a href="#">Changes Log</a></dd>
-                    </dl>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <dl class="dl-nav">
-                        <dt>Code</dt>
-                        <dd><a id="scm-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template" class="link-noted">SCM <span
-                                class="note">GitHub</span></a>
-                        </dd>
-                        <dd><a id="ci-link" href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template" class="link-noted">CI <span class="note">Travis</span></a>
-                        </dd>
-                        <dd><a id="issues-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template/issues" class="link-noted">Issues <span
-                                class="note">GitHub</span></a>
-                        </dd>
-                    </dl>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <dl class="dl-nav">
-                        <dt>Releases</dt>
-                        <dd><a href="#">Bintray</a></dd>
-                        <dd><a href="#">Maven Central</a></dd>
-                    </dl>
-                </div>
+               <div class="col">
+                  <dl class="text-center mb-1">
+                     <dt class="border-bottom">General Info</dt>
+                     <dd><a href="#">Acquire</a></dd>
+                     <dd><a href="#">Getting Started</a></dd>
+                     <dd><a href="#">Changes Log</a></dd>
+                  </dl>
+               </div>
+               <div class="col">
+                  <dl class="text-center mb-1">
+                     <dt class="border-bottom">Code</dt>
+                     <dd><a id="scm-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template" class="link-noted">SCM <span class="note">GitHub</span></a>
+                     </dd>
+                     <dd><a id="ci-link" href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template" class="link-noted">CI <span class="note">Travis</span></a>
+                     </dd>
+                     <dd><a id="issues-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template/issues" class="link-noted">Issues <span class="note">GitHub</span></a>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="col">
+                  <dl class="text-center mb-1">
+                     <dt class="border-bottom">Releases</dt>
+                     <dd><a href="#">Bintray</a></dd>
+                     <dd><a href="#">Maven Central</a></dd>
+                  </dl>
+               </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12"><span class="fa fa-copyright"></span>2015-2019 <a id="author-link"
-                                                                                                             href="https://github.com/Bernardo-MG">Bernardo
-                    Martínez Garrido</a> - <a id="license-link"
-                                              href="http://www.opensource.org/licenses/mit-license.php">MIT
-                    License</a></div>
-                <div class="col-md-12 col-sm-12 col-xs-12">Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a
-                        href="http://getbootstrap.com/">Bootstrap</a></div>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="./static/lib/jquery/jquery.min.js"></script>
-<script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="./static/js/chevron-toggle.js"></script>
-<script src="./static/js/smooth-scroll.js"></script>
-<script src="./static/js/heading-numbering.js"></script>
-<script src="./static/lib/highlight/highlight.pack.js"></script>
-<script src="./static/js/initialize.js"></script>
-<script src="./static/js/initializeHighlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-</body>
+         </div>
+         <div id="footer-info" class="bg-light pl-2 pb-1 w-100">
+            <div><span class="fa fa-copyright"></span>2015-2020 <a id="author-link" href="https://github.com/Bernardo-MG">Bernardo
+                  Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
+                  License</a></div>
+            <div>Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a href="http://getbootstrap.com/">Bootstrap</a></div>
+         </div>
+      </footer>
+      <script src="./static/lib/jquery/jquery.min.js"></script>
+      <script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
+      <script src="./static/lib/highlight/highlight.pack.js"></script>
+      <script src="./static/js/initializeHighlight.js"></script>
+      <script>
+         hljs.initHighlightingOnLoad();
+
+      </script>
+   </body>
+
 </html>

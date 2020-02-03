@@ -28,7 +28,6 @@ Desktop.ini
 
 # Node
 /node_modules/
-package-lock.json
 
 # Dependencies
 src/static/lib/bootstrap
