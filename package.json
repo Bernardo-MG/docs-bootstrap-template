@@ -17,11 +17,11 @@
       "url": "https://www.github.com/bernardo-mg/docs-bootstrap-template/issues"
    },
    "scripts": {
-      "copy-bootstrap": "copyfiles \"node_modules/bootstrap/dist/js/*.js\" src/static/lib/bootstrap/js",
-      "copy-bootswatch": "copyfiles \"node_modules/bootswatch/dist/litera/*.css\" src/static/lib/bootswatch/litera",
-      "copy-fontawesome": "copyfiles \"node_modules/font-awesome/**/*\" src/static/lib/font-awesome",
-      "copy-html5shiv": "copyfiles \"node_modules/html5shiv/dist/*.css\" src/static/lib/html5shiv",
-      "copy-jquery": "copyfiles \"node_modules/jquery/dist/*.js\" src/static/lib/jquery",
+      "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/*.js\" ./src/static/lib/bootstrap/js",
+      "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/litera/*.css\" ./src/static/lib/bootswatch/litera",
+      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/font-awesome/**/*\" ./src/static/lib/font-awesome",
+      "copy-html5shiv": "copyfiles -u 3 \"./node_modules/html5shiv/dist/*.css\" ./src/static/lib/html5shiv",
+      "copy-jquery": "copyfiles -u 3 \"./node_modules/jquery/dist/*.js\" ./src/static/lib/jquery",
       "copy-all": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-fontawesome && npm run copy-html5shiv && npm run copy-jquery",
       "server": "http-server ./src -p 8080 >/dev/null 2>&1 &",
       "validate-css": "csslint ./src/static/css/",
