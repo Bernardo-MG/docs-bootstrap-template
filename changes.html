@@ -78,69 +78,138 @@
       </header>
       <section id="main-section" class="container">
          <header class="pb-2 mt-4 mb-2 border-bottom">
-              <h1>Example code documentation</h1>
+              <h1>Example of a changes log</h1>
       
-              <p>This example shows a piece of code being documented.</p>
+              <p>This example is based on the changes report for Maven, which shows the changes log for the project.</p>
           </header>
-          <h2>Documentation for a class</h2>
-      
-          <p>This would hold information for a class, and probably links to more detailed technical data, such as the
-              Javadoc files.</p>
-      
-          <h3>Diagrams</h3>
-      
-          <p>Diagrams would be used to help explaining the code.</p>
-      
-          <h4>A basic example on a figure</h4>
-      
-		  <div class="d-inline-flex">
-			  <figure class="shadow bg-white rounded p-2">
-				  <img src="static/img/example_class_diagram.png" alt="Example diagram" class="border shadow-none rounded"/>
-				  <figcaption class="d-flex justify-content-center font-italic">Example diagram</figcaption>
-			  </figure>
-		  </div>
-      
-          <h4>A very long caption</h4>
-      
-		  <div class="d-inline-flex">
-			  <figure  class="shadow bg-white rounded p-2">
-				  <img src="static/img/example_class_diagram.png" alt="Example diagram" class="border shadow-none rounded"/>
-				  <figcaption class="font-italic">This is a very long caption which won't fit into a single line, and will require at least
-					  two to be visible
-				  </figcaption>
-			  </figure>
-		  </div>
-          <h4>Without caption</h4>
-      
-		  <div class="d-inline-flex">
-			  <figure class="shadow bg-white rounded p-2">
-				  <img src="static/img/example_class_diagram.png" alt="Example diagram" class="border shadow-none rounded"/>
-			  </figure>
-		  </div>
-          <h4>Just as an image</h4>
-      
-		  <div class="d-inline-flex">
-		     <img src="static/img/example_class_diagram.png" alt="Example diagram" class="shadow-lg bg-white rounded"/>
-		  </div>
-      
-          <h3>Code</h3>
-      
-          <p>Pieces of code, which are automatically highlighted with the help of highlight.js:</p>
-          <pre class="border shadow rounded"><code>/**
-* The HelloWorldApp class implements an application that
-* simply prints "Hello World!" to standard output.
-*/
-class HelloWorldApp {
-    public static void main(String[] args) {
-        System.out.println("Hello World!"); // Display the string.
-    }
-}</code></pre>
-          <h4>Long code section</h4>
-      <pre class="border shadow rounded"><code>class LongPrint {
-    public static void main(String[] args) {
-        System.out.println("This is a very loooooooooooooooooooooong string, to show how a very loooooooooooooooooong piece of code is show. A sliding bar should be visible in the lower part of the code section, and it should be usable.");
-    }
-}</code></pre>
+          <section id="releases-history" class="section">
+              <h2>Releases History</h2>
+              <table class="table table-striped table-bordered shadow">
+                  <thead class="thead-light">
+                  <tr>
+                      <th>Version</th>
+                      <th>Date</th>
+                      <th>Description</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td><a href="#release_010">0.1.0</a></td>
+                      <td>
+                          <time>2015-04-03</time>
+                      </td>
+                      <td>First release</td>
+                  </tr>
+                  <tr>
+                      <td><a href="#release_020">0.2.0</a></td>
+                      <td>
+                          <time>2015-05-04</time>
+                      </td>
+                      <td>Various enhancements</td>
+                  </tr>
+                  <tr>
+                      <td><a href="#release_021">0.2.1</a></td>
+                      <td>
+                          <time>2015-05-07</time>
+                      </td>
+                      <td>A few patches</td>
+                  </tr>
+                  </tbody>
+              </table>
+          </section>
+          <section id="release_010" class="section">
+              <h3>Release 0.1.0
+                  <small>(
+                      <time>2015-04-03</time>
+                      )
+                  </small>
+              </h3>
+              <table class="table table-striped table-bordered shadow">
+                  <thead class="thead-light">
+                  <tr>
+                      <th>Type</th>
+                      <th>Changes</th>
+                      <th>By</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td><span class="fa fa-plus"
+                                aria-hidden="true"></span><span class="sr-only">Addition</span></td>
+                      <td>First release of the library.</td>
+                      <td><a href="#">bmg</a></td>
+                  </tr>
+                  </tbody>
+              </table>
+          </section>
+          <section id="release_020" class="section">
+              <h3>Release 0.2.0
+                  <small>(
+                      <time>2015-05-04</time>
+                      )
+                  </small>
+              </h3>
+              <table class="table table-striped table-bordered shadow">
+                  <thead class="thead-light">
+                  <tr>
+                      <th>Type</th>
+                      <th>Changes</th>
+                      <th>By</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td><span class="fa fa-plus"
+                                aria-hidden="true"></span><span class="sr-only">Addition</span></td>
+                      <td>This is an addition.</td>
+                      <td><a href="#">bmg</a></td>
+                  </tr>
+                  <tr>
+                      <td><span class="fa fa-refresh"
+                                aria-hidden="true"></span><span class="sr-only">Refresh</span></td>
+                      <td>This is an update.</td>
+                      <td><a href="#">bmg</a></td>
+                  </tr>
+                  <tr>
+                      <td><span class="fa fa-wrench"
+                                aria-hidden="true"></span><span class="sr-only">Fix</span></td>
+                      <td>This is a fix.</td>
+                      <td><a href="#">bmg</a></td>
+                  </tr>
+                  </tbody>
+              </table>
+          </section>
+          <section id="release_021" class="section">
+              <h3>Release 0.2.1
+                  <small>(
+                      <time>2015-05-07</time>
+                      )
+                  </small>
+              </h3>
+              <table class="table table-striped table-bordered shadow">
+                  <thead class="thead-light">
+                  <tr>
+                      <th>Type</th>
+                      <th>Changes</th>
+                      <th>By</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td><span class="fa fa-wrench"
+                                aria-hidden="true"></span><span class="sr-only">Fix</span></td>
+                      <td>A patch.</td>
+                      <td><a href="#">bmg</a></td>
+                  </tr>
+                  <tr>
+                      <td><span class="fa fa-wrench"
+                                aria-hidden="true"></span><span class="sr-only">Fix</span></td>
+                      <td>Another patch.</td>
+                      <td><a href="#">bmg</a></td>
+                  </tr>
+                  </tbody>
+              </table>
+          </section>
       </section>
       <footer class="footer w-100 pt-2 border-top bg-light">
          <div id="footer-nav" class="bg-light container">

@@ -78,69 +78,83 @@
       </header>
       <section id="main-section" class="container">
          <header class="pb-2 mt-4 mb-2 border-bottom">
-              <h1>Example code documentation</h1>
-      
-              <p>This example shows a piece of code being documented.</p>
-          </header>
-          <h2>Documentation for a class</h2>
-      
-          <p>This would hold information for a class, and probably links to more detailed technical data, such as the
-              Javadoc files.</p>
-      
-          <h3>Diagrams</h3>
-      
-          <p>Diagrams would be used to help explaining the code.</p>
-      
-          <h4>A basic example on a figure</h4>
-      
-		  <div class="d-inline-flex">
-			  <figure class="shadow bg-white rounded p-2">
-				  <img src="static/img/example_class_diagram.png" alt="Example diagram" class="border shadow-none rounded"/>
-				  <figcaption class="d-flex justify-content-center font-italic">Example diagram</figcaption>
-			  </figure>
-		  </div>
-      
-          <h4>A very long caption</h4>
-      
-		  <div class="d-inline-flex">
-			  <figure  class="shadow bg-white rounded p-2">
-				  <img src="static/img/example_class_diagram.png" alt="Example diagram" class="border shadow-none rounded"/>
-				  <figcaption class="font-italic">This is a very long caption which won't fit into a single line, and will require at least
-					  two to be visible
-				  </figcaption>
-			  </figure>
-		  </div>
-          <h4>Without caption</h4>
-      
-		  <div class="d-inline-flex">
-			  <figure class="shadow bg-white rounded p-2">
-				  <img src="static/img/example_class_diagram.png" alt="Example diagram" class="border shadow-none rounded"/>
-			  </figure>
-		  </div>
-          <h4>Just as an image</h4>
-      
-		  <div class="d-inline-flex">
-		     <img src="static/img/example_class_diagram.png" alt="Example diagram" class="shadow-lg bg-white rounded"/>
-		  </div>
-      
-          <h3>Code</h3>
-      
-          <p>Pieces of code, which are automatically highlighted with the help of highlight.js:</p>
-          <pre class="border shadow rounded"><code>/**
-* The HelloWorldApp class implements an application that
-* simply prints "Hello World!" to standard output.
-*/
-class HelloWorldApp {
-    public static void main(String[] args) {
-        System.out.println("Hello World!"); // Display the string.
-    }
-}</code></pre>
-          <h4>Long code section</h4>
-      <pre class="border shadow rounded"><code>class LongPrint {
-    public static void main(String[] args) {
-        System.out.println("This is a very loooooooooooooooooooooong string, to show how a very loooooooooooooooooong piece of code is show. A sliding bar should be visible in the lower part of the code section, and it should be usable.");
-    }
-}</code></pre>
+            <h1>Bootstrap Template and Demo for a Project's Documentation</h1>
+         </header>
+         <p>Making use of the latest features of Bootstrap and HTML5, this template aims to give a modern and responsive web
+            design to
+            documentation sites, allowing them to be read from any kind of device.</p>
+
+         <p>Any kind of project can take advantage of this template, as it is meant to be generic and reusable. Just adapt it
+            for wathever
+            documentation or templating framework you are using, and modify it for your needs, may it be Jinja, Maven Site,
+            Sphinx or anything else.</p>
+
+         <section id="features">
+            <h2>Features</h2>
+            <ul>
+               <li>Simple style, avoiding unnecessary complexities.</li>
+               <li>HTML5 semantic markup.</li>
+               <li>Semantic tags for <a href="http://ogp.me/">Facebook OpenGraph</a> and
+                  <a href="https://dev.twitter.com/cards/overview">Twitter Cards</a>.
+               </li>
+               <li>Responsive design with <a href="http://getbootstrap.com/">Bootstrap 4</a>.
+               </li>
+               <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> icons.</li>
+               <li><a href="https://highlightjs.org/">highlight.js</a> for code highlighting.</li>
+               <li>Validated for HTML 5, following the <a href="https://validator.w3.org/">W3C guidelines</a>.</li>
+               <li>Validated for accessibility, following the <a href="http://achecker.ca/checker/index.php">WCAG
+                     2.0</a> (Level AA) guidelines, and also checked with <a href="http://wave.webaim.org/">Wave</a>.
+               </li>
+               <li>Additionally it is being continuously validated with other tools through <a href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template/">Travis
+                     CI</a>.
+               </li>
+            </ul>
+         </section>
+         <section id="examples">
+            <h2>Examples</h2>
+
+            <p>To illustrate the template several pages have been created. These are divided into two groups, first
+               there are some pages showcasing different uses of the template, which serve also smaller subtemplates, and there
+               are also some test pages, for checking that the template works as expected.</p>
+
+            <p>Some example pages:</p>
+            <ul>
+               <li><a href="./tests_report.html">Tests report</a></li>
+               <li><a href="./changes.html">Changes log</a></li>
+               <li><a href="./code.html">Code documentation</a></li>
+               <li><a href="./content.html">Page filled with content</a></li>
+               <li><a href="./min-page.html">A page with minimal content</a></li>
+            </ul>
+
+            <p>In all of these pages you can always go back to the index by clicking the project's name on the navigation bar.</p>
+         </section>
+         <section id="projects">
+            <h2>Projects making use of the template</h2>
+
+            <p>Some projects have adapted this template into a real documentation project. These are a good example
+               of what can be achieved by the Docs Bootstrap Template.</p>
+
+            <ul>
+               <li>The <a href="https://github.com/Bernardo-MG/docs-maven-skin">Docs Maven Skin</a> adapts the
+                  template to be used on a <a href="https://maven.apache.org/plugins/maven-site-plugin/">Maven Site</a>.
+               </li>
+               <li>The <a href="https://github.com/Bernardo-MG/sphinx-docs-theme">Sphinx Docs Theme</a> adapts the
+                  template for <a href="http://sphinx-doc.org/">Sphinx</a>.
+               </li>
+            </ul>
+         </section>
+         <section id="usage">
+            <h2>Usage</h2>
+
+            <p>Just grab the template from <a href="https://github.com/Bernardo-MG/docs-bootstrap-template">GitHub</a> and adapt the html
+               files for your preferred templating engine.</p>
+
+            <p>All the static files, which are required for the template, are stored in the static folder.</p>
+
+            <p>If you want to change the Bootstrap configuration, a config.json file is included in the
+               Bootstrap folder. This can be used on the <a href="http://getbootstrap.com/customize/">
+                  Bootstrap Customize</a> page to change said configuration.</p>
+         </section>
       </section>
       <footer class="footer w-100 pt-2 border-top bg-light">
          <div id="footer-nav" class="bg-light container">
