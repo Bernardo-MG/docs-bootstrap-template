@@ -77,7 +77,7 @@
          </nav>
       </header>
       <section id="main-section" class="container">
-          <header class="page-header">
+         <header class="pb-2 mt-4 mb-2 border-bottom">
               <h1>Page with Content</h1>
       
               <p>This example shows content to see how it is displayed.</p>
@@ -92,27 +92,33 @@
          
           <p>Actually it is meant to be bigger than the page, and show how the set up a responsive image.</p>
           
-		   <a href="./static/img/Fronalpstock_big.jpg"><img class="img-fluid" src="static/img/Fronalpstock_big.jpg" alt="Fronalpstock"/></a>
+		  <div class="d-inline-flex">
+		      <a href="./static/img/Fronalpstock_big.jpg"><img class="img-fluid" src="static/img/Fronalpstock_big.jpg" alt="Fronalpstock"/></a>
+		  </div>
           
           <p>Here that same image is wrapped in a figure:</p>
       
-		  <figure>
-			  <a href="./static/img/Fronalpstock_big.jpg"><img class="img-fluid" src="static/img/Fronalpstock_big.jpg" alt="Fronalpstock"/></a>
-			  <figcaption class="font-italic">A big image</figcaption>
-		  </figure>
+		  <div class="d-inline-flex">
+			  <figure>
+				  <a href="./static/img/Fronalpstock_big.jpg"><img class="img-fluid" src="static/img/Fronalpstock_big.jpg" alt="Fronalpstock"/></a>
+				  <figcaption class="font-italic">A big image</figcaption>
+			  </figure>
+		  </div>
       
           <p>And now a smaller image:</p>
       
-          <div class="row">
+		  <div class="d-inline-flex">
               <img class="img-fluid shadow-lg bg-white rounded" src="static/img/example_class_diagram.png" alt="Example diagram"/>
           </div>
       
           <p>Again, that same image wrapped in a figure:</p>
       
-		  <figure class="shadow bg-white rounded p-2">
-			  <img class="img-fluid border shadow-none rounded" src="static/img/example_class_diagram.png" alt="Example diagram"/>
-			  <figcaption class="font-italic">Example diagram</figcaption>
-		  </figure>
+		  <div class="d-inline-flex">
+			  <figure class="shadow bg-white rounded p-2">
+				  <img class="img-fluid border shadow-none rounded" src="static/img/example_class_diagram.png" alt="Example diagram"/>
+				  <figcaption class="font-italic">Example diagram</figcaption>
+			  </figure>
+		  </div>
       
           <h3>Lots of Text</h3>
       	
