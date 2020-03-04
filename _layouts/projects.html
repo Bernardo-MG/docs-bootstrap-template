@@ -1,0 +1,9 @@
+---
+layout: page
+---
+
+{% assign collection = site[page.collection] %}
+<div class="row justify-content-center">
+   <h2>{{ collection | size }} projects</h2>
+</div>
+{% include projectList.html projects=collection %}

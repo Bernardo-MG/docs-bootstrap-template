@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div>
+   {%- assign projects = '' | split: '' -%}
+   {%- for project in site.projects -%}
+      {%- if project.languages contains page.name -%}
+         {% assign projects = projects | push: project %}
+      {%- endif -%}
+   {%- endfor -%}
+   {{ language }}
+   <div id="#{{ language.name | slugize }}">
+   <h2>{{ language.name }}</h2>
+   {% include projectList.html projects=projects %}
+   </div>
+</div>
