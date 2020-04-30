@@ -37,7 +37,7 @@
       "html5shiv": "~3.7.3",
       "html-validator-cli": "~7.0.0",
       "http-server": "~0.12.1",
-      "jquery": "~3.4.1",
+      "jquery": "~3.5.0",
       "pa11y-ci": "~2.3.0",
       "phantomjs-prebuilt": "~2.1.16"
    }
