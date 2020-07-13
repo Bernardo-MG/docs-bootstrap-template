@@ -29,15 +29,15 @@
       "validate-html5": "html-validator http://localhost:8080/index.html --islocal && html-validator http://localhost:8080/changes.html --islocal && html-validator http://localhost:8080/tests_report.html --islocal"
    },
    "devDependencies": {
-      "bootstrap": "~4.4.1",
-      "bootswatch": "~4.4.1",
-      "copyfiles": "~2.2.0",
+      "bootstrap": "~4.5.0",
+      "bootswatch": "~4.5.0",
+      "copyfiles": "~2.3.0",
       "csslint": "~1.0.5",
       "font-awesome": "~4.7.0",
       "html5shiv": "~3.7.3",
       "html-validator-cli": "~7.0.0",
       "http-server": "~0.12.1",
-      "jquery": "~3.4.1",
+      "jquery": "~3.5.1",
       "pa11y-ci": "~2.3.0",
       "phantomjs-prebuilt": "~2.1.16"
    }
