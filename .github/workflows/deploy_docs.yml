@@ -19,7 +19,7 @@ jobs:
       run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       id: extract_branch
     - name: Install sshpass
-      sudo apt-get install sshpass
+      run: sudo apt-get install sshpass
     - name: Set up Node.js
       uses: actions/setup-node@v1
       with:
