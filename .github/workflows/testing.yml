@@ -1,0 +1,32 @@
+name: Testing and validation
+
+on: [push, pull_request]
+
+jobs:
+
+  test:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ 14.x ]
+
+    steps:
+    - name: Check-out
+      uses: actions/checkout@v2
+    - name: Set up Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node }}
+    - name: Install dependencies
+      run: npm ci
+    - name: Build page
+      run: npm run copy-all
+    - name: Validate CSS
+      run: npm run validate-css
+    - name: Files are loaded into a local server
+      run: npm run server
+    - name: HTML5 Validation
+      run: npm run validate-html5
+    - name: Accessibility Validation
+      run: npm run validate-access
