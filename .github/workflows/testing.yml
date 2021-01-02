@@ -23,7 +23,7 @@ jobs:
     - name: Build page
       run: npm run copy-all
     - name: Validate CSS
-      run: run validate-css
+      run: npm run validate-css
     - name: Files are loaded into a local server
       run: npm run server
     - name: HTML5 Validation
