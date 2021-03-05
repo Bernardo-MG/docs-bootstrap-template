@@ -43,13 +43,13 @@ Otherwise, it is just plain HTML5 and CSS3.
 First of all the dependencies should be installed:
 
 ```
-$ npm install
+npm install
 ```
 
 Afterwards these dependencies should be copied to the resources folders:
 
 ```
-$ npm run copy-all
+npm run copy-all
 ```
 
 Once this is done, the index file is ready to open at:
