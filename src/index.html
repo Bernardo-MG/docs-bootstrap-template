@@ -51,8 +51,8 @@
          <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
                <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-menu" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                </button>
                <small class="navbar-text d-none d-md-block"><span id="navbar-version">v2.0.5</span> (<time id="navbar-date">2021-01-02</time>)</small>
                <div class="col-sm d-none d-md-block">
@@ -62,13 +62,15 @@
                <div class="collapse navbar-collapse" id="navbar-main-menu">
                   <ul class="nav navbar-nav ms-auto">
                      <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UI
+                        <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UI
                         Examples</a>
-                        <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="examplesDropdown">
-                           <a href="./tests_report.html" class="dropdown-item" title="Tests report">Tests report</a> <a href="./changes.html" class="dropdown-item" title="Changes log">Changes log</a> <a
-                              href="./code.html" class="dropdown-item" title="Code documentation">Code documentation</a> <a href="./content.html" class="dropdown-item" title="Page filled with content">Page
-                           filled with content</a> <a href="./min-page.html" class="dropdown-item" title="A page with minimal content">A page with minimal content</a>
-                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="examplesDropdown">
+                           <li><a href="./tests_report.html" class="dropdown-item" title="Tests report">Tests report</a></li>
+                           <li><a href="./changes.html" class="dropdown-item" title="Changes log">Changes log</a></li>
+                           <li><a href="./code.html" class="dropdown-item" title="Code documentation">Code documentation</a></li>
+                           <li><a href="./content.html" class="dropdown-item" title="Page filled with content">Page filled with content</a></li>
+                           <li><a href="./min-page.html" class="dropdown-item" title="A page with minimal content">A page with minimal content</a></li>
+                        </ul>
                      </li>
                   </ul>
                </div>
