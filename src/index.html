@@ -46,33 +46,32 @@
     <![endif]-->
 
    </head>
-
    <body class="d-flex flex-column">
       <header>
          <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-menu" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-menu" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <small class="navbar-text d-none d-md-block"><span id="navbar-version">v2.0.5</span> (<time id="navbar-date">2021-01-02</time>)</small>
-            <div class="col-sm d-none d-md-block">
-               <a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span class="fa fa-github pl-1" aria-hidden="true"></span><span class="d-none d-sm-block d-md-none">
-                  Github</span></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-main-menu">
-               <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                     <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UI Examples</a>
-                     <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="examplesDropdown">
-                        <a href="./tests_report.html" class="dropdown-item" title="Tests report">Tests report</a>
-                        <a href="./changes.html" class="dropdown-item" title="Changes log">Changes log</a>
-                        <a href="./code.html" class="dropdown-item" title="Code documentation">Code documentation</a>
-                        <a href="./content.html" class="dropdown-item" title="Page filled with content">Page filled with content</a>
-                        <a href="./min-page.html" class="dropdown-item" title="A page with minimal content">A page with minimal content</a>
-                     </div>
-                  </li>
-               </ul>
+               </button>
+               <small class="navbar-text d-none d-md-block"><span id="navbar-version">v2.0.5</span> (<time id="navbar-date">2021-01-02</time>)</small>
+               <div class="col-sm d-none d-md-block">
+                  <a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span class="fa fa-github ps-1" aria-hidden="true"></span><span
+                     class="d-none d-sm-block d-md-none"> Github</span></a>
+               </div>
+               <div class="collapse navbar-collapse" id="navbar-main-menu">
+                  <ul class="nav navbar-nav ms-auto">
+                     <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UI
+                        Examples</a>
+                        <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="examplesDropdown">
+                           <a href="./tests_report.html" class="dropdown-item" title="Tests report">Tests report</a> <a href="./changes.html" class="dropdown-item" title="Changes log">Changes log</a> <a
+                              href="./code.html" class="dropdown-item" title="Code documentation">Code documentation</a> <a href="./content.html" class="dropdown-item" title="Page filled with content">Page
+                           filled with content</a> <a href="./min-page.html" class="dropdown-item" title="A page with minimal content">A page with minimal content</a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
             </div>
          </nav>
       </header>
@@ -82,13 +81,13 @@
          </header>
          <p>Making use of the latest features of Bootstrap and HTML5, this template aims to give a modern and responsive web
             design to
-            documentation sites, allowing them to be read from any kind of device.</p>
-
+            documentation sites, allowing them to be read from any kind of device.
+         </p>
          <p>Any kind of project can take advantage of this template, as it is meant to be generic and reusable. Just adapt it
             for wathever
             documentation or templating framework you are using, and modify it for your needs, may it be Jinja, Maven Site,
-            Sphinx or anything else.</p>
-
+            Sphinx or anything else.
+         </p>
          <section id="features">
             <h2>Features</h2>
             <ul>
@@ -103,20 +102,19 @@
                <li><a href="https://highlightjs.org/">highlight.js</a> for code highlighting.</li>
                <li>Validated for HTML 5, following the <a href="https://validator.w3.org/">W3C guidelines</a>.</li>
                <li>Validated for accessibility, following the <a href="http://achecker.ca/checker/index.php">WCAG
-                     2.0</a> (Level AA) guidelines, and also checked with <a href="http://wave.webaim.org/">Wave</a>.
+                  2.0</a> (Level AA) guidelines, and also checked with <a href="http://wave.webaim.org/">Wave</a>.
                </li>
                <li>Additionally it is being continuously validated with other tools through <a href="https://github.com/Bernardo-MG/docs-bootstrap-template/actions">Github Workflow
-                     CI</a>.
+                  CI</a>.
                </li>
             </ul>
          </section>
          <section id="examples">
             <h2>Examples</h2>
-
             <p>To illustrate the template several pages have been created. These are divided into two groups, first
                there are some pages showcasing different uses of the template, which serve also smaller subtemplates, and there
-               are also some test pages, for checking that the template works as expected.</p>
-
+               are also some test pages, for checking that the template works as expected.
+            </p>
             <p>Some example pages:</p>
             <ul>
                <li><a href="./tests_report.html">Tests report</a></li>
@@ -125,15 +123,13 @@
                <li><a href="./content.html">Page filled with content</a></li>
                <li><a href="./min-page.html">A page with minimal content</a></li>
             </ul>
-
             <p>In all of these pages you can always go back to the index by clicking the project's name on the navigation bar.</p>
          </section>
          <section id="projects">
             <h2>Projects making use of the template</h2>
-
             <p>Some projects have adapted this template into a real documentation project. These are a good example
-               of what can be achieved by the Docs Bootstrap Template.</p>
-
+               of what can be achieved by the Docs Bootstrap Template.
+            </p>
             <ul>
                <li>The <a href="https://github.com/Bernardo-MG/docs-maven-skin">Docs Maven Skin</a> adapts the
                   template to be used on a <a href="https://maven.apache.org/plugins/maven-site-plugin/">Maven Site</a>.
@@ -145,15 +141,14 @@
          </section>
          <section id="usage">
             <h2>Usage</h2>
-
             <p>Just grab the template from <a href="https://github.com/Bernardo-MG/docs-bootstrap-template">GitHub</a> and adapt the html
-               files for your preferred templating engine.</p>
-
+               files for your preferred templating engine.
+            </p>
             <p>All the static files, which are required for the template, are stored in the static folder.</p>
-
             <p>If you want to change the Bootstrap configuration, a config.json file is included in the
                Bootstrap folder. This can be used on the <a href="http://getbootstrap.com/customize/">
-                  Bootstrap Customize</a> page to change said configuration.</p>
+               Bootstrap Customize</a> page to change said configuration.
+            </p>
          </section>
       </section>
       <footer class="footer w-100 pt-2 border-top bg-light">
@@ -181,16 +176,16 @@
                <div class="col">
                   <dl class="text-center mb-1">
                      <dt class="border-bottom">Releases</dt>
-                     <dd><a href="#">Bintray</a></dd>
                      <dd><a href="#">Maven Central</a></dd>
                   </dl>
                </div>
             </div>
          </div>
-         <div id="footer-info" class="bg-light pl-2 pb-1 w-100">
+         <div id="footer-info" class="bg-light ps-2 pb-1 w-100">
             <div><span class="fa fa-copyright"></span>2015-2021 <a id="author-link" href="https://github.com/Bernardo-MG">Bernardo
-                  Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
-                  License</a></div>
+               Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
+               License</a>
+            </div>
             <div>Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a href="http://getbootstrap.com/">Bootstrap</a></div>
          </div>
       </footer>
@@ -199,5 +194,4 @@
       <script src="./static/lib/highlight/highlight.pack.js"></script>
       <script src="./static/js/initializeHighlight.js"></script>
    </body>
-
 </html>
