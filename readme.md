@@ -10,7 +10,7 @@ It is used to create other, dynamic, templates, with the help of tools such as J
 - Response design prepared for mobiles
 - [HTML5][html5] semantic markup.
 - Semantic tags for [Facebook OpenGraph][opengraph] and [Twitter Cards][twitter-cards].
-- [Bootstrap 4][bootstrap], [Font Awesome][fontawesome] and [highlight.js][highlightjs].
+- [Bootstrap 5][bootstrap], [Font Awesome][fontawesome] and [highlight.js][highlightjs].
 - Validated HTML 5, accessibility, CSS and JS.
 
 ## Check it
@@ -43,13 +43,13 @@ Otherwise, it is just plain HTML5 and CSS3.
 First of all the dependencies should be installed:
 
 ```
-$ npm install
+npm install
 ```
 
 Afterwards these dependencies should be copied to the resources folders:
 
 ```
-$ npm run copy-all
+npm run copy-all
 ```
 
 Once this is done, the index file is ready to open at:

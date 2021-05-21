@@ -19,26 +19,24 @@
    "scripts": {
       "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/*.js\" ./src/static/lib/bootstrap/js",
       "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/litera/*.css\" ./src/static/lib/bootswatch/litera",
-      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/font-awesome/**/*\" ./src/static/lib/font-awesome",
+      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./src/static/lib/font-awesome",
       "copy-html5shiv": "copyfiles -u 3 \"./node_modules/html5shiv/dist/*.css\" ./src/static/lib/html5shiv",
-      "copy-jquery": "copyfiles -u 3 \"./node_modules/jquery/dist/*.js\" ./src/static/lib/jquery",
-      "copy-all": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-fontawesome && npm run copy-html5shiv && npm run copy-jquery",
+      "copy-all": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-fontawesome && npm run copy-html5shiv",
       "server": "http-server ./src -p 8080 >/dev/null 2>&1 &",
       "validate-css": "csslint ./src/static/css/",
       "validate-access": "pa11y-ci",
       "validate-html5": "html-validator http://localhost:8080/index.html --islocal && html-validator http://localhost:8080/changes.html --islocal && html-validator http://localhost:8080/tests_report.html --islocal"
    },
    "devDependencies": {
-      "bootstrap": "~4.5.3",
-      "bootswatch": "~4.5.3",
+      "@fortawesome/fontawesome-free": "~5.15.3",
+      "bootstrap": "~5.0.1",
+      "bootswatch": "~5.0.1",
       "copyfiles": "~2.4.1",
       "csslint": "~1.0.5",
-      "font-awesome": "~4.7.0",
       "html5shiv": "~3.7.3",
       "html-validator-cli": "~7.0.1",
       "http-server": "~0.12.3",
-      "jquery": "~3.5.1",
-      "pa11y-ci": "~2.4.0",
+      "pa11y-ci": "~2.4.1",
       "phantomjs-prebuilt": "~2.1.16"
    }
 }

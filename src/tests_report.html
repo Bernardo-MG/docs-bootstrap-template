@@ -35,7 +35,7 @@
 
       <!-- CSS -->
       <link rel="stylesheet" href="./static/lib/bootswatch/litera/bootstrap.min.css">
-      <link rel="stylesheet" href="./static/lib/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./static/lib/font-awesome/fontawesome-free/css/all.min.css">
       <link rel="stylesheet" href="./static/lib/highlight/styles/default.css">
       <!-- Docs Template style -->
       <link rel="stylesheet" href="static/css/style.css">
@@ -50,29 +50,31 @@
    <body class="d-flex flex-column">
       <header>
          <nav id="navbar-main" class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main-menu" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <small class="navbar-text d-none d-md-block"><span id="navbar-version">v2.0.5</span> (<time id="navbar-date">2021-01-02</time>)</small>
-            <div class="col-sm d-none d-md-block">
-               <a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span class="fa fa-github pl-1" aria-hidden="true"></span><span class="d-none d-sm-block d-md-none">
-                  Github</span></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-main-menu">
-               <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item dropdown">
-                     <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UI Examples</a>
-                     <div class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="examplesDropdown">
-                        <a href="./tests_report.html" class="dropdown-item" title="Tests report">Tests report</a>
-                        <a href="./changes.html" class="dropdown-item" title="Changes log">Changes log</a>
-                        <a href="./code.html" class="dropdown-item" title="Code documentation">Code documentation</a>
-                        <a href="./content.html" class="dropdown-item" title="Page filled with content">Page filled with content</a>
-                        <a href="./min-page.html" class="dropdown-item" title="A page with minimal content">A page with minimal content</a>
-                     </div>
-                  </li>
-               </ul>
+            <div class="container-fluid">
+               <a class="navbar-brand" href="./index.html">Docs Bootstrap Template Demo</a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <small class="navbar-text d-none d-md-block"><span id="navbar-version">v2.1.0</span> (<time id="navbar-date">2021-01-02</time>)</small>
+               <div class="col-sm d-none d-md-block">
+                  <a href="https://github.com/Bernardo-MG/docs-bootstrap-template" title="GitHub" aria-label="GitHub"><span class="fab fa-github ps-1" aria-hidden="true"></span><span
+                     class="d-none d-sm-block d-md-none"> Github</span></a>
+               </div>
+               <div class="collapse navbar-collapse" id="navbar-main-menu">
+                  <ul class="nav navbar-nav ms-auto">
+                     <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="examplesDropdown" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">UI
+                        Examples</a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="examplesDropdown">
+                           <li><a href="./tests_report.html" class="dropdown-item" title="Tests report">Tests report</a></li>
+                           <li><a href="./changes.html" class="dropdown-item" title="Changes log">Changes log</a></li>
+                           <li><a href="./code.html" class="dropdown-item" title="Code documentation">Code documentation</a></li>
+                           <li><a href="./content.html" class="dropdown-item" title="Page filled with content">Page filled with content</a></li>
+                           <li><a href="./min-page.html" class="dropdown-item" title="A page with minimal content">A page with minimal content</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
             </div>
          </nav>
       </header>
@@ -120,7 +122,7 @@
                       </thead>
                       <tbody>
                       <tr class="warning">
-                          <td><span class="fa fa-close" aria-hidden="true" title="Failed"
+                          <td><span class="fas fa-times" aria-hidden="true" title="Failed"
                                     aria-label="Failed"></span><span class="sr-only">Failed</span></td>
                           <td><a href="#test-cases-1">Test Suite 1</a></td>
                           <td>2</td>
@@ -131,7 +133,7 @@
                           <td>0.018</td>
                       </tr>
                       <tr>
-                          <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                          <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                     aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                           <td><a href="#test-cases-2">Test Suite 2</a></td>
                           <td>3</td>
@@ -142,7 +144,7 @@
                           <td>0.007</td>
                       </tr>
                       <tr>
-                          <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                          <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                     aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                           <td><a href="#test-cases-3">Test Suite 3</a></td>
                           <td>1</td>
@@ -153,7 +155,7 @@
                           <td>0.012</td>
                       </tr>
                       <tr>
-                          <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                          <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                     aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                           <td><a href="#test-cases-4">Test Suite 4</a></td>
                           <td>7</td>
@@ -183,13 +185,13 @@
                           </thead>
                           <tbody>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_something_is_ok</td>
                               <td>0.007</td>
                           </tr>
                           <tr class="warning">
-                              <td><span class="fa fa-close" aria-hidden="true" title="Failed"
+                              <td><span class="fas fa-times" aria-hidden="true" title="Failed"
                                         aria-label="Failed"></span><span class="sr-only">Failed</span></td>
                               <td>test_something_else_works</td>
                               <td>0.011</td>
@@ -212,19 +214,19 @@
                           </thead>
                           <tbody>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_1</td>
                               <td>0.001</td>
                           </tr>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_2</td>
                               <td>0.001</td>
                           </tr>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_3</td>
                               <td>0.005</td>
@@ -247,7 +249,7 @@
                           </thead>
                           <tbody>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>just_a_test_case</td>
                               <td>0.012</td>
@@ -270,43 +272,43 @@
                           </thead>
                           <tbody>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_a</td>
                               <td>0.001</td>
                           </tr>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_b</td>
                               <td>0.001</td>
                           </tr>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_c</td>
                               <td>0.005</td>
                           </tr>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_d</td>
                               <td>0.001</td>
                           </tr>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_e</td>
                               <td>0.001</td>
                           </tr>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_f</td>
                               <td>0.005</td>
                           </tr>
                           <tr>
-                              <td><span class="fa fa-check" aria-hidden="true" title="Passed"
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"
                                         aria-label="Passed"></span><span class="sr-only">Passed</span></td>
                               <td>test_case_g</td>
                               <td>0.005</td>
@@ -333,7 +335,7 @@
                      <dt class="border-bottom">Code</dt>
                      <dd><a id="scm-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template" class="link-noted">SCM <span class="note">GitHub</span></a>
                      </dd>
-                     <dd><a id="ci-link" href="https://travis-ci.org/Bernardo-MG/docs-bootstrap-template" class="link-noted">CI <span class="note">Travis</span></a>
+                     <dd><a id="ci-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template/actions" class="link-noted">CI <span class="note">Github Workflow</span></a>
                      </dd>
                      <dd><a id="issues-link" href="https://github.com/Bernardo-MG/docs-bootstrap-template/issues" class="link-noted">Issues <span class="note">GitHub</span></a>
                      </dd>
@@ -342,20 +344,19 @@
                <div class="col">
                   <dl class="text-center mb-1">
                      <dt class="border-bottom">Releases</dt>
-                     <dd><a href="#">Bintray</a></dd>
                      <dd><a href="#">Maven Central</a></dd>
                   </dl>
                </div>
             </div>
          </div>
-         <div id="footer-info" class="bg-light pl-2 pb-1 w-100">
-            <div><span class="fa fa-copyright"></span>2015-2021 <a id="author-link" href="https://github.com/Bernardo-MG">Bernardo
-                  Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
-                  License</a></div>
+         <div id="footer-info" class="bg-light ps-2 pb-1 w-100">
+            <div><span class="far fa-copyright"></span>2015-2021 <a id="author-link" href="https://github.com/Bernardo-MG">Bernardo
+               Martínez Garrido</a> - <a id="license-link" href="http://www.opensource.org/licenses/mit-license.php">MIT
+               License</a>
+            </div>
             <div>Powered by <a href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> and <a href="http://getbootstrap.com/">Bootstrap</a></div>
          </div>
       </footer>
-      <script src="./static/lib/jquery/jquery.min.js"></script>
       <script src="./static/lib/bootstrap/js/bootstrap.min.js"></script>
       <script src="./static/lib/highlight/highlight.pack.js"></script>
       <script src="./static/js/initializeHighlight.js"></script>
