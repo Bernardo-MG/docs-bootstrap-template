@@ -21,7 +21,9 @@ jobs:
       id: extract_branch
 
   deploy_docs:
-
+    name: Deployment
+    environment: ${{ inputs.environment }}
+    needs: setup
     runs-on: ubuntu-latest
 
     steps:
@@ -36,12 +38,12 @@ jobs:
     - name: Build page
       run: npm run copy-all
     - name: Deploy development version
-      if: ${{ 'develop' == inputs.branch }}
+      if: ${{ 'develop' == needs.setup.outputs.branchName }}
       run: |
         cd src
         sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -o 'StrictHostKeyChecking no' -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USERNAME }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH_DEVELOP }};
     - name: Deploy final version
-      if: ${{ 'master' == inputs.branch }}
+      if: ${{ 'master' == needs.setup.outputs.branchName }}
       run: |
         cd src
         sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -o 'StrictHostKeyChecking no' -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USERNAME }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH_RELEASE }};
