@@ -7,43 +7,26 @@ on:
       - master
 
 jobs:
-  setup:
-    name: Preparation
-    outputs:
-      branchName: ${{ steps.extract_branch.outputs.branchName }}
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Install sshpass
-      run: sudo apt-get install sshpass
-    - name: Extract branch name
-      uses: bernardo-mg/extract-branch-name-action@v1
-      id: extract_branch
+  deploy_develop_docs:
+    name: Deploy development docs
+    uses: Bernardo-MG/github-workflow/.github/workflows/npm_ssh_deploy_site.yml@v1
+    with:
+      branch: develop
+    secrets:
+      host: ${{ secrets.DEPLOY_DOCS_HOST }}
+      port: ${{ secrets.DEPLOY_DOCS_PORT }}
+      path: ${{ secrets.DEPLOY_DOCS_PATH_DEVELOP }}
+      username: ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}
+      password: ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }}
 
   deploy_docs:
-    name: Deployment
-    environment: ${{ inputs.environment }}
-    needs: setup
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Check-out
-      uses: actions/checkout@v2
-    - name: Set up Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 16
-    - name: Install dependencies
-      run: npm ci
-    - name: Build page
-      run: npm run copy-all
-    - name: Deploy development version
-      if: ${{ 'develop' == needs.setup.outputs.branchName }}
-      run: |
-        cd src
-        sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -o 'StrictHostKeyChecking no' -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USERNAME }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH_DEVELOP }};
-    - name: Deploy final version
-      if: ${{ 'master' == needs.setup.outputs.branchName }}
-      run: |
-        cd src
-        sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -o 'StrictHostKeyChecking no' -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USERNAME }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH_RELEASE }};
+    name: Deploy docs
+    uses: Bernardo-MG/github-workflow/.github/workflows/npm_ssh_deploy_site.yml@v1
+    with:
+      branch: master
+    secrets:
+      host: ${{ secrets.DEPLOY_DOCS_HOST }}
+      port: ${{ secrets.DEPLOY_DOCS_PORT }}
+      path: ${{ secrets.DEPLOY_DOCS_PATH_DEVELOP }}
+      username: ${{ secrets.DEPLOY_DOCS_USER }}
+      password: ${{ secrets.DEPLOY_DOCS_PASSWORD }}
