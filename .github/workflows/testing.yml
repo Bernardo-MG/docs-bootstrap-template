@@ -31,3 +31,29 @@ jobs:
       run: npm run validate-html5
     - name: Accessibility Validation
       run: npm run validate-access
+
+  deploy_develop_docs:
+    name: Deploy development docs
+    needs: tests
+    uses: Bernardo-MG/github-workflow/.github/workflows/npm_deploy_site.yml@develop
+    with:
+      branch: develop
+      host: docs.bernardomg.com
+    secrets:
+      port: ${{ secrets.DEPLOY_DOCS_DEVELOP_PORT }}
+      path: ${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }}
+      username: ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}
+      password: ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }}
+
+  deploy_docs:
+    name: Deploy docs
+    needs: tests
+    uses: Bernardo-MG/github-workflow/.github/workflows/npm_deploy_site.yml@develop
+    with:
+      branch: master
+      host: docs.bernardomg.com
+    secrets:
+      port: ${{ secrets.DEPLOY_DOCS_PORT }}
+      path: ${{ secrets.DEPLOY_DOCS_PATH }}
+      username: ${{ secrets.DEPLOY_DOCS_USER }}
+      password: ${{ secrets.DEPLOY_DOCS_PASSWORD }}
