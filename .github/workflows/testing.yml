@@ -39,6 +39,7 @@ jobs:
     with:
       branch: develop
     secrets:
+      host: docs.bernardomg.com
       port: ${{ secrets.DEPLOY_DOCS_DEVELOP_PORT }}
       path: ${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }}
       username: ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}
@@ -51,6 +52,7 @@ jobs:
     with:
       branch: master
     secrets:
+      host: docs.bernardomg.com
       port: ${{ secrets.DEPLOY_DOCS_PORT }}
       path: ${{ secrets.DEPLOY_DOCS_PATH }}
       username: ${{ secrets.DEPLOY_DOCS_USER }}
