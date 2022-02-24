@@ -1,4 +1,4 @@
-name: Testing and validation
+name: Tests and docs
 
 on: [push, pull_request]
 
