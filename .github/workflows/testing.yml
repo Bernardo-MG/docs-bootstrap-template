@@ -70,7 +70,7 @@ jobs:
       run: sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -o 'StrictHostKeyChecking no' -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH }};
 
   deploy_develop_docs:
-    name: Deploy docs
+    name: Deploy development docs
     needs: setup_docs
     runs-on: ubuntu-latest
     if: ${{ needs.setup_docs.outputs.branchName == 'develop' }}
