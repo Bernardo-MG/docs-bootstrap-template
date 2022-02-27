@@ -25,10 +25,8 @@ jobs:
       run: npm run copy-all
     - name: Validate CSS
       run: npm run validate-css
-    - name: Files are loaded into a local server
-      run: npm run server
     - name: HTML5 Validation
-      run: npm run validate-html5
+      run: npm run validate-html
     - name: Accessibility Validation
       run: npm run validate-access
 
