@@ -94,12 +94,10 @@ jobs:
     - name: Move to deployment folder
       run: cd src
     - name: Deploy docs
-      uses: Bernardo-MG/github-workflow/.github/workflows/npm_ssh_deploy_site.yml@develop
+      uses: bernardo-mg/ssh-deployment-action@develop
       with:
-        branch: master
-      secrets:
+        username: ${{ secrets.DEPLOY_DOCS_USER }}
+        password: ${{ secrets.DEPLOY_DOCS_PASSWORD }}
         host: ${{ secrets.DEPLOY_DOCS_HOST }}
         port: ${{ secrets.DEPLOY_DOCS_PORT }}
         path: ${{ secrets.DEPLOY_DOCS_PATH }}
-        username: ${{ secrets.DEPLOY_DOCS_USER }}
-        password: ${{ secrets.DEPLOY_DOCS_PASSWORD }}
