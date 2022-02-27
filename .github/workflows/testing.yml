@@ -91,7 +91,15 @@ jobs:
       run: npm ci
     - name: Build page
       run: npm run copy-all
+    - name: Move to deployment folder
+      run: cd src
     - name: Deploy docs
-      run: |
-        cd src
-        sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
+      uses: Bernardo-MG/github-workflow/.github/workflows/npm_ssh_deploy_site.yml@develop
+      with:
+        branch: master
+      secrets:
+        host: ${{ secrets.DEPLOY_DOCS_HOST }}
+        port: ${{ secrets.DEPLOY_DOCS_PORT }}
+        path: ${{ secrets.DEPLOY_DOCS_PATH }}
+        username: ${{ secrets.DEPLOY_DOCS_USER }}
+        password: ${{ secrets.DEPLOY_DOCS_PASSWORD }}
