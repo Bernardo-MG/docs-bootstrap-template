@@ -91,12 +91,14 @@ jobs:
       run: npm ci
     - name: Build page
       run: npm run copy-all
+    - name: Move to deployment folder
+      run: cd src
     - name: Deploy docs
-      uses: bernardo-mg/ssh-deployment-action@develop
+      uses: appleboy/scp-action@master
       with:
+        host: ${{ secrets.DEPLOY_DOCS_HOST }}
         username: ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}
         password: ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }}
-        host: ${{ secrets.DEPLOY_DOCS_HOST }}
         port: ${{ secrets.DEPLOY_DOCS_PORT }}
-        path: ${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }}
-        folder: src
+        source: "."
+        target: ${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }}
