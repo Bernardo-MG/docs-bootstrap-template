@@ -34,6 +34,7 @@ jobs:
 
   setup_docs:
     name: Doc deployment preparation
+    needs: tests
     outputs:
       branchName: ${{ steps.extract_branch.outputs.branchName }}
     runs-on: ubuntu-latest
