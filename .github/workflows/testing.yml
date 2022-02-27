@@ -94,4 +94,4 @@ jobs:
     - name: Deploy docs
       run: |
         cd src
-        sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'/home1/duenco/www/development/docs-bootstrap-template;
+        sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
