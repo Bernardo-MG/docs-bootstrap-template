@@ -68,7 +68,7 @@ jobs:
     - name: Move to deployment folder
       run: cd src
     - name: Deploy docs
-      run: sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH }};
+      run: sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -o StrictHostKeyChecking=no -p ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH }};
 
   deploy_develop_docs:
     name: Deploy development docs
@@ -92,4 +92,4 @@ jobs:
     - name: Move to deployment folder
       run: cd src
     - name: Deploy docs
-      run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH_DEVELOP }};
+      run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -o StrictHostKeyChecking=no -p ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH_DEVELOP }};
