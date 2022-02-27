@@ -92,4 +92,4 @@ jobs:
     - name: Move to deployment folder
       run: cd src
     - name: Deploy docs
-      run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./src ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
+      run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -o StrictHostKeyChecking=no -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./src ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'/asd;
