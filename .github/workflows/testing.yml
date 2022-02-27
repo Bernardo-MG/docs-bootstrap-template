@@ -48,6 +48,7 @@ jobs:
 
   deploy_docs:
     name: Deploy docs
+    environment: deployment_site
     needs: setup_docs
     runs-on: ubuntu-latest
     if: ${{ needs.setup_docs.outputs.branchName == 'master' }}
@@ -72,6 +73,7 @@ jobs:
 
   deploy_develop_docs:
     name: Deploy development docs
+    environment: deployment_site
     needs: setup_docs
     runs-on: ubuntu-latest
     if: ${{ needs.setup_docs.outputs.branchName == 'develop' }}
