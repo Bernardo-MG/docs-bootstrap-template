@@ -35,6 +35,9 @@ Desktop.ini
 *.tgz
 *.tar
 
+# Compilation folders
+/output/
+
 # Dependencies
 src/static/lib/bootstrap
 src/static/lib/bootswatch
