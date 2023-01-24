@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   deploy_develop_docs:
     name: Deploy docs for develop
-    uses: Bernardo-MG/github-workflow-maven/.github/workflows/deploy_site.yml@v1
+    uses: Bernardo-MG/github-workflow-node/.github/workflows/deploy_ssh.yml@v1
     with:
       branch: develop
     secrets:
@@ -17,7 +17,7 @@ jobs:
       
   deploy_master_docs:
     name: Deploy docs for master
-    uses: Bernardo-MG/github-workflow-maven/.github/workflows/deploy_site.yml@v1
+    uses: Bernardo-MG/github-workflow-node/.github/workflows/deploy_ssh.yml@v1
     with:
       branch: master
     secrets:
