@@ -84,247 +84,249 @@
             </div>
          </nav>
       </header>
-      <section id="main-section" class="container flex-grow-1">
-         <header class="pb-2 mt-4 mb-2 border-bottom">
-            <h1>Example of a tests report</h1>
+      <main>
+         <section id="main-section" class="container flex-grow-1">
+            <header class="pb-2 mt-4 mb-2 border-bottom">
+               <h1>Example of a tests report</h1>
 
-            <p>This example is based on the Surefire report for Maven, which shows the results of running various test
-               suites.</p>
-         </header>
+               <p>This example is based on the Surefire report for Maven, which shows the results of running various test
+                  suites.</p>
+            </header>
 
-         <section id="tests-summary" class="section">
-            <h2>Summary</h2>
-            <dl class="row">
-               <dt class="col-2">Tests</dt>
-               <dd class="col-10">13</dd>
-               <dt class="col-2">Errors</dt>
-               <dd class="col-10">0</dd>
-               <dt class="col-2">Failures</dt>
-               <dd class="col-10">1</dd>
-               <dt class="col-2">Skipped</dt>
-               <dd class="col-10">0</dd>
-               <dt class="col-2">Success Rate</dt>
-               <dd class="col-10">92.3%</dd>
-               <dt class="col-2">Time</dt>
-               <dd class="col-10">0.059s</dd>
-            </dl>
-         </section>
-         <section id="tests-suites" class="section">
-            <h3>Test Suites</h3>
-
-            <div class="table-responsive">
-               <table class="table table-striped table-bordered table-with-icon">
-                  <thead>
-                     <tr>
-                        <th scope="col">Result</th>
-                        <th scope="col">Test Suite</th>
-                        <th scope="col">Tests</th>
-                        <th scope="col">Errors</th>
-                        <th scope="col">Failures</th>
-                        <th scope="col">Skipped</th>
-                        <th scope="col">Success Rate</th>
-                        <th scope="col">Time</th>
-                     </tr>
-                  </thead>
-                  <tbody>
-                     <tr class="warning">
-                        <td><span class="fas fa-times" aria-hidden="true" title="Failed"></span><span
-                              class="sr-only">Failed</span></td>
-                        <td><a href="#test-cases-1">Test Suite 1</a></td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>100%</td>
-                        <td>0.018</td>
-                     </tr>
-                     <tr>
-                        <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                              class="sr-only">Passed</span></td>
-                        <td><a href="#test-cases-2">Test Suite 2</a></td>
-                        <td>3</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>100%</td>
-                        <td>0.007</td>
-                     </tr>
-                     <tr>
-                        <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                              class="sr-only">Passed</span></td>
-                        <td><a href="#test-cases-3">Test Suite 3</a></td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>100%</td>
-                        <td>0.012</td>
-                     </tr>
-                     <tr>
-                        <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                              class="sr-only">Passed</span></td>
-                        <td><a href="#test-cases-4">Test Suite 4</a></td>
-                        <td>7</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>100%</td>
-                        <td>0.022</td>
-                     </tr>
-                  </tbody>
-               </table>
-            </div>
-         </section>
-         <section id="tests-cases" class="section">
-            <h3>Test Cases</h3>
-            <section id="test-cases-1" class="section">
-               <h4>Test Suite 1</h4>
+            <section id="tests-summary" class="section">
+               <h2>Summary</h2>
+               <dl class="row">
+                  <dt class="col-2">Tests</dt>
+                  <dd class="col-10">13</dd>
+                  <dt class="col-2">Errors</dt>
+                  <dd class="col-10">0</dd>
+                  <dt class="col-2">Failures</dt>
+                  <dd class="col-10">1</dd>
+                  <dt class="col-2">Skipped</dt>
+                  <dd class="col-10">0</dd>
+                  <dt class="col-2">Success Rate</dt>
+                  <dd class="col-10">92.3%</dd>
+                  <dt class="col-2">Time</dt>
+                  <dd class="col-10">0.059s</dd>
+               </dl>
+            </section>
+            <section id="tests-suites" class="section">
+               <h3>Test Suites</h3>
 
                <div class="table-responsive">
                   <table class="table table-striped table-bordered table-with-icon">
                      <thead>
                         <tr>
                            <th scope="col">Result</th>
-                           <th scope="col">Test Case</th>
+                           <th scope="col">Test Suite</th>
+                           <th scope="col">Tests</th>
+                           <th scope="col">Errors</th>
+                           <th scope="col">Failures</th>
+                           <th scope="col">Skipped</th>
+                           <th scope="col">Success Rate</th>
                            <th scope="col">Time</th>
                         </tr>
                      </thead>
                      <tbody>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_something_is_ok</td>
-                           <td>0.007</td>
-                        </tr>
                         <tr class="warning">
                            <td><span class="fas fa-times" aria-hidden="true" title="Failed"></span><span
                                  class="sr-only">Failed</span></td>
-                           <td>test_something_else_works</td>
-                           <td>0.011</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </section>
-            <section id="test-cases-2" class="section">
-               <h4>Test Suite 2</h4>
-
-               <div class="table-responsive">
-                  <table class="table table-striped table-bordered table-with-icon">
-                     <thead>
-                        <tr>
-                           <th scope="col">Result</th>
-                           <th scope="col">Test Case</th>
-                           <th scope="col">Time</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_case_1</td>
-                           <td>0.001</td>
+                           <td><a href="#test-cases-1">Test Suite 1</a></td>
+                           <td>2</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td>100%</td>
+                           <td>0.018</td>
                         </tr>
                         <tr>
                            <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
                                  class="sr-only">Passed</span></td>
-                           <td>test_case_2</td>
-                           <td>0.001</td>
+                           <td><a href="#test-cases-2">Test Suite 2</a></td>
+                           <td>3</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td>100%</td>
+                           <td>0.007</td>
                         </tr>
                         <tr>
                            <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
                                  class="sr-only">Passed</span></td>
-                           <td>test_case_3</td>
-                           <td>0.005</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
-            </section>
-            <section id="test-cases-3" class="section">
-               <h4>Test Suite 3</h4>
-
-               <div class="table-responsive">
-                  <table class="table table-striped table-bordered table-with-icon">
-                     <thead>
-                        <tr>
-                           <th scope="col">Result</th>
-                           <th scope="col">Test Case</th>
-                           <th scope="col">Time</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>just_a_test_case</td>
+                           <td><a href="#test-cases-3">Test Suite 3</a></td>
+                           <td>1</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td>100%</td>
                            <td>0.012</td>
                         </tr>
+                        <tr>
+                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                 class="sr-only">Passed</span></td>
+                           <td><a href="#test-cases-4">Test Suite 4</a></td>
+                           <td>7</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td>0</td>
+                           <td>100%</td>
+                           <td>0.022</td>
+                        </tr>
                      </tbody>
                   </table>
                </div>
             </section>
-            <section id="test-cases-4" class="section">
-               <h4>Test Suite 4</h4>
+            <section id="tests-cases" class="section">
+               <h3>Test Cases</h3>
+               <section id="test-cases-1" class="section">
+                  <h4>Test Suite 1</h4>
 
-               <div class="table-responsive">
-                  <table class="table table-striped table-bordered table-with-icon">
-                     <thead>
-                        <tr>
-                           <th scope="col">Result</th>
-                           <th scope="col">Test Case</th>
-                           <th scope="col">Time</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_case_a</td>
-                           <td>0.001</td>
-                        </tr>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_case_b</td>
-                           <td>0.001</td>
-                        </tr>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_case_c</td>
-                           <td>0.005</td>
-                        </tr>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_case_d</td>
-                           <td>0.001</td>
-                        </tr>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_case_e</td>
-                           <td>0.001</td>
-                        </tr>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_case_f</td>
-                           <td>0.005</td>
-                        </tr>
-                        <tr>
-                           <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
-                                 class="sr-only">Passed</span></td>
-                           <td>test_case_g</td>
-                           <td>0.005</td>
-                        </tr>
-                     </tbody>
-                  </table>
-               </div>
+                  <div class="table-responsive">
+                     <table class="table table-striped table-bordered table-with-icon">
+                        <thead>
+                           <tr>
+                              <th scope="col">Result</th>
+                              <th scope="col">Test Case</th>
+                              <th scope="col">Time</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_something_is_ok</td>
+                              <td>0.007</td>
+                           </tr>
+                           <tr class="warning">
+                              <td><span class="fas fa-times" aria-hidden="true" title="Failed"></span><span
+                                    class="sr-only">Failed</span></td>
+                              <td>test_something_else_works</td>
+                              <td>0.011</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </section>
+               <section id="test-cases-2" class="section">
+                  <h4>Test Suite 2</h4>
+
+                  <div class="table-responsive">
+                     <table class="table table-striped table-bordered table-with-icon">
+                        <thead>
+                           <tr>
+                              <th scope="col">Result</th>
+                              <th scope="col">Test Case</th>
+                              <th scope="col">Time</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_1</td>
+                              <td>0.001</td>
+                           </tr>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_2</td>
+                              <td>0.001</td>
+                           </tr>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_3</td>
+                              <td>0.005</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </section>
+               <section id="test-cases-3" class="section">
+                  <h4>Test Suite 3</h4>
+
+                  <div class="table-responsive">
+                     <table class="table table-striped table-bordered table-with-icon">
+                        <thead>
+                           <tr>
+                              <th scope="col">Result</th>
+                              <th scope="col">Test Case</th>
+                              <th scope="col">Time</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>just_a_test_case</td>
+                              <td>0.012</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </section>
+               <section id="test-cases-4" class="section">
+                  <h4>Test Suite 4</h4>
+
+                  <div class="table-responsive">
+                     <table class="table table-striped table-bordered table-with-icon">
+                        <thead>
+                           <tr>
+                              <th scope="col">Result</th>
+                              <th scope="col">Test Case</th>
+                              <th scope="col">Time</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_a</td>
+                              <td>0.001</td>
+                           </tr>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_b</td>
+                              <td>0.001</td>
+                           </tr>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_c</td>
+                              <td>0.005</td>
+                           </tr>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_d</td>
+                              <td>0.001</td>
+                           </tr>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_e</td>
+                              <td>0.001</td>
+                           </tr>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_f</td>
+                              <td>0.005</td>
+                           </tr>
+                           <tr>
+                              <td><span class="fas fa-check" aria-hidden="true" title="Passed"></span><span
+                                    class="sr-only">Passed</span></td>
+                              <td>test_case_g</td>
+                              <td>0.005</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </section>
             </section>
          </section>
-      </section>
+      </main>
       <footer class="footer w-100 pt-2 border-top bg-light">
          <div id="footer-nav" class="bg-light container">
             <div id="navbar-footer" class="row">
