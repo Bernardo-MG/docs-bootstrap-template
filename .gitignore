@@ -34,6 +34,7 @@ Desktop.ini
 /node_modules/
 *.tgz
 *.tar
+/results/
 
 # Dependencies
 src/static/lib/bootstrap

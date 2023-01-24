@@ -12,11 +12,9 @@ coverage
 .codeclimate.yml
 
 # Linter
-.jscsrc
-.jshintrc
-.eslintrc*
-.pa11yci
+.achecker.yml
 .htmlvalidate.json
+.jshintrc
 
 # IDE - Eclipse files
 .buildpath
