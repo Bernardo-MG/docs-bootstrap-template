@@ -1,9 +1,11 @@
 {
     "extends": [
-      "html-validate:recommended"
+      "html-validate:recommended",
+      "html-validate:document"
     ],
   
     "rules": {
-      "close-order": "error"
+      "close-order": "error",
+      "require-sri": "warn"
     }
   }
