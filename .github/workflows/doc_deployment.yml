@@ -25,11 +25,11 @@ jobs:
     if: ${{ needs.setup_docs.outputs.branchName == 'master' }}
     steps:
     - name: Check-out
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         persist-credentials: false
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: 16
         cache: 'npm'
@@ -50,11 +50,11 @@ jobs:
     if: ${{ needs.setup_docs.outputs.branchName == 'develop' }}
     steps:
     - name: Check-out
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         persist-credentials: false
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: 16
         cache: 'npm'
