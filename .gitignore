@@ -1,7 +1,7 @@
-# Git folder #
+# Git folder
 /.git/
 
-# Eclipse files #
+# IDE - Eclipse files
 .buildpath
 .classpath
 .launch
@@ -11,15 +11,19 @@
 .settings/
 bin/**
 
-# IntelliJ Idea files
+# IDE - IntelliJ Idea files
 .idea
 *.iml
 
-# Windows files #
+# IDE - VSCode
+.vscode/*
+.history/*
+
+# Windows files
 Thumbs.db
 Desktop.ini
 
-# OS files #
+# OS files
 .DS_Store
 .svn
 ._*
@@ -28,6 +32,8 @@ Desktop.ini
 
 # Node
 /node_modules/
+*.tgz
+*.tar
 
 # Dependencies
 src/static/lib/bootstrap

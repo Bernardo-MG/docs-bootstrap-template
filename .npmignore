@@ -1,0 +1,37 @@
+# Git
+.gitattributes
+
+# Tests
+test
+coverage
+
+# CI
+.github/**
+.travis.yml
+.jenkins.yml
+.codeclimate.yml
+
+# Linter
+.jscsrc
+.jshintrc
+.eslintrc*
+.pa11yci
+.htmlvalidate.json
+
+# IDE - Eclipse files
+.buildpath
+.classpath
+.launch
+.loadpath
+.metadata
+.project
+.settings/
+bin/**
+
+# IDE - IntelliJ Idea files
+.idea
+*.iml
+
+# IDE - VSCode
+.vscode/*
+.history/*
