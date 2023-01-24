@@ -8,7 +8,6 @@ jobs:
     uses: Bernardo-MG/github-workflow-maven/.github/workflows/deploy_site.yml@v1
     with:
       branch: develop
-      build-command: copy-all
     secrets:
       host: ${{ secrets.DEPLOY_DOCS_DEVELOP_HOST }}
       port: ${{ secrets.DEPLOY_DOCS_DEVELOP_PORT }}
@@ -21,7 +20,6 @@ jobs:
     uses: Bernardo-MG/github-workflow-maven/.github/workflows/deploy_site.yml@v1
     with:
       branch: master
-      build-command: copy-all
     secrets:
       host: ${{ secrets.DEPLOY_DOCS_HOST }}
       port: ${{ secrets.DEPLOY_DOCS_PORT }}

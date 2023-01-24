@@ -22,7 +22,7 @@
       "copy-popperjs": "copyfiles -u 5 \"./node_modules/@popperjs/core/dist/umd/popper.min.js\" ./src/static/lib/popperjs",
       "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./src/static/lib/font-awesome",
       "copy-html5shiv": "copyfiles -u 3 \"./node_modules/html5shiv/dist/*.css\" ./src/static/lib/html5shiv",
-      "copy-all": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome && npm run copy-html5shiv",
+      "build": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome && npm run copy-html5shiv",
       "server": "http-server ./src -p 8080 >/dev/null 2>&1 &",
       "validate-css": "csslint ./src/static/css/",
       "validate-access": "pa11y-ci",
