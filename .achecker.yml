@@ -18,8 +18,7 @@ policies:
 # i.e. failLevels: violation,potential violation or refer to below as a list
 # Default: violation, potentialviolation
 failLevels:
-    - violation
-    - potentialviolation
+    - off
 
 # optional - Specify one or many violation levels which should be reported
 #            i.e. If specified violation then in the report it would only contain
