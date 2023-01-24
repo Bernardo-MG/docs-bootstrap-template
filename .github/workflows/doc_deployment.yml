@@ -8,6 +8,7 @@ jobs:
     uses: Bernardo-MG/github-workflow-node/.github/workflows/deploy_ssh.yml@v1
     with:
       branch: develop
+      environment: deployment_site
     secrets:
       host: ${{ secrets.DEPLOY_DOCS_DEVELOP_HOST }}
       port: ${{ secrets.DEPLOY_DOCS_DEVELOP_PORT }}
@@ -20,6 +21,7 @@ jobs:
     uses: Bernardo-MG/github-workflow-node/.github/workflows/deploy_ssh.yml@v1
     with:
       branch: master
+      environment: deployment_site
     secrets:
       host: ${{ secrets.DEPLOY_DOCS_HOST }}
       port: ${{ secrets.DEPLOY_DOCS_PORT }}
