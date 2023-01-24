@@ -33,3 +33,6 @@ bin/**
 # IDE - VSCode
 .vscode/*
 .history/*
+
+# Compilation folders
+/output/

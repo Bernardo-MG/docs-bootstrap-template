@@ -8,7 +8,7 @@ ruleArchive: latest
 # i.e. Multiple policies: IBM_Accessibility,WCAG_2_1
 # Run `npx achecker archives` for a list of valid ruleArchive ids and policy ids
 policies:
-    - IBM_Accessibility
+    - WCAG_2_1
 
 # optional - Specify one or many violation levels on which to fail the test
 #            i.e. If specified violation then the testcase will only fail if
@@ -54,7 +54,7 @@ label:
 
 # optional - Where the scan results should be saved.
 # Default: results
-outputFolder: results
+outputFolder: /output/accessibility
 
 # optional - Where the baseline results should be loaded from
 # Default: baselines
@@ -62,4 +62,4 @@ baselineFolder: test/baselines
 
 # optional - Where the tool can read/write cached files (ace-node.js / archive.json)
 # Default: `${os.tmpdir()}/accessibility-checker/`
-cacheFolder: /tmp/accessibility-checker
+cacheFolder: /output/tmp/accessibility-checker
