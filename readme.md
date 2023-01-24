@@ -32,7 +32,7 @@ It contains a few dependencies which require the project to be built. Otherwise 
 
 ### Prerequisites
 
-The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery], [Font Awesome][fontawesome] and [highlight.js][highlightjs], installed with [npm][npm].
+The project makes use of [Bootstrap 3][bootstrap], [Font Awesome][fontawesome] and [highlight.js][highlightjs], installed with [npm][npm].
 
 Otherwise, it is just plain HTML5 and CSS3.
 
@@ -83,7 +83,6 @@ The project has been released under the [MIT License][license].
 
 [demo-site]: http://docs.bernardomg.com/docs-bootstrap-template/
 [issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
-[jquery]: https://jquery.com/
 [license]: http://www.opensource.org/licenses/mit-license.php
 [npm]: https://www.npmjs.com/
 [scm]: http://github.com/Bernardo-MG/docs-bootstrap-template
