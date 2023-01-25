@@ -55,7 +55,7 @@ npm run build
 Once this is done, the index file is ready to open at:
 
 ```
-/src/index.html
+/target/index.html
 ```
 
 ### Remote Deployment

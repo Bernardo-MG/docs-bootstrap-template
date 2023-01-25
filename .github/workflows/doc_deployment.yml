@@ -27,7 +27,7 @@ jobs:
     - name: Build project
       run: npm run build
     - name: Move to build folder
-      run: cd src
+      run: cd target
     - name: Deploy build folder
       run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
 
@@ -55,6 +55,6 @@ jobs:
     - name: Build project
       run: npm run build
     - name: Move to build folder
-      run: cd src
+      run: cd target
     - name: Deploy build folder
       run: sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH }};

@@ -37,9 +37,4 @@ Desktop.ini
 
 # Compilation folders
 /output/
-
-# Dependencies
-src/static/lib/bootstrap
-src/static/lib/bootswatch
-src/static/lib/popperjs
-src/static/lib/font-awesome
+/target/

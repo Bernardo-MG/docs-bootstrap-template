@@ -17,14 +17,15 @@
       "url": "https://www.github.com/bernardo-mg/docs-bootstrap-template/issues"
    },
    "scripts": {
-      "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/*.js\" ./src/static/lib/bootstrap/js",
-      "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/litera/*.css\" ./src/static/lib/bootswatch/litera",
-      "copy-popperjs": "copyfiles -u 5 \"./node_modules/@popperjs/core/dist/umd/popper.min.js\" ./src/static/lib/popperjs",
-      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./src/static/lib/font-awesome",
-      "build": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome",
-      "validate-css": "csslint ./src/static/css/",
-      "validate-access": "achecker src/",
-      "validate-html": "html-validate ./src/*.html"
+      "copy-sources": "copyfiles -u 1 \"./src/**/*\" ./target",
+      "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/*.js\" ./target/static/lib/bootstrap/js",
+      "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/litera/*.css\" ./target/static/lib/bootswatch/litera",
+      "copy-popperjs": "copyfiles -u 5 \"./node_modules/@popperjs/core/dist/umd/popper.min.js\" ./target/static/lib/popperjs",
+      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./target/static/lib/font-awesome",
+      "build": "npm run copy-sources && npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome",
+      "validate-css": "csslint ./target/static/css/",
+      "validate-access": "achecker target/",
+      "validate-html": "html-validate ./target/*.html"
    },
    "devDependencies": {
       "@fortawesome/fontawesome-free": "~6.2.1",
