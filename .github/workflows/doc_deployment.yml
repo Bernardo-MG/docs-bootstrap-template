@@ -29,7 +29,7 @@ jobs:
     - name: Move to build folder
       run: cd src
     - name: Deploy build folder
-      run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_DEVELOP_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_DEVELOP_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
+      run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
 
   deploy_master_docs:
     name: Deploy docs for master
