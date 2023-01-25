@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   deploy_develop_docs:
     name: Deploy docs for develop
-    uses: Bernardo-MG/github-workflow-node/.github/workflows/deploy_ssh.yml@v1
+    uses: Bernardo-MG/github-workflow-node/.github/workflows/deploy_ssh.yml@develop
     with:
       branch: develop
       environment: deployment_site
