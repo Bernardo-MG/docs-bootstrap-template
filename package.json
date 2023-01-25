@@ -23,19 +23,14 @@
       "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./src/static/lib/font-awesome",
       "build": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome",
       "validate-css": "csslint ./src/static/css/",
-      "validate-access": "achecker src/",
       "validate-html": "html-validate ./src/*.html"
    },
    "devDependencies": {
       "@fortawesome/fontawesome-free": "~6.2.1",
-      "accessibility-checker": "^3.1.42",
       "bootstrap": "~5.2.2",
       "bootswatch": "~5.2.2",
       "copyfiles": "~2.4.1",
       "csslint": "~1.0.5",
       "html-validate": "~7.13.1"
-   },
-   "dependencies": {
-      "chromedriver": "^109.0.0"
    }
 }
