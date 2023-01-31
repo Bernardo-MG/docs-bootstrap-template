@@ -1,13 +1,14 @@
 {
    "name": "docs-bootstrap-template",
-   "version": "2.2.0",
+   "version": "2.1.4",
    "description": "Bootstrap-based HTML template for documentation sites.",
    "author": "Bernardo Martínez Garrido",
    "homepage": "https://github.com/Bernardo-MG/docs-bootstrap-template",
    "license": "MIT",
    "keywords": [
       "template",
-      "bootstrap"
+      "bootstrap",
+      "documentation"
    ],
    "repository": {
       "type": "git",
