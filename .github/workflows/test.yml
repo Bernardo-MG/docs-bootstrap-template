@@ -1,0 +1,31 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+
+  tests:
+    name: Tests with node ${{ matrix.node }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ 16 ]
+
+    steps:
+    - name: Check-out
+      uses: actions/checkout@v3
+    - name: Set up Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node }}
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm ci
+    - name: Build page
+      run: npm run build
+    - name: Validate CSS
+      run: npm run validate-css
+    - name: HTML5 Validation
+      run: npm run validate-html
+    - name: Accessibility Validation
+      run: npm run validate-access

@@ -1,0 +1,60 @@
+name: Doc deployment
+
+on: [push, pull_request]
+
+jobs:
+  deploy_develop_docs:
+    name: Deploy docs for develop
+    environment: deployment_site
+    concurrency:
+      group: deploy-ssh-${{ github.ref }}
+      cancel-in-progress: true
+    if: ${{ github.ref == format('refs/heads/{0}', 'develop') }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check-out
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+    - name: Set up Node.js 16
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm ci
+    - name: Build project
+      run: npm run build
+    - name: Move to build folder
+      run: cd target
+    - name: Deploy build folder
+      run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
+
+  deploy_master_docs:
+    name: Deploy docs for master
+    environment: deployment_site
+    concurrency:
+      group: deploy-ssh-${{ github.ref }}
+      cancel-in-progress: true
+    if: ${{ github.ref == format('refs/heads/{0}', 'master') }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check-out
+      uses: actions/checkout@v3
+      with:
+        persist-credentials: false
+    - name: Set up Node.js 16
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm ci
+    - name: Build project
+      run: npm run build
+    - name: Move to build folder
+      run: cd target
+    - name: Deploy build folder
+      run: sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH }};

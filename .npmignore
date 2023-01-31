@@ -1,5 +1,20 @@
-# Git folder
-/.git/
+# Git
+.gitattributes
+
+# Tests
+test
+coverage
+
+# CI
+.github/**
+.travis.yml
+.jenkins.yml
+.codeclimate.yml
+
+# Linter
+.achecker.yml
+.htmlvalidate.json
+.jshintrc
 
 # IDE - Eclipse files
 .buildpath
@@ -19,22 +34,5 @@ bin/**
 .vscode/*
 .history/*
 
-# Windows files
-Thumbs.db
-Desktop.ini
-
-# OS files
-.DS_Store
-.svn
-._*
-.Spotlight-V100
-.Trashes
-
-# Node
-/node_modules/
-*.tgz
-*.tar
-
 # Compilation folders
 /output/
-/target/

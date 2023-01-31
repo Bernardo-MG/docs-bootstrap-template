@@ -1,8 +1,26 @@
 # Docs Bootstrap Template
 
-A static template making use of Bootstrap and HTML5, meant to be used for creating responsive documentation pages.
+A static template based on [Bootstrap 5][bootstrap] and [HTML5][html5]. Used as a reference skeleton for responsive documentation pages. Such pages would be created with tools like Jinja, Maven Site or Sphinx.
 
-It is used to create other, dynamic, templates, with the help of tools such as Jinja, Maven Site or Sphinx.
+This project is just an example to serve as reference. And for that reason is kept as simple as possible. Still, it should be built with [npm][npm] before checking it.
+
+First install the dependencies:
+
+```
+npm install
+```
+
+Then build the project:
+
+```
+npm run build
+```
+
+After this the index file is ready at:
+
+```
+/target/index.html
+```
 
 ## Features
 
@@ -23,40 +41,6 @@ A few projects have been created based on this template, meant to ease documenti
 
 - [Docs Maven Skin][docs-maven-skin], adapts the template for [Maven Site][maven-site].
 - [Sphinx Docs Theme][sphinx-docs-theme], adapts the template for [Sphinx][sphinx].
-
-## Usage
-
-This is a static template, meant to be used as an skeleton to create a dynamic one.
-
-It contains a few dependencies which require the project to be built. Otherwise all the required code is contained in 'src/static', while the HTML files in 'src' are the examples to be used as a basis for the templates.
-
-### Prerequisites
-
-The project makes use of [Bootstrap 3][bootstrap], [JQuery][jquery], [Font Awesome][fontawesome] and [highlight.js][highlightjs], installed with [npm][npm].
-
-Otherwise, it is just plain HTML5 and CSS3.
-
-### Building the project
-
-[npm][npm] is used for building the project, which requires running a few commands. All of these should be executed from the project root.
-
-First of all the dependencies should be installed:
-
-```
-npm install
-```
-
-Afterwards these dependencies should be copied to the resources folders:
-
-```
-npm run copy-all
-```
-
-Once this is done, the index file is ready to open at:
-
-```
-/src/index.html
-```
 
 ### Remote Deployment
 
@@ -83,7 +67,6 @@ The project has been released under the [MIT License][license].
 
 [demo-site]: http://docs.bernardomg.com/docs-bootstrap-template/
 [issues]: https://github.com/Bernardo-MG/docs-bootstrap-template/issues
-[jquery]: https://jquery.com/
 [license]: http://www.opensource.org/licenses/mit-license.php
 [npm]: https://www.npmjs.com/
 [scm]: http://github.com/Bernardo-MG/docs-bootstrap-template

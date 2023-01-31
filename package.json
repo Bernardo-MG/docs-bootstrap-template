@@ -1,13 +1,14 @@
 {
    "name": "docs-bootstrap-template",
-   "version": "2.2.0",
+   "version": "2.1.4",
    "description": "Bootstrap-based HTML template for documentation sites.",
    "author": "Bernardo Martínez Garrido",
    "homepage": "https://github.com/Bernardo-MG/docs-bootstrap-template",
    "license": "MIT",
    "keywords": [
       "template",
-      "bootstrap"
+      "bootstrap",
+      "documentation"
    ],
    "repository": {
       "type": "git",
@@ -17,26 +18,23 @@
       "url": "https://www.github.com/bernardo-mg/docs-bootstrap-template/issues"
    },
    "scripts": {
-      "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/*.js\" ./src/static/lib/bootstrap/js",
-      "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/litera/*.css\" ./src/static/lib/bootswatch/litera",
-      "copy-popperjs": "copyfiles -u 5 \"./node_modules/@popperjs/core/dist/umd/popper.min.js\" ./src/static/lib/popperjs",
-      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./src/static/lib/font-awesome",
-      "copy-html5shiv": "copyfiles -u 3 \"./node_modules/html5shiv/dist/*.css\" ./src/static/lib/html5shiv",
-      "copy-all": "npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome && npm run copy-html5shiv",
-      "server": "http-server ./src -p 8080 >/dev/null 2>&1 &",
-      "validate-css": "csslint ./src/static/css/",
-      "validate-access": "pa11y-ci",
-      "validate-html": "html-validate ./src/*.html"
+      "copy-sources": "copyfiles -u 1 \"./src/**/*\" ./target",
+      "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/*.js\" ./target/static/lib/bootstrap/js",
+      "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/litera/*.css\" ./target/static/lib/bootswatch/litera",
+      "copy-popperjs": "copyfiles -u 5 \"./node_modules/@popperjs/core/dist/umd/popper.min.js\" ./target/static/lib/popperjs",
+      "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./target/static/lib/font-awesome",
+      "build": "npm run copy-sources && npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome",
+      "validate-css": "csslint ./target/static/css/",
+      "validate-access": "achecker target/",
+      "validate-html": "html-validate ./target/*.html"
    },
    "devDependencies": {
       "@fortawesome/fontawesome-free": "~6.2.1",
+      "accessibility-checker": "^3.1.42",
       "bootstrap": "~5.2.2",
       "bootswatch": "~5.2.2",
       "copyfiles": "~2.4.1",
       "csslint": "~1.0.5",
-      "html5shiv": "~3.7.3",
-      "html-validate": "~7.1.2",
-      "http-server": "~14.1.0",
-      "pa11y-ci": "~3.0.1"
+      "html-validate": "~7.13.1"
    }
 }
