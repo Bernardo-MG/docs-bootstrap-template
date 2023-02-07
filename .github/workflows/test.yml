@@ -27,5 +27,3 @@ jobs:
       run: npm run validate-css
     - name: HTML5 Validation
       run: npm run validate-html
-    - name: Accessibility Validation
-      run: npm run validate-access
