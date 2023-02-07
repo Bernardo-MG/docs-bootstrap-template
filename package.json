@@ -29,12 +29,12 @@
       "validate-html": "html-validate ./target/*.html"
    },
    "devDependencies": {
-      "@fortawesome/fontawesome-free": "~6.2.1",
-      "accessibility-checker": "^3.1.42",
-      "bootstrap": "~5.2.2",
-      "bootswatch": "~5.2.2",
-      "copyfiles": "~2.4.1",
-      "csslint": "~1.0.5",
-      "html-validate": "~7.13.1"
+      "@fortawesome/fontawesome-free": "~6.2.0",
+      "accessibility-checker": "~3.1.0",
+      "bootstrap": "~5.2.0",
+      "bootswatch": "~5.2.0",
+      "copyfiles": "~2.4.0",
+      "csslint": "~1.0.0",
+      "html-validate": "~7.13.0"
    }
 }
