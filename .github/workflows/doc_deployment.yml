@@ -26,10 +26,10 @@ jobs:
       run: npm ci
     - name: Build project
       run: npm run build
-    - name: Move to build folder
-      run: cd target
-    - name: Deploy build folder
-      run: sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
+    - name: Move to build folder and deploy
+      run: |
+           cd target
+           sshpass -p ${{ secrets.DEPLOY_DOCS_DEVELOP_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_DEVELOP_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_DEVELOP_PATH }};
 
   deploy_master_docs:
     name: Deploy docs for master
@@ -54,7 +54,7 @@ jobs:
       run: npm ci
     - name: Build project
       run: npm run build
-    - name: Move to build folder
-      run: cd target
-    - name: Deploy build folder
-      run: sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH }};
+    - name: Move to build folder and deploy
+      run: |
+           cd target
+           sshpass -p ${{ secrets.DEPLOY_DOCS_PASSWORD }} scp -oStrictHostKeyChecking=no -oHostKeyAlgorithms=+ssh-dss -P ${{ secrets.DEPLOY_DOCS_PORT }} -r ./* ${{ secrets.DEPLOY_DOCS_USER }}'@'${{ secrets.DEPLOY_DOCS_HOST }}':'${{ secrets.DEPLOY_DOCS_PATH }};
