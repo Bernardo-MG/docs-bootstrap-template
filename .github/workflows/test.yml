@@ -23,7 +23,7 @@ jobs:
       run: npm ci
     - name: Build page
       run: npm run build
-    - name: Validate CSS
+    - name: CSS validation
       run: npm run validate-css
-    - name: HTML5 Validation
+    - name: HTML5 validation
       run: npm run validate-html
