@@ -22,7 +22,7 @@
       "copy-bootstrap": "copyfiles -u 4 \"./node_modules/bootstrap/dist/js/*.js\" ./target/static/lib/bootstrap/js",
       "copy-bootswatch": "copyfiles -u 4 \"./node_modules/bootswatch/dist/litera/*.css\" ./target/static/lib/bootswatch/litera",
       "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./target/static/lib/font-awesome",
-      "build": "npm run copy-sources && npm run copy-bootstrap && npm run copy-bootswatch && && npm run copy-fontawesome",
+      "build": "npm run copy-sources && npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-fontawesome",
       "validate-css": "csslint ./target/static/css/",
       "validate-html": "html-validate ./target/*.html"
    },
