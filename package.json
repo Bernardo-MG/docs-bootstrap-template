@@ -1,6 +1,6 @@
 {
    "name": "docs-bootstrap-template",
-   "version": "2.1.6",
+   "version": "2.2.0",
    "description": "Bootstrap-based HTML template for documentation sites.",
    "author": "Bernardo Martínez Garrido",
    "homepage": "https://github.com/Bernardo-MG/docs-bootstrap-template",
@@ -24,15 +24,16 @@
       "copy-popperjs": "copyfiles -u 5 \"./node_modules/@popperjs/core/dist/umd/popper.min.js\" ./target/static/lib/popperjs",
       "copy-fontawesome": "copyfiles -u 2 \"./node_modules/@fortawesome/fontawesome-free/**/*\" ./target/static/lib/font-awesome",
       "build": "npm run copy-sources && npm run copy-bootstrap && npm run copy-bootswatch && npm run copy-popperjs && npm run copy-fontawesome",
-      "validate-css": "csslint ./target/static/css/",
+      "validate-css": "stylelint ./target/static/css/",
       "validate-html": "html-validate ./target/*.html"
    },
    "devDependencies": {
-      "@fortawesome/fontawesome-free": "~6.3.0",
-      "bootstrap": "~5.2.0",
-      "bootswatch": "~5.2.0",
+      "@fortawesome/fontawesome-free": "~6.6.0",
+      "bootstrap": "~5.3.0",
+      "bootswatch": "~5.3.0",
       "copyfiles": "~2.4.0",
-      "csslint": "~1.0.0",
-      "html-validate": "~7.13.0"
+      "html-validate": "~8.22.0",
+      "stylelint": "^16.9.0",
+      "stylelint-config-standard": "^36.0.1"
    }
 }

@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ 16 ]
+        node: [ 18, 20, 22 ]
 
     steps:
     - name: Check-out
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Set up Node.js ${{ matrix.node }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node }}
         cache: 'npm'
@@ -23,7 +23,7 @@ jobs:
       run: npm ci
     - name: Build page
       run: npm run build
-    - name: Validate CSS
+    - name: CSS validation
       run: npm run validate-css
-    - name: HTML5 Validation
+    - name: HTML5 validation
       run: npm run validate-html
